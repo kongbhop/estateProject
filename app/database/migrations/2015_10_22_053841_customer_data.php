@@ -12,7 +12,17 @@ class CustomerData extends Migration {
 	 */
 	public function up()
 	{
-		//
+		Schema::create('customer_data', function(Blueprint $table)
+        {
+            $table->increments('id');
+            $table->string('firstname', 100)->nullable();
+            $table->string('lastname', 100)->nullable();
+            $table->string('email', 100)->nullable();
+            $table->string('mobile', 100)->nullable();
+            $table->text('description')->nullable();
+            $table->datetime('appointment')->nullable();
+            $table->timestamps();
+        });
 	}
 
 	/**

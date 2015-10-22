@@ -17,6 +17,10 @@ Route::post('/login', array('as' => 'login', 'uses' => 'UsersController@handleLo
 Route::get('/logout', array('as' => 'logout', 'uses' => 'UsersController@logout'));
 
 Route::get('customerData', array('as' => 'customerData', 'uses' => 'CustomerController@viewCustomerData'));
+Route::get('exportData', array('as' => 'exportData', 'uses' => 'CustomerController@exportCustomerData'));
+Route::get('contact', array('as' => 'contact', 'uses' => 'CustomerController@requestData'));
+Route::post('contact', array('as' => 'contact', 'uses' => 'CustomerController@handleRequestData'));
+
 
 Route::get('/', function()
 {
