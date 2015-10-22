@@ -39,7 +39,7 @@
 	/* Backgrounds will cover all the section
 	* --------------------------------------- */
 	.section{
-		background-size: cover; 
+		background-size: cover;
 	}
 	.slide{
 		background-size: cover;
@@ -86,7 +86,7 @@
 	}
 
 	.headTextcontainer {
-		background-color:rgba(210, 210, 204, 0.7); 
+		background-color:rgba(210, 210, 204, 0.7);
 		top: 50%;
 		position: relative;
 		height: 150px;
@@ -107,16 +107,16 @@
 
 	.headTextcontainer p{
 		font-family: ThaiSansLite;
-		font-size: 1.25em;	
+		font-size: 1.25em;
 		padding: 0px 20px;
 		line-height: 1em;
 	}
 
 	.textcontainer {
-		background-color:rgba(210, 210, 204, 0.7); 
-		color:#000; 
+		background-color:rgba(210, 210, 204, 0.7);
+		color:#000;
 		max-width: 600px;
-		min-width: 300px;	
+		min-width: 300px;
 		width: 40%;
 		right: 100px;
 		opacity: 0;
@@ -213,6 +213,7 @@
 			$('#fullpage').fullpage({
 				verticalCentered: false,
 				'css3': true,
+				menu: '.mainMenu',
 				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
 
 		        afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
@@ -254,13 +255,36 @@
 		        }
 
 			});
-				
+
 		});
 	</script>
 
 </head>
 <body>
 
+<div id="header">
+	<div class="logo">
+		<a href="#firstPage"><img src="imgs/logo.png" /></a>
+	</div>
+	<div class="topMenu">
+		<ul id="menu">
+			<li class="active"><a href="">ไทย</a></li>
+			|
+			<li><a href="">ENGLISH</a></li>
+		</ul>
+	</div>
+	<div class="bottomMenu">
+		<ul id="menu" class="mainMenu">
+			<li data-menuanchor="firstPage"><a href="#firstPage">โครงการไพรเวทย์3</a></li>
+			<li data-menuanchor="secondPage"><a href="#secondPage">ที่ตั้งโครงการ</a></li>
+			<li data-menuanchor="thirdPage"><a href="#thirdPage">บ้านแบบ A</a></li>
+			<li data-menuanchor="fourthPage"><a href="#fourthPage">บ้านแบบ B</a></li>
+			<li data-menuanchor="fourthPage"><a href="#fourthPage">บ้านสัมพันธ์</a></li>
+			<li data-menuanchor="fourthPage"><a href="#fourthPage">ติดต่อเรา</a></li>
+		</ul>
+	</div>
+
+</div>
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <div class="subMenu">
@@ -278,7 +302,7 @@
 	</div>
 
 	<div class="section" id="section1">
-		
+
 	    <div class="slide" id="slide1">
 	    	<div class="textcontainer" id="textbox-1-1"><h2>คอนเซปโครงการ</h2>
 	    		<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
