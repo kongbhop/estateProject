@@ -149,10 +149,10 @@
 
 	.textcontainer.active{
 		opacity: 1;
-		-webkit-transform: translate3d(134px, 0px, 0px);
-		-moz-transform: translate3d(134px, 0px, 0px);
-		-ms-transform:translate3d(134px, 0px, 0px);
-		transform: translate3d(134px, 0px, 0px);
+		-webkit-transform: translate3d(34px, 0px, 0px);
+		-moz-transform: translate3d(34px, 0px, 0px);
+		-ms-transform:translate3d(34px, 0px, 0px);
+		transform: translate3d(34px, 0px, 0px);
 	}
 
 	.subMenu {
@@ -183,6 +183,9 @@
 		transform: translate3d(0px, -10px, 0px);
 	}
 
+	.subMenu a{
+		color: #111;
+	}
 
 	.subMenu li{
 		display: inline-block;
@@ -212,6 +215,7 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				verticalCentered: false,
+				slidesNavigation: true,
 				'css3': true,
 				menu: '.mainMenu',
 				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
@@ -222,6 +226,8 @@
 		            if(anchorLink == 'secondPage'){
 		            	$('.slide.fp-slide.active').find('.textcontainer').addClass('active');
 		            }
+		            $('.subMenu').find('li.active').removeClass('active');
+           	 		$('.subMenu').find('li').eq(slideIndex).addClass('active');
 
 		        },
 
@@ -289,7 +295,7 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <div class="subMenu">
 	<ul>
-		<li class="active">House Type A</li><li>1st Floor Plan</li><li>2nd Floor Plan</li>
+		<li><a href="#">House Type A</a></li><li><a href="#">1st Floor Plan</a></li><li><a href="#">2nd Floor Plan</a></li>
 	</ul>
 </div>
 

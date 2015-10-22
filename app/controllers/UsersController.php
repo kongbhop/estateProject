@@ -36,7 +36,7 @@ class UsersController extends BaseController {
         );
 
         if(Auth::attempt($credential)){
-            Redirect::to('/');
+            return Redirect::to('customerData');
         }
 
         Session::flash('message', 'ชื่อผู้ใช้หรือรหัสผ่านผิดพลาด');
@@ -48,7 +48,6 @@ class UsersController extends BaseController {
         if(Auth::check()){
             Auth::logout();
         }
-
         return Redirect::route('login');
     }
 }
