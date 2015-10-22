@@ -4,7 +4,7 @@ class UsersController extends BaseController {
 
     public function __construct(){
         // Only Guest can access this
-        // $this->beforeFilter('guest', array('only' => array('login', 'handleLogin', 'signUp', 'handleSignUp')));
+        $this->beforeFilter('guest', array('only' => array('login', 'handleLogin', 'signUp', 'handleSignUp')));
     }
     
     public function signUp(){
@@ -36,13 +36,12 @@ class UsersController extends BaseController {
         );
 
         if(Auth::attempt($credential)){
-            return 1;
             Redirect::to('/');
         }
-        return -1;
+
         Session::flash('message', 'ชื่อผู้ใช้หรือรหัสผ่านผิดพลาด');
         Session::flash('status', 'fail');
-        return Redirect::to('/')->withInput();
+        return Redirect::route('login')->withInput();
     }
 
     public function logout(){

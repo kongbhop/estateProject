@@ -16,6 +16,8 @@ Route::get('login', array('as' => 'login', 'uses' => 'UsersController@login'));
 Route::post('/login', array('as' => 'login', 'uses' => 'UsersController@handleLogin'));
 Route::get('/logout', array('as' => 'logout', 'uses' => 'UsersController@logout'));
 
+Route::get('customerData', array('as' => 'customerData', 'uses' => 'CustomerController@viewCustomerData'));
+
 Route::get('/', function()
 {
 	return View::make('hello');
