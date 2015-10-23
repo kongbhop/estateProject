@@ -9,15 +9,52 @@
   background-size: cover;
 }
 
+#planBMain {
+  background-image: url("../imgs/houseB.jpg")
+}
+
+.sideCover {
+  padding: 0px 10%;
+}
+
+#planBFloor {
+  background-color: #BBB;
+  // padding: 0px 10%;
+  padding-top: 30vh;
+  color: #444;
+  .floorPlan{
+    float: left;
+    width: 50%;
+    text-align: center;
+    img {
+      width: 50%;
+    }
+    div {
+      font-size: 1.2em;
+    }
+
+  }
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.textRight {
+  text-align: right;
+}
+
+
+.textTopic {
+  font-size: 2.2em;
+}
+.textDesp {
+  font-size: 1.4em;
+  padding: 0px 10%;
+}
+
 #samapan {
   color: white !important;
-  .textTopic {
-    font-size: 2.2em;
-  }
-  .textDesp {
-    font-size: 1.4em;
-    padding: 0px 10%;
-  }
   #samapanSlide, #privateSlide {
     padding-top: 15vh;
     background-color: #2A2728;

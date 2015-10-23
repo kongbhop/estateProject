@@ -293,6 +293,10 @@
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+
+
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
@@ -438,7 +442,31 @@
 
 	<div class="section" id="planA"></div>
 
-	<div class="section" id="planB"></div>
+	<div class="section" id="planB">
+		<div class="slide" id="planBMain" name="บ้าน Type B">
+			<div class="textcontainer" id="textbox-1-1" ><h2>บ้าน Type B</h2>
+				<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
+			</div>
+		</div>
+		<div class="slide" id="planBFloor" name="แผนผังบ้าน">
+			<div class="sideCover">
+				<div class="floorPlan">
+					<a class="fancybox" rel="fancybox" href="imgs/sec0.jpg" title="">
+						<img src="imgs/sec0.jpg" alt="" />
+					</a>
+					<p class="textTopic">บ้านประเภท B - ชั้นล่าง</p>
+					<div class="textLeft textDesp">โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค </div>
+				</div>
+				<div class="floorPlan">
+					<a class="fancybox" rel="fancybox" href="imgs/sec1-1.jpg" title="">
+						<img src="imgs/sec1-1.jpg" alt="" />
+					</a>
+					<p class="textTopic">บ้านประเภท B - ชั้นบน</p>
+					<div class="textLeft textDesp">โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค </div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="section" id="samapan">
 		<div class="slide" id="samapanSlide" name="บ้านสมาพันธ์">
