@@ -1,7 +1,7 @@
 <?php
 
 class CustomerController extends BaseController {
-	
+
 	public function requestData(){
 		return View::make('customers.requestData');
 	}
@@ -15,6 +15,8 @@ class CustomerController extends BaseController {
 		$customerData->email = $data['email'];
 		$customerData->mobile = $data['mobile'];
 		$customerData->description = $data['description'];
+		// var_dump($customerData);
+		// return 1;
 		$customerData->save();
 
 		return Response::json($customerData);
