@@ -32,6 +32,7 @@ class CustomerController extends BaseController {
 		$customers = CustomerData::orderBy('id')->get();
 		$customers = $customers->toArray();
 		$filename = CustomerData::exportData($customers);
+		
 		return Response::download(public_path($filename));
 	}
 }
