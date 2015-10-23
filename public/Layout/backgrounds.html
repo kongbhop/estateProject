@@ -78,6 +78,9 @@
 	#slide2-2{
 		background-color: #DDDDDD;
 	}
+	#slide2-3{
+		background-color: #DDDDDD;
+	}
 
 
 	/* Bottom menu
@@ -156,6 +159,25 @@
 		padding-left: 15%;
 		padding-right: 10%;
 		text-align: left;
+	}
+
+	.textcontainer.centertext p{
+		font-size: 1.2em;
+		text-align: left;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.textcontainer.centertext h2{
+		font-family: Didot, ThaiSansLite;
+		font-size: 3em;
+		text-align: center;
+		padding-left: 0px;
+	}
+
+	.textcontainer.centertext{
+		background-color: rgba(0,0,0,0);
+		width: 40%;
 	}
 
 	.textcontainer.active{
@@ -252,6 +274,10 @@
 		margin-top: 50px;	
 	}
 
+	#textbox-2-3 {
+		right: 0px;
+	}
+
 	</style>
 
 	<!--[if IE]>
@@ -324,6 +350,7 @@
           center: myLatLng,
           zoom: 10,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false,
         }
         var map = new google.maps.Map(mapCanvas, mapOptions);
         var marker = new google.maps.Marker({
@@ -402,8 +429,8 @@
 	    		<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
 	    	</div>
 	    </div>
-	    <div class="slide" id="slide3" name="Neighbourhood">
-	    	<div class="textcontainer" id="textbox-1-2" ><h2>The Architect</h2>
+	    <div class="slide" id="slide2-3" name="Neighbourhood">
+	    	<div class="textcontainer centertext" id="textbox-2-3" ><h2>Neighbourhood</h2>
 	    		<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
 	    	</div>
 	    </div>
