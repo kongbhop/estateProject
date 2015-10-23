@@ -271,7 +271,7 @@
 
 	#textbox-2-2 {
 		width: 40%;
-		margin-top: 50px;	
+		margin-top: 50px;
 	}
 
 	#textbox-2-3 {
@@ -300,7 +300,7 @@
 				slidesNavigation: true,
 				'css3': true,
 				menu: '.mainMenu',
-				anchors: ['Project', 'secondPage', 'thirdPage', 'fourthPage', 'Contact'],
+				anchors: ['Mainpage', 'Project', 'Location', 'PlanA', 'PlanB', 'Samapan', 'Contact'],
 
 		        afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
 		            var loadedSlide = $(this);
@@ -358,8 +358,8 @@
 		    map: map,
 		    title: 'Hello World!'
 		  });
-        
-		
+
+
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
@@ -369,7 +369,7 @@
 
 <div id="header">
 	<div class="logo">
-		<a href="#Project"><img src="imgs/logo.png" /></a>
+		<a href="#Mainpage"><img src="imgs/logo.png" /></a>
 	</div>
 	<div class="topMenu">
 		<ul id="menu">
@@ -380,11 +380,11 @@
 	</div>
 	<div class="bottomMenu">
 		<ul id="menu" class="mainMenu">
-			<li data-menuanchor="Project"><a href="#Project">โครงการไพรเวทย์3</a></li>
-			<li data-menuanchor="secondPage"><a href="#secondPage">ที่ตั้งโครงการ</a></li>
-			<li data-menuanchor="thirdPage"><a href="#thirdPage">บ้านแบบ A</a></li>
-			<li data-menuanchor="fourthPage"><a href="#fourthPage">บ้านแบบ B</a></li>
-			<li data-menuanchor="fourthPage"><a href="#fourthPage">บ้านสัมพันธ์</a></li>
+			<li data-menuanchor="Project"><a href="#Project">โครงการไพรเวทพาร์ค3</a></li>
+			<li data-menuanchor="Location"><a href="#Location">ที่ตั้งโครงการ</a></li>
+			<li data-menuanchor="PlanA"><a href="#PlanA">บ้านแบบ A</a></li>
+			<li data-menuanchor="PlanB"><a href="#PlanB">บ้านแบบ B</a></li>
+			<li data-menuanchor="Samapan"><a href="#Samapan">บ้านสมาพันธ์</a></li>
 			<li data-menuanchor="Contact"><a href="#Contact">ติดต่อเรา</a></li>
 		</ul>
 	</div>
@@ -393,14 +393,14 @@
 
 
 <div id="fullpage">
-	<div class="section" id="section0">
+	<div class="section" id="mainpage">
 		<div class="headTextcontainer">
 			<h1>โครงการไพรเวทพาร์ค</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae erat a dui ornare blandit a id dolor. Nunc tincidunt enim at ultricies mattis. Cras pulvinar diam eu mi</p>
 		</div>
 	</div>
 
-	<div class="section" id="section1">
+	<div class="section" id="project">
 
 	    <div class="slide" id="slide1" name="House Type A">
 	    	<div class="textcontainer" id="textbox-1-1" ><h2>คอนเซปโครงการ</h2>
@@ -418,9 +418,9 @@
 	    	</div>
 	    </div>
 	</div>
-	<div class="section" id="section2">
+	<div class="section" id="location">
 		<div class="slide" id="slide2-1" name="Location">
-	    	
+
 	    </div>
 	    <div class="slide" id="slide2-2" name="Map">
 	    	<div class="mapcontainer" id="map">
@@ -435,7 +435,25 @@
 	    	</div>
 	    </div>
 	</div>
-	<div class="section" id="section3"></div>
+
+	<div class="section" id="planA"></div>
+
+	<div class="section" id="planB"></div>
+
+	<div class="section" id="samapan">
+		<div class="slide" id="samapanSlide" name="บ้านสมาพันธ์">
+			<img src="imgs/baansamapanlogo.png" alt="">
+			<p class="textTopic">บ้านสมาพันธ์</p>
+			<p class="textDesp">ไมโครซอฟท์เพิ่มรุ่นย่อย Surface Book อีกหนึ่งรุ่น คือ ซีพียู Core i5 (สเปคซีพียู) แรม 8 กิกะไบต์ SSD จุ 128 กิกะไบต์ และจีพียู NVIDIA ตัวเดียวกับรุ่นท็อป (ซึ่งใกล้เคียงกับ GeForce GT 940M มาก) สนนราคาที่ 1,699 ดอลลาร์เท่านั้น
+			</p>
+		</div>
+		<div class="slide" id="privateSlide" name="โครงการไพรเวทพาร์ค 3">
+			<img src="imgs/logo.png" alt="">
+			<p class="textTopic">โครงการไพรเวทพาร์ค 3</p>
+			<p class="textDesp">ไมโครซอฟท์เพิ่มรุ่นย่อย Surface Book อีกหนึ่งรุ่น คือ ซีพียู Core i5 (สเปคซีพียู) แรม 8 กิกะไบต์ SSD จุ 128 กิกะไบต์ และจีพียู NVIDIA ตัวเดียวกับรุ่นท็อป (ซึ่งใกล้เคียงกับ GeForce GT 940M มาก) สนนราคาที่ 1,699 ดอลลาร์เท่านั้น
+			</p>
+		</div>
+	</div>
 
 	<div class="section" id="contact">
 		<div class="rightContact">
