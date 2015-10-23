@@ -56,8 +56,8 @@
 		background-image: url(imgs/sec0.jpg);
 		background-position: center center;
 	}
-	
-	
+
+
 
 
  	/*Adding background for the slides
@@ -280,7 +280,7 @@
 		            var loadedSlide = $(this);
 
 		            $('.slide.fp-slide.active').find('.textcontainer').addClass('active');
-		            
+
 		            $('.subMenu').find('li.active').removeClass('active');
            	 		$('.subMenu').find('li').eq(slideIndex).addClass('active');
 
@@ -292,7 +292,7 @@
 		            	$('.slide.fp-slide.active').find('.textcontainer').addClass('active');
 		             	$('.fp-slidesNav').addClass('active');
 		            }
-		             
+
 
 		        },
 
@@ -364,7 +364,6 @@
 
 </div>
 
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 <div id="fullpage">
 	<div class="section" id="section0">
@@ -413,8 +412,20 @@
 
 	<div class="section" id="contact">
 		<div class="rightContact">
-			<h1>ใส่กล่องตัวเลือก</h1>
+			<div class="contactToggle">
+				<div class="contactButton active">
+					ติดต่อสอบถาม
+				</div>
+				<div class="attendButton">
+					นัดหมายเข้าชมโครงการ
+				</div>
+				<div class="clear"></div>
+			</div>
 			<form action="" method="POST">
+				<div class="dateBox" style="width:100%; display:none;">
+					<label>วันที่นัดเข้าชมโครงการ</label><br>
+					<input type="date" name="date" value=""><br>
+				</div>
 				<label>ชื่อ</label> <br>
 				<input type="text" name="first_name"> <br>
 				<label>นามสกุล</label> <br>
@@ -425,6 +436,7 @@
 				<input type="text" name="email"> <br>
 				<label>ข้อความ</label> <br>
 				<textarea rows="4" name="text"></textarea> <br>
+				<input type="submit" value="ส่งรายละเอียด">
 			</form>
 		</div>
 		<div class="leftContact">

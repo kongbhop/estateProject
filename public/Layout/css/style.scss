@@ -13,7 +13,31 @@
   background-color: #CCC;
   padding-top: 70px;
   font-family: 'ThaiSansLite', Arial, Helvetica;
-  color: #888 !important;
+  color: #666 !important;
+}
+
+.contactToggle {
+  width: 50%;
+  background-color: #BBB;
+  color: #555;
+  font-size: 1.2em;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  .contactButton {
+    width: 50%;
+    padding: 5px 0px;
+    text-align: center;
+    float: left;
+  }
+  .attendButton {
+    @extend .contactButton;
+    float: right;
+  }
+  .active {
+    background-color: #AAA;
+    color: #444;
+  }
 }
 
 .leftContact {
@@ -28,17 +52,27 @@
   text-align: left !important;
   label{
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   input, textarea {
     font-family: 'ThaiSansLite', Arial, Helvetica;
     background-color: #BBB;
-    // height: 1.5em;
+    transition: all 0.5s ease;
     border: none;
     padding-left: 5px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 50%;
+    &:focus{
+      outline: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+  }
+
+  input[type=submit]{
+    width: 140px;
+    text-align: center;
+    color: #555;
   }
 }
 
@@ -113,6 +147,11 @@ body{
 	color: #333;
 	color: rgba(0,0,0,0.5);
 }
+
+.clear {
+  clear: both;
+}
+
 .wrap{
 	margin-left: auto;
 	margin-right: auto;
