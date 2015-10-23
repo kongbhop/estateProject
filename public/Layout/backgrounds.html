@@ -124,10 +124,6 @@
 		width: 40%;
 		right: 100px;
 		opacity: 0;
-		-webkit-transition: all 1.0s ease-in-out;
-		-moz-transition: all 1.0s ease-in-out;
-		-o-transition: all 1.0s ease-in-out;
-		transition: all 1.0s ease-in-out;
 		font-family: ThaiSansLite;
 		padding-bottom: 40px;
 		padding-top: 40px;
@@ -135,6 +131,19 @@
 		top: 15%;
 		left: 2.5%;
 
+	}
+	.textcontainer.active {
+		-webkit-transition: all 1.0s ease-in-out;
+		-moz-transition: all 1.0s ease-in-out;
+		-o-transition: all 1.0s ease-in-out;
+		transition: all 1.0s ease-in-out;
+	}
+
+	.textcontainer:not(.active) {
+		-webkit-transition: all 0.1s ease-in-out;
+		-moz-transition: all 0.1s ease-in-out;
+		-o-transition: all 0.1s ease-in-out;
+		transition: all 0.1s ease-in-out;
 	}
 
 	.textcontainer h2{
@@ -204,6 +213,14 @@
 
 	.fp-slidesNav.bottom {
 		bottom: 40px;
+		opacity: 0;
+		-webkit-transition: all 1.0s ease-in-out;
+		-moz-transition: all 1.0s ease-in-out;
+		-o-transition: all 1.0s ease-in-out;
+		transition: all 1.0s ease-in-out;
+	}
+	.fp-slidesNav.active {
+		opacity: 1;
 	}
 
 	.fp-slidesNav ul {
@@ -274,9 +291,8 @@
 		        afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
 		            var loadedSlide = $(this);
 
-		            if(anchorLink == 'secondPage'){
-		            	$('.slide.fp-slide.active').find('.textcontainer').addClass('active');
-		            }
+		            $('.slide.fp-slide.active').find('.textcontainer').addClass('active');
+		            
 		            $('.subMenu').find('li.active').removeClass('active');
            	 		$('.subMenu').find('li').eq(slideIndex).addClass('active');
 
@@ -284,30 +300,26 @@
 
 		        afterLoad: function(anchorLink, index){
 		            var loadedSection = $(this);
-
-		            if(anchorLink == 'secondPage'){
-		                $('.slide.fp-slide.active').find('.textcontainer').addClass('active');
-		                $('.subMenu').addClass('active');
+		            if(loadedSection.find('.fp-slides').length != 0){
+		            	$('.slide.fp-slide.active').find('.textcontainer').addClass('active');
+		             	$('.fp-slidesNav').addClass('active');
 		            }
+		             
 
 		        },
 
 		        onLeave: function(index, nextIndex, direction){
 		            var leavingSection = $(this);
+		             $('.slide.fp-slide.active').find('.textcontainer').removeClass('active');
 
-		            if(index == 2){
-		                $('.slide.fp-slide.active').find('.textcontainer').removeClass('active');
-		                $('.subMenu').removeClass('active');
-		            }
 
 		        },
 
 		        onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
 		            var leavingSlide = $(this);
 
-		            if(anchorLink == 'secondPage'){
-		                $('.slide.fp-slide.active').find('.textcontainer').removeClass('active');
-		            }
+		             $('.slide.fp-slide.active').find('.textcontainer').removeClass('active');
+
 
 		        }
 
@@ -371,7 +383,23 @@
 	    	</div>
 	    </div>
 	</div>
-	<div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div>
+	<div class="section" id="section2">
+		<div class="slide" id="slide1" name="A">
+	    	<div class="textcontainer" id="textbox-1-1" ><h2>คอนเซปโครงการ</h2>
+	    		<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
+	    	</div>
+	    </div>
+	    <div class="slide" id="slide2" name="B">
+	    	<div class="textcontainer" id="textbox-1-2" ><h2>คอนเซปโครงการ</h2>
+	    		<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
+	    	</div>
+	    </div>
+	    <div class="slide" id="slide3" name="C">
+	    	<div class="textcontainer" id="textbox-1-2" ><h2>The Architect</h2>
+	    		<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
+	    	</div>
+	    </div>
+	</div>
 	<div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
 
 	<div class="section" id="contact">
