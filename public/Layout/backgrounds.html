@@ -23,8 +23,8 @@
 	* --------------------------------------- */
 	h1{
 		font-size: 5em;
-		font-family: arial,helvetica;
-		color: #fff;
+		font-family: 'ThaiSansLite', Arial, Helvetica;
+		/*color: #fff;*/
 		margin:0;
 		padding:0;
 	}
@@ -218,7 +218,7 @@
 				slidesNavigation: true,
 				'css3': true,
 				menu: '.mainMenu',
-				anchors: ['Project', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+				anchors: ['Project', 'secondPage', 'thirdPage', 'fourthPage', 'Contact'],
 
 		        afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
 		            var loadedSlide = $(this);
@@ -286,7 +286,7 @@
 			<li data-menuanchor="thirdPage"><a href="#thirdPage">บ้านแบบ A</a></li>
 			<li data-menuanchor="fourthPage"><a href="#fourthPage">บ้านแบบ B</a></li>
 			<li data-menuanchor="fourthPage"><a href="#fourthPage">บ้านสัมพันธ์</a></li>
-			<li data-menuanchor="fourthPage"><a href="#fourthPage">ติดต่อเรา</a></li>
+			<li data-menuanchor="Contact"><a href="#Contact">ติดต่อเรา</a></li>
 		</ul>
 	</div>
 
@@ -327,6 +327,32 @@
 	</div>
 	<div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div>
 	<div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
+
+	<div class="section" id="contact">
+		<div class="rightContact">
+			<h1>ใส่กล่องตัวเลือก</h1>
+			<form action="" method="POST">
+				<label>ชื่อ</label> <br>
+				<input type="text" name="first_name"> <br>
+				<label>นามสกุล</label> <br>
+				<input type="text" name="last_name"> <br>
+				<label>เบอร์โทรศัพท์</label> <br>
+				<input type="text" name="tel"> <br>
+				<label>อีเมลล์</label> <br>
+				<input type="text" name="email"> <br>
+				<label>ข้อความ</label> <br>
+				<textarea rows="4" name="text"></textarea> <br>
+			</form>
+		</div>
+		<div class="leftContact">
+			<h1>Contact Us</h1>
+			<h2>
+				เพียงกรอกรายละเอียดของท่าน <br>
+				เราจะติดต่อท่านกลับโดยเร็ว
+			</h2>
+		</div>
+
+	</div>
 </div>
 
 </body>
