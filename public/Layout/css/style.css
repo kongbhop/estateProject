@@ -7,6 +7,19 @@
   -o-background-size: cover;
   background-size: cover; }
 
+#samapan {
+  color: white !important; }
+  #samapan .textTopic {
+    font-size: 2.2em; }
+  #samapan .textDesp {
+    font-size: 1.4em;
+    padding: 0px 10%; }
+  #samapan #samapanSlide, #samapan #privateSlide {
+    padding-top: 15vh;
+    background-color: #2A2728; }
+    #samapan #samapanSlide img, #samapan #privateSlide img {
+      width: 250px; }
+
 #contact {
   background-color: #CCC;
   padding-top: 70px;
