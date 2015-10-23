@@ -22,10 +22,16 @@ class CustomerController extends BaseController {
 
 	public function viewCustomerData()
 	{
-		return View::make('customers.viewData');
+		$customers = CustomerData::orderBy('id', 'DESC')->get();
+		$customers = $customers->toArray();
+
+		return View::make('customers.viewData')->with('customers', $customers);
 	}
 
 	public function exportCustomerData(){
-		return 'welcome to export eiei';
+		$customers = CustomerData::orderBy('id')->get();
+		$customers = $customers->toArray();
+		$filename = CustomerData::exportData($customers);
+		return Response::download(public_path($filename));
 	}
 }
