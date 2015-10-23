@@ -26,8 +26,8 @@
 	/* Style for our header texts
 	* --------------------------------------- */
 	h1{
-		font-size: 5em;
-		font-family: 'Didot','ThaiSansLite', Arial, Helvetica;
+		font-size: 4em;
+		font-family: 'Didot', 'ThaiSansLite', Arial, Helvetica;
 		/*color: #fff;*/
 		margin:0;
 		padding:0;
@@ -457,35 +457,40 @@
 
 	<div class="section" id="contact">
 		<div class="rightContact">
-			<div class="contactToggle">
-				<div class="contactButton active">
-					ติดต่อสอบถาม
-				</div>
-				<div class="attendButton">
-					นัดหมายเข้าชมโครงการ
-				</div>
-				<div class="clear"></div>
-			</div>
-			<form action="" method="POST">
-				<div class="dateBox" style="width:100%; display:none;">
-					<label>วันที่นัดเข้าชมโครงการ</label><br>
-					<input type="date" name="date" value=""><br>
-				</div>
-				<label>ชื่อ</label> <br>
-				<input type="text" name="first_name"> <br>
-				<label>นามสกุล</label> <br>
-				<input type="text" name="last_name"> <br>
-				<label>เบอร์โทรศัพท์</label> <br>
-				<input type="text" name="tel"> <br>
-				<label>อีเมลล์</label> <br>
-				<input type="text" name="email"> <br>
-				<label>ข้อความ</label> <br>
-				<textarea rows="4" name="text"></textarea> <br>
-				<input type="submit" value="ส่งรายละเอียด">
-			</form>
+      <div class="thankYou" style="display:none;">
+        <h2>ขอบคุณสำหรับความสนใจของท่าน</h2>
+      </div>
+      <div class="customerContactForm">
+  			<div class="contactToggle">
+  				<div class="contactButton active">
+  					ติดต่อสอบถาม
+  				</div>
+  				<div class="attendButton">
+  					นัดหมายเข้าชมโครงการ
+  				</div>
+  				<div class="clear"></div>
+  			</div>
+  			<form class="customerContact">
+  				<div class="dateBox" style="width:100%; display:none;">
+  					<label>วันที่นัดเข้าชมโครงการ</label><br>
+  					<input type="date" name="appointment" value=""><br>
+  				</div>
+  				<label>ชื่อ</label> <br>
+  				<input type="text" name="firstname"> <br>
+  				<label>นามสกุล</label> <br>
+  				<input type="text" name="lastname"> <br>
+  				<label>เบอร์โทรศัพท์</label> <br>
+  				<input type="text" name="mobile"> <br>
+  				<label>อีเมลล์</label> <br>
+  				<input type="text" name="email"> <br>
+  				<label>ข้อความ</label> <br>
+  				<textarea rows="4" name="description"></textarea> <br>
+  				<input type="submit" value="ส่งรายละเอียด">
+  			</form>
+      </div>
 		</div>
 		<div class="leftContact">
-			<h1>Contact Us</h1>
+			<h1>Contact us</h1>
 			<h2>
 				เพียงกรอกรายละเอียดของท่าน <br>
 				เราจะติดต่อท่านกลับโดยเร็ว

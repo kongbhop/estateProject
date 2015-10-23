@@ -24,5 +24,5 @@ Route::post('contact', array('as' => 'contact', 'uses' => 'CustomerController@ha
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('index');
 });
