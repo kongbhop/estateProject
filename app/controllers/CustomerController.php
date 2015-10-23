@@ -15,11 +15,16 @@ class CustomerController extends BaseController {
 		$customerData->email = $data['email'];
 		$customerData->mobile = $data['mobile'];
 		$customerData->description = $data['description'];
-		// var_dump($customerData);
-		// return 1;
 		$customerData->save();
 
-		return Response::json($customerData);
+		$subject = (string)('customer contact #'.$customerData->id);
+
+		Mail::send('customers.email', array('data'=> $customerData), function($message) use ($subject){
+        	$message->to('private.park.test@gmail.com', 'AUTHOR - PRIVATE CONTACT')
+        			->subject($subject);
+    	});
+
+		return Redirect::to('/');
 	}
 
 	public function viewCustomerData()
