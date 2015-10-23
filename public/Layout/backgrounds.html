@@ -172,7 +172,7 @@
 	    margin-right: auto;
     	margin-left: auto;
     	right: 0;
-    left: 0;
+    	left: 0;
 
 	    -webkit-transition: all 1.0s ease-in-out;
 		-moz-transition: all 1.0s ease-in-out;
@@ -200,6 +200,52 @@
 	.subMenu li.active{
 	    display: inline-block;
 	    background-color: rgba(162,163,159,0.8);
+	}
+
+	.fp-slidesNav.bottom {
+		bottom: 40px;
+	}
+
+	.fp-slidesNav ul {
+
+	}
+
+	.fp-slidesNav ul li a {
+	    display: block;
+	    position: relative;
+	    z-index: 1;
+	    width: 100%;
+	    height: 100%;
+	    cursor: pointer;
+	    text-decoration: none;
+	}
+
+	.fp-slidesNav ul li {
+		display: inline-block;
+	    width: 200px;
+	    background-color: rgba(162,163,159,0.5);
+	    margin: 0px 0px;
+	}
+
+	.fp-slidesNav ul li a.active span,
+	.fp-slidesNav ul li:hover a.active span {
+		width: 100%;
+	}
+
+	.fp-slidesNav ul li a span {
+	    border-radius: 0%;
+	    position: absolute;
+	    z-index: 1;
+		line-height: 2.5em;
+	    height: 2.5em;
+	    -webkit-transition: all 0.1s ease-in-out;
+	    -moz-transition: all 0.1s ease-in-out;
+	    -o-transition: all 0.1s ease-in-out;
+	    transition: all 0.1s ease-in-out;
+	}
+
+	.fp-slidesNav ul li:hover a span{
+
 	}
 
 	</style>
@@ -298,11 +344,6 @@
 </div>
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-<div class="subMenu">
-	<ul>
-		<li><a href="#">House Type A</a></li><li><a href="#">1st Floor Plan</a></li><li><a href="#">2nd Floor Plan</a></li>
-	</ul>
-</div>
 
 <div id="fullpage">
 	<div class="section" id="section0">
@@ -314,18 +355,18 @@
 
 	<div class="section" id="section1">
 
-	    <div class="slide" id="slide1">
-	    	<div class="textcontainer" id="textbox-1-1"><h2>คอนเซปโครงการ</h2>
+	    <div class="slide" id="slide1" name="FIRST">
+	    	<div class="textcontainer" id="textbox-1-1" ><h2>คอนเซปโครงการ</h2>
 	    		<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
 	    	</div>
 	    </div>
-	    <div class="slide" id="slide2">
-	    	<div class="textcontainer" id="textbox-1-2"><h2>คอนเซปโครงการ</h2>
+	    <div class="slide" id="slide2" name="SECOND">
+	    	<div class="textcontainer" id="textbox-1-2" ><h2>คอนเซปโครงการ</h2>
 	    		<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
 	    	</div>
 	    </div>
-	    <div class="slide" id="slide3">
-	    	<div class="textcontainer" id="textbox-1-2"><h2>The Architect</h2>
+	    <div class="slide" id="slide3" name="THIRD">
+	    	<div class="textcontainer" id="textbox-1-2" ><h2>The Architect</h2>
 	    		<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
 	    	</div>
 	    </div>
