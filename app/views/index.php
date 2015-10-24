@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Background images - fullPage.js</title>
+	<title>Private Park Project</title>
 	<meta name="author" content="Alvaro Trigo Lopez" />
 	<meta name="description" content="fullPage full-screen backgrounds." />
 	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
@@ -21,6 +21,87 @@
 	@font-face {
 	    font-family: Didot;
 	    src: url(font/Didot.ttc);
+	}
+
+	.grid {
+		position: relative;
+		margin: 0 auto;
+		padding: 1em 0 4em;
+		max-width: 1000px;
+		list-style: none;
+		text-align: center;
+	}
+
+	/* Common style */
+	.grid figure {
+		position: relative;
+		float: left;
+		overflow: hidden;
+		margin: 10px 1%;
+		width: 30%;
+		background: #3085a3;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.grid figure img {
+		position: relative;
+		display: block;
+		min-height: 100%;
+		max-width: 100%;
+		opacity: 0.8;
+	}
+
+	.grid figure figcaption {
+		padding: 2em;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 1.25em;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+
+	.grid figure figcaption::before,
+	.grid figure figcaption::after {
+		pointer-events: none;
+	}
+
+	.grid figure figcaption,
+	.grid figure figcaption > a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	/* Anchor will cover the whole item by default */
+	/* For some effects it will show as a button */
+	.grid figure figcaption > a {
+		z-index: 1000;
+		text-indent: 200%;
+		white-space: nowrap;
+		font-size: 0;
+		opacity: 0;
+	}
+
+	.grid figure h2 {
+		word-spacing: -0.15em;
+		font-weight: 300;
+	}
+
+	.grid figure h2 span {
+		font-weight: 800;
+	}
+
+	.grid figure h2,
+	.grid figure p {
+		margin: 0;
+	}
+
+	.grid figure p {
+		letter-spacing: 1px;
+		font-size: 68.5%;
 	}
 
 	/* Style for our header texts
@@ -89,6 +170,77 @@
 		color: #fff;
 	}
 
+
+	figure.effect-chico img {
+		width: 100%;
+		height: 100%;
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+		transition: opacity 0.35s, transform 0.35s;
+		-webkit-transform: scale(1.12);
+		transform: scale(1.12);
+	}
+
+	figure.effect-chico:hover img {
+		opacity: 0.5;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+
+	figure.effect-chico figcaption {
+		padding: 0em;
+	}
+
+	figure.effect-chico figcaption::before {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		bottom: 30px;
+		left: 30px;
+		border: 1px solid #fff;
+		content: '';
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+
+	figure.effect-chico figcaption::before,
+	figure.effect-chico p {
+		opacity: 0;
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+		transition: opacity 0.35s, transform 0.35s;
+	}
+
+	figure.effect-chico h2 {
+		padding: 20% 0 20px 0;
+	}
+
+	figure.effect-chico p {
+		margin: 0 auto;
+		max-width: 200px;
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+	}
+
+	figure.effect-chico:hover figcaption::before,
+	figure.effect-chico:hover p {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+
+	@media screen and (max-width: 50em) {
+		.content {
+			padding: 0 10px;
+			text-align: center;
+		}
+		.grid figure {
+			display: inline-block;
+			float: none;
+			margin: 10px auto;
+			width: 100%;
+		}
+	}
+
+
 	.headTextcontainer {
 		background-color:rgba(210, 210, 204, 0.7);
 		top: 50%;
@@ -133,10 +285,10 @@
 
 	}
 	.textcontainer.active {
-		-webkit-transition: all 1.0s ease-in-out;
-		-moz-transition: all 1.0s ease-in-out;
-		-o-transition: all 1.0s ease-in-out;
-		transition: all 1.0s ease-in-out;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
 	}
 
 	.textcontainer:not(.active) {
@@ -162,10 +314,19 @@
 	}
 
 	.textcontainer.centertext p{
-		font-size: 1.2em;
+		font-size: 20px;
 		text-align: left;
 		padding-left: 0px;
 		padding-right: 0px;
+	}
+
+	.textcontainer.centertext ul li{
+		text-align: left;
+	}
+
+	.textcontainer.centertext ul{
+		list-style-type: disc;
+		padding-left: 10%;
 	}
 
 	.textcontainer.centertext h2{
@@ -177,7 +338,8 @@
 
 	.textcontainer.centertext{
 		background-color: rgba(0,0,0,0);
-		width: 40%;
+		width: 35%;
+		font-size: 20px;
 	}
 
 	.textcontainer.active{
@@ -209,13 +371,17 @@
 	.fp-slidesNav.bottom {
 		bottom: 40px;
 		opacity: 0;
-		-webkit-transition: all 1.0s ease-in-out;
-		-moz-transition: all 1.0s ease-in-out;
-		-o-transition: all 1.0s ease-in-out;
-		transition: all 1.0s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
 	.fp-slidesNav.active {
 		opacity: 1;
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
 	}
 
 	.fp-slidesNav ul {
@@ -272,11 +438,21 @@
 	#textbox-2-2 {
 		width: 40%;
 		margin-top: 50px;
+
 	}
 
 	#textbox-2-3 {
-		right: 0px;
+		float: right;
+		left: -10%;
 	}
+
+	.gallery {
+		width: 50%;
+		height: 100%;
+		padding-top: 60px;
+		padding-left: 5%;
+	}
+
 
 	</style>
 
@@ -328,7 +504,10 @@
 
 		        onLeave: function(index, nextIndex, direction){
 		            var leavingSection = $(this);
-		             $('.slide.fp-slide.active').find('.textcontainer').removeClass('active');
+		            if(leavingSection.find('.fp-slides').length != 0){
+			            $('.slide.fp-slide.active').find('.textcontainer').removeClass('active');
+			            $('.fp-slidesNav').removeClass('active');
+			        }
 
 
 		        },
@@ -436,7 +615,79 @@
 	    <div class="slide" id="slide2-3" name="Neighbourhood">
 	    	<div class="textcontainer centertext" id="textbox-2-3" ><h2>Neighbourhood</h2>
 	    		<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
+	    		<ul>
+	    			<li>Central Plaza</li>
+	    			<li>BTS Siam</li>
+	    		</ul>
 	    	</div>
+	    	<div class="gallery">
+	    		<div class="grid">
+			    	<figure class="effect-chico">
+		    			<img src="imgs/sec1-3.jpg">
+		    			<figcaption>
+							<h2>Silly <span>Chico</span></h2>
+							<p>Chico's main fear was missing the morning bus.</p>
+							<a href="#">View more</a>
+						</figcaption>
+			    	</figure>
+			    	<figure class="effect-chico">
+		    			<img src="imgs/sec1-3.jpg">
+		    			<figcaption>
+							<h2>Silly <span>Chico</span></h2>
+							<p>Chico's main fear was missing the morning bus.</p>
+							<a href="#">View more</a>
+						</figcaption>
+			    	</figure>
+			    	<figure class="effect-chico">
+		    			<img src="imgs/sec1-3.jpg">
+		    			<figcaption>
+							<h2>Silly <span>Chico</span></h2>
+							<p>Chico's main fear was missing the morning bus.</p>
+							<a href="#">View more</a>
+						</figcaption>
+			    	</figure>
+			    	<figure class="effect-chico">
+		    			<img src="imgs/sec1-3.jpg">
+		    			<figcaption>
+							<h2>Silly <span>Chico</span></h2>
+							<p>Chico's main fear was missing the morning bus.</p>
+							<a href="#">View more</a>
+						</figcaption>
+			    	</figure>
+			    	<figure class="effect-chico">
+		    			<img src="imgs/sec1-3.jpg">
+		    			<figcaption>
+							<h2>Silly <span>Chico</span></h2>
+							<p>Chico's main fear was missing the morning bus.</p>
+							<a href="#">View more</a>
+						</figcaption>
+			    	</figure>
+			    	<figure class="effect-chico">
+		    			<img src="imgs/sec1-3.jpg">
+		    			<figcaption>
+							<h2>Silly <span>Chico</span></h2>
+							<p>Chico's main fear was missing the morning bus.</p>
+							<a href="#">View more</a>
+						</figcaption>
+			    	</figure>
+			    	<figure class="effect-chico">
+		    			<img src="imgs/sec1-3.jpg">
+		    			<figcaption>
+							<h2>Silly <span>Chico</span></h2>
+							<p>Chico's main fear was missing the morning bus.</p>
+							<a href="#">View more</a>
+						</figcaption>
+			    	</figure>
+			    	<figure class="effect-chico">
+		    			<img src="imgs/sec1-3.jpg">
+		    			<figcaption>
+							<h2>Silly <span>Chico</span></h2>
+							<p>Chico's main fear was missing the morning bus.</p>
+							<a href="#">View more</a>
+						</figcaption>
+			    	</figure>
+			    </div>
+		    </div>
 	    </div>
 	</div>
 
