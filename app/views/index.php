@@ -691,7 +691,31 @@
 	    </div>
 	</div>
 
-	<div class="section" id="planA"></div>
+	<div class="section" id="planA">
+		<div class="slide" id="planAMain" name="บ้าน Type A">
+			<div class="textcontainer" id="textbox-1-1" ><h2>บ้าน Type A</h2>
+				<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
+			</div>
+		</div>
+		<div class="slide planFloor" id="planAFloor" name="แผนผังบ้าน">
+			<div class="sideCover">
+				<div class="floorPlan">
+					<a class="fancybox" rel="fancybox" href="imgs/sec0.jpg" title="">
+						<img src="imgs/sec0.jpg" alt="" />
+					</a>
+					<p class="textTopic">บ้านประเภท A - ชั้นล่าง</p>
+					<div class="textLeft textDesp">โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค </div>
+				</div>
+				<div class="floorPlan">
+					<a class="fancybox" rel="fancybox" href="imgs/sec1-1.jpg" title="">
+						<img src="imgs/sec1-1.jpg" alt="" />
+					</a>
+					<p class="textTopic">บ้านประเภท A - ชั้นบน</p>
+					<div class="textLeft textDesp">โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค </div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="section" id="planB">
 		<div class="slide" id="planBMain" name="บ้าน Type B">
@@ -699,7 +723,7 @@
 				<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
 			</div>
 		</div>
-		<div class="slide" id="planBFloor" name="แผนผังบ้าน">
+		<div class="slide planFloor" id="planBFloor" name="แผนผังบ้าน">
 			<div class="sideCover">
 				<div class="floorPlan">
 					<a class="fancybox" rel="fancybox" href="imgs/sec0.jpg" title="">
