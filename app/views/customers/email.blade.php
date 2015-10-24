@@ -4,3 +4,4 @@
 <p>Email: {{ $data->email }}</p>
 <p>Mobile: {{ $data->mobile }}</p>
 <p>Description: {{ $data->description }}</p>
+<p>Appointment: {{ $data->appointment }}</p>

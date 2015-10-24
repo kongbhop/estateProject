@@ -9,12 +9,13 @@
 
 	<table style="width:100%">
 		<tr>
-			<td>id</td>
+			<td>ref#</td>
 			<td>firstname</td>
 			<td>lastname</td>
 			<td>email</td>
 			<td>mobile</td>
 			<td>description</td>
+			<td>appointment</td>
 		</tr>
 
 		@foreach ($customers as $each_customer)
@@ -25,6 +26,11 @@
 			    <td>{{ $each_customer['email'] }}</td>
 			    <td>{{ $each_customer['mobile'] }}</td>
 			    <td>{{ $each_customer['description'] }}</td>
+			    @if ($each_customer['appointment'])
+			    	<td>{{ date_create($each_customer['appointment'])->format('d M Y')}}</td>
+			    @else
+			    	<td>-</td>
+			    @endif
 		  	</tr>
 	  	@endforeach
 	</table>

@@ -33,7 +33,8 @@ class CustomerData extends Eloquent {
 				'lastname'=> $each_customer['lastname'],
 				'mobile'=> $each_customer['mobile'],
 				'email'=> $each_customer['email'],
-				'description'=> $each_customer['description']
+				'description'=> $each_customer['description'],
+				'appointment'=> $each_customer['appointment']?date_create($each_customer['appointment'])->format('d M Y'):'-'
 			);
 		}
 
@@ -52,6 +53,7 @@ class CustomerData extends Eloquent {
 			'mobile',
 			'email',
 			'description',
+			'appointment',
 		];
 		fputcsv($file, $header);
 

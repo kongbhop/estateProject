@@ -2,6 +2,10 @@
 
 class CustomerController extends BaseController {
 
+	public function __construct(){
+		$this->beforeFilter('auth');
+	}
+	
 	public function requestData(){
 		return View::make('customers.requestData');
 	}
@@ -15,7 +19,17 @@ class CustomerController extends BaseController {
 		$customerData->email = $data['email'];
 		$customerData->mobile = $data['mobile'];
 		$customerData->description = $data['description'];
+		$customerData->appointment = $data['appointment'];
 		$customerData->save();
+
+		if($customerData->appointment){
+			$appointment_dt = date_create($data['appointment']);
+			$appointment_dt = $appointment_dt->format('d M Y');
+			$customerData->appointment = $appointment_dt; 
+		}
+		else {
+			$customerData->appointment = '-';
+		} 
 
 		$subject = (string)('customer contact #'.$customerData->id);
 
