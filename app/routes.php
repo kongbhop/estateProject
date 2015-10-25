@@ -1,5 +1,5 @@
 <?php
-
+use Jenssegers\Agent\Agent as Agent;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -24,7 +24,13 @@ Route::post('contact', array('as' => 'contact', 'uses' => 'CustomerController@ha
 
 Route::get('/', function()
 {
-	return View::make('index');
+	$Agent = new Agent();
+	// return View::make('index');
+	if ( $Agent->isMobile() ) {
+      return View::make('indexMobile');
+  } else {
+      return View::make('index');
+  }
 });
 
 Route::get('/th', function()
