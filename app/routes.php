@@ -26,3 +26,15 @@ Route::get('/', function()
 {
 	return View::make('index');
 });
+
+Route::get('/th', function()
+{
+	Session::put('lang', 'th');
+	return Redirect::to('/');
+});
+
+Route::get('/en', function()
+{
+	Session::put('lang', 'en');
+	return Redirect::to('/');
+});
