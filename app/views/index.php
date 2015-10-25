@@ -556,19 +556,19 @@
 	</div>
 	<div class="topMenu">
 		<ul id="menu">
-			<li class="active"><a href="">ไทย</a></li>
+			<li class="<?= (Session::get('lang') == 'th')? 'active':'' ?>"><a href="th">ไทย</a></li>
 			|
-			<li><a href="">ENGLISH</a></li>
+			<li class="<?= (Session::get('lang') == 'en')? 'active':'' ?>"><a href="en">ENGLISH</a></li>
 		</ul>
 	</div>
 	<div class="bottomMenu">
 		<ul id="menu" class="mainMenu">
-			<li data-menuanchor="Project"><a href="#Project">โครงการไพรเวทพาร์ค3</a></li>
-			<li data-menuanchor="Location"><a href="#Location">ที่ตั้งโครงการ</a></li>
-			<li data-menuanchor="PlanA"><a href="#PlanA">บ้านแบบ A</a></li>
-			<li data-menuanchor="PlanB"><a href="#PlanB">บ้านแบบ B</a></li>
-			<li data-menuanchor="Samapan"><a href="#Samapan">บ้านสมาพันธ์</a></li>
-			<li data-menuanchor="Contact"><a href="#Contact">ติดต่อเรา</a></li>
+			<li data-menuanchor="Project"><a href="#Project"><?= Lang::get('content.navProject') ?></a></li>
+			<li data-menuanchor="Location"><a href="#Location"><?= Lang::get('content.navLocation') ?></a></li>
+			<li data-menuanchor="PlanA"><a href="#PlanA"><?= Lang::get('content.navPlanA') ?></a></li>
+			<li data-menuanchor="PlanB"><a href="#PlanB"><?= Lang::get('content.navPlanB') ?></a></li>
+			<li data-menuanchor="Samapan"><a href="#Samapan"><?= Lang::get('content.navSamapan') ?></a></li>
+			<li data-menuanchor="Contact"><a href="#Contact"><?= Lang::get('content.navContact') ?></a></li>
 		</ul>
 	</div>
 
@@ -578,26 +578,26 @@
 <div id="fullpage">
 	<div class="section" id="mainpage">
 		<div class="headTextcontainer">
-			<h1>โครงการไพรเวทพาร์ค</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae erat a dui ornare blandit a id dolor. Nunc tincidunt enim at ultricies mattis. Cras pulvinar diam eu mi</p>
+			<h1><?= Lang::get('content.mainPageTopic') ?></h1>
+			<p><?= Lang::get('content.mainPageContent') ?></p>
 		</div>
 	</div>
 
 	<div class="section" id="project">
 
 	    <div class="slide" id="slide1" name="House Type A">
-	    	<div class="textcontainer" id="textbox-1-1" ><h2>คอนเซปโครงการ</h2>
-	    		<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
+	    	<div class="textcontainer" id="textbox-1-1" ><h2><?= Lang::get('content.concept1Topic') ?></h2>
+	    		<p><?= Lang::get('content.concept1Content') ?></p>
 	    	</div>
 	    </div>
 	    <div class="slide" id="slide2" name="1st Floor Plan">
-	    	<div class="textcontainer" id="textbox-1-2" ><h2>คอนเซปโครงการ</h2>
-	    		<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
+	    	<div class="textcontainer" id="textbox-1-2" ><h2><?= Lang::get('content.concept2Topic') ?></h2>
+	    		<p><?= Lang::get('content.concept2Content') ?></p>
 	    	</div>
 	    </div>
 	    <div class="slide" id="slide3" name="2nd Floor Plan">
-	    	<div class="textcontainer" id="textbox-1-2" ><h2>The Architect</h2>
-	    		<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
+	    	<div class="textcontainer" id="textbox-1-2" ><h2><?= Lang::get('content.concept3Topic') ?></h2>
+	    		<p><?= Lang::get('content.concept3Content') ?></p>
 	    	</div>
 	    </div>
 	</div>
@@ -608,152 +608,99 @@
 	    <div class="slide" id="slide2-2" name="Map">
 	    	<div class="mapcontainer" id="map">
 	    	</div>
-	    	<div class="textcontainer" id="textbox-2-2" ><h2>Location on Map</h2>
-	    		<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
+	    	<div class="textcontainer" id="textbox-2-2" ><h2><?= Lang::get('content.locationOnMapTopic') ?></h2>
+	    		<p><?= Lang::get('content.locationOnMapContent') ?></p>
 	    	</div>
 	    </div>
 	    <div class="slide" id="slide2-3" name="Neighbourhood">
-	    	<div class="textcontainer centertext" id="textbox-2-3" ><h2>Neighbourhood</h2>
-	    		<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
+	    	<div class="textcontainer centertext" id="textbox-2-3" ><h2><?= Lang::get('content.neighbourhoodTopic') ?></h2>
+	    		<p><?= Lang::get('content.neighbourhoodContent') ?></p>
 	    		<ul>
-	    			<li>Central Plaza</li>
-	    			<li>BTS Siam</li>
+						<?php foreach(Lang::get('content.neighbourhoodBullets') as $bullet): ?>
+	    				<li><?= $bullet ?></li>
+						<?php endforeach ?>
 	    		</ul>
 	    	</div>
 	    	<div class="gallery">
 	    		<div class="grid">
-			    	<figure class="effect-chico">
-		    			<img src="imgs/sec1-3.jpg">
-		    			<figcaption>
-							<h2>Silly <span>Chico</span></h2>
-							<p>Chico's main fear was missing the morning bus.</p>
-							<a href="#">View more</a>
-						</figcaption>
-			    	</figure>
-			    	<figure class="effect-chico">
-		    			<img src="imgs/sec1-3.jpg">
-		    			<figcaption>
-							<h2>Silly <span>Chico</span></h2>
-							<p>Chico's main fear was missing the morning bus.</p>
-							<a href="#">View more</a>
-						</figcaption>
-			    	</figure>
-			    	<figure class="effect-chico">
-		    			<img src="imgs/sec1-3.jpg">
-		    			<figcaption>
-							<h2>Silly <span>Chico</span></h2>
-							<p>Chico's main fear was missing the morning bus.</p>
-							<a href="#">View more</a>
-						</figcaption>
-			    	</figure>
-			    	<figure class="effect-chico">
-		    			<img src="imgs/sec1-3.jpg">
-		    			<figcaption>
-							<h2>Silly <span>Chico</span></h2>
-							<p>Chico's main fear was missing the morning bus.</p>
-							<a href="#">View more</a>
-						</figcaption>
-			    	</figure>
-			    	<figure class="effect-chico">
-		    			<img src="imgs/sec1-3.jpg">
-		    			<figcaption>
-							<h2>Silly <span>Chico</span></h2>
-							<p>Chico's main fear was missing the morning bus.</p>
-							<a href="#">View more</a>
-						</figcaption>
-			    	</figure>
-			    	<figure class="effect-chico">
-		    			<img src="imgs/sec1-3.jpg">
-		    			<figcaption>
-							<h2>Silly <span>Chico</span></h2>
-							<p>Chico's main fear was missing the morning bus.</p>
-							<a href="#">View more</a>
-						</figcaption>
-			    	</figure>
-			    	<figure class="effect-chico">
-		    			<img src="imgs/sec1-3.jpg">
-		    			<figcaption>
-							<h2>Silly <span>Chico</span></h2>
-							<p>Chico's main fear was missing the morning bus.</p>
-							<a href="#">View more</a>
-						</figcaption>
-			    	</figure>
-			    	<figure class="effect-chico">
-		    			<img src="imgs/sec1-3.jpg">
-		    			<figcaption>
-							<h2>Silly <span>Chico</span></h2>
-							<p>Chico's main fear was missing the morning bus.</p>
-							<a href="#">View more</a>
-						</figcaption>
-			    	</figure>
+						<?php foreach(Lang::get('content.neighbourhoodPicture') as $pic): ?>
+							<figure class="effect-chico">
+			    			<img src="<?= $pic['picUrl'] ?>">
+			    			<figcaption>
+									<h2><span><?= $pic['title'] ?></span></h2>
+									<p><?= $pic['desp'] ?></p>
+									<a href="<?= $pic['link'] ?>">View more</a>
+								</figcaption>
+				    	</figure>
+						<?php endforeach ?>
 			    </div>
 		    </div>
 	    </div>
 	</div>
 
 	<div class="section" id="planA">
-		<div class="slide" id="planAMain" name="บ้าน Type A">
-			<div class="textcontainer" id="textbox-1-1" ><h2>บ้าน Type A</h2>
-				<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
+		<div class="slide" id="planAMain" name="<?= Lang::get('content.planATopic') ?>">
+			<div class="textcontainer" id="textbox-1-1" ><h2><?= Lang::get('content.planATopic') ?></h2>
+				<p><?= Lang::get('content.planAContent') ?></p>
 			</div>
 		</div>
-		<div class="slide planFloor" id="planAFloor" name="แผนผังบ้าน">
+		<div class="slide planFloor" id="planAFloor" name="<?= Lang::get('content.floorPlan') ?>">
 			<div class="sideCover">
 				<div class="floorPlan">
 					<a class="fancybox" rel="fancybox" href="imgs/sec0.jpg" title="">
 						<img src="imgs/sec0.jpg" alt="" />
 					</a>
-					<p class="textTopic">บ้านประเภท A - ชั้นล่าง</p>
-					<div class="textLeft textDesp">โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค </div>
+					<p class="textTopic"><?= Lang::get('content.planADownTopic') ?></p>
+					<div class="textLeft textDesp"><?= Lang::get('content.planADownContent') ?></div>
 				</div>
 				<div class="floorPlan">
 					<a class="fancybox" rel="fancybox" href="imgs/sec1-1.jpg" title="">
 						<img src="imgs/sec1-1.jpg" alt="" />
 					</a>
-					<p class="textTopic">บ้านประเภท A - ชั้นบน</p>
-					<div class="textLeft textDesp">โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค </div>
+					<p class="textTopic"><?= Lang::get('content.planAUpTopic') ?></p>
+					<div class="textLeft textDesp"><?= Lang::get('content.planAUpContent') ?></div>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="section" id="planB">
-		<div class="slide" id="planBMain" name="บ้าน Type B">
-			<div class="textcontainer" id="textbox-1-1" ><h2>บ้าน Type B</h2>
-				<p>โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3</p>
+		<div class="slide" id="planBMain" name="<?= Lang::get('content.planBTopic') ?>B">
+			<div class="textcontainer" id="textbox-1-1" ><h2><?= Lang::get('content.planBTopic') ?></h2>
+				<p><?= Lang::get('content.planBContent') ?></p>
 			</div>
 		</div>
-		<div class="slide planFloor" id="planBFloor" name="แผนผังบ้าน">
+		<div class="slide planFloor" id="planBFloor" name="<?= Lang::get('content.floorPlan') ?>">
 			<div class="sideCover">
 				<div class="floorPlan">
 					<a class="fancybox" rel="fancybox" href="imgs/sec0.jpg" title="">
 						<img src="imgs/sec0.jpg" alt="" />
 					</a>
-					<p class="textTopic">บ้านประเภท B - ชั้นล่าง</p>
-					<div class="textLeft textDesp">โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค </div>
+					<p class="textTopic"><?= Lang::get('content.planBDownTopic') ?></p>
+					<div class="textLeft textDesp"><?= Lang::get('content.planBDownContent') ?></div>
 				</div>
 				<div class="floorPlan">
 					<a class="fancybox" rel="fancybox" href="imgs/sec1-1.jpg" title="">
 						<img src="imgs/sec1-1.jpg" alt="" />
 					</a>
-					<p class="textTopic">บ้านประเภท B - ชั้นบน</p>
-					<div class="textLeft textDesp">โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค 3 โครงการไพรเวทย์พาร์ค </div>
+					<p class="textTopic"><?= Lang::get('content.planBUpTopic') ?></p>
+					<div class="textLeft textDesp"><?= Lang::get('content.planBUpContent') ?></div>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="section" id="samapan">
-		<div class="slide" id="samapanSlide" name="บ้านสมาพันธ์">
+		<div class="slide" id="samapanSlide" name="<?= Lang::get('content.baanSamapanTopic') ?>">
 			<img src="imgs/baansamapanlogo.png" alt="">
-			<p class="textTopic">บ้านสมาพันธ์</p>
-			<p class="textDesp">ไมโครซอฟท์เพิ่มรุ่นย่อย Surface Book อีกหนึ่งรุ่น คือ ซีพียู Core i5 (สเปคซีพียู) แรม 8 กิกะไบต์ SSD จุ 128 กิกะไบต์ และจีพียู NVIDIA ตัวเดียวกับรุ่นท็อป (ซึ่งใกล้เคียงกับ GeForce GT 940M มาก) สนนราคาที่ 1,699 ดอลลาร์เท่านั้น
+			<p class="textTopic"><?= Lang::get('content.baanSamapanTopic') ?></p>
+			<p class="textDesp"><?= Lang::get('content.baanSamapanContent') ?>
 			</p>
 		</div>
-		<div class="slide" id="privateSlide" name="โครงการไพรเวทพาร์ค 3">
+		<div class="slide" id="privateSlide" name="<?= Lang::get('content.privateParkTopic') ?>">
 			<img src="imgs/logo.png" alt="">
-			<p class="textTopic">โครงการไพรเวทพาร์ค 3</p>
-			<p class="textDesp">ไมโครซอฟท์เพิ่มรุ่นย่อย Surface Book อีกหนึ่งรุ่น คือ ซีพียู Core i5 (สเปคซีพียู) แรม 8 กิกะไบต์ SSD จุ 128 กิกะไบต์ และจีพียู NVIDIA ตัวเดียวกับรุ่นท็อป (ซึ่งใกล้เคียงกับ GeForce GT 940M มาก) สนนราคาที่ 1,699 ดอลลาร์เท่านั้น
+			<p class="textTopic"><?= Lang::get('content.privateParkTopic') ?></p>
+			<p class="textDesp"><?= Lang::get('content.privateParkContent') ?>
 			</p>
 		</div>
 	</div>
@@ -761,42 +708,41 @@
 	<div class="section" id="contact">
 		<div class="rightContact">
       <div class="thankYou" style="display:none;">
-        <h2>ขอบคุณสำหรับความสนใจของท่าน</h2>
+        <h2><?= Lang::get('content.formThankYouMsg') ?></h2>
       </div>
       <div class="customerContactForm">
   			<div class="contactToggle">
   				<div class="contactButton active">
-  					ติดต่อสอบถาม
+  					<?= Lang::get('content.formContactButton') ?>
   				</div>
   				<div class="attendButton">
-  					นัดหมายเข้าชมโครงการ
+  					<?= Lang::get('content.formAttendButton') ?>
   				</div>
   				<div class="clear"></div>
   			</div>
   			<form class="customerContact">
   				<div class="dateBox" style="width:100%; display:none;">
-  					<label>วันที่นัดเข้าชมโครงการ</label><br>
+  					<label><?= Lang::get('content.formDate') ?></label><br>
   					<input type="date" name="appointment" value=""><br>
   				</div>
-  				<label>ชื่อ</label> <br>
+  				<label><?= Lang::get('content.formFirstname') ?></label> <br>
   				<input type="text" name="firstname"> <br>
-  				<label>นามสกุล</label> <br>
+  				<label><?= Lang::get('content.formLastname') ?></label> <br>
   				<input type="text" name="lastname"> <br>
-  				<label>เบอร์โทรศัพท์</label> <br>
+  				<label><?= Lang::get('content.formTel') ?></label> <br>
   				<input type="text" name="mobile"> <br>
-  				<label>อีเมลล์</label> <br>
+  				<label><?= Lang::get('content.formEmail') ?></label> <br>
   				<input type="text" name="email"> <br>
-  				<label>ข้อความ</label> <br>
+  				<label><?= Lang::get('content.formDesp') ?></label> <br>
   				<textarea rows="4" name="description"></textarea> <br>
-  				<input type="submit" value="ส่งรายละเอียด">
+  				<input type="submit" value="<?= Lang::get('content.formSubmitButton') ?>">
   			</form>
       </div>
 		</div>
 		<div class="leftContact">
-			<h1>Contact us</h1>
+			<h1><?= Lang::get('content.contactTopic') ?></h1>
 			<h2>
-				เพียงกรอกรายละเอียดของท่าน <br>
-				เราจะติดต่อท่านกลับโดยเร็ว
+				<?= Lang::get('content.contactDesp') ?>
 			</h2>
 		</div>
 
