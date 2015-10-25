@@ -3,7 +3,9 @@
 class CustomerController extends BaseController {
 
 	public function __construct(){
-		$this->beforeFilter('auth');
+		$this->beforeFilter('auth', array('only' => array(
+    		'viewCustomerData', 'exportCustomerData'
+    	)));
 	}
 	
 	public function requestData(){
@@ -35,6 +37,7 @@ class CustomerController extends BaseController {
 
 		Mail::send('customers.email', array('data'=> $customerData), function($message) use ($subject){
         	$message->to('private.park.test@gmail.com', 'AUTHOR - PRIVATE CONTACT')
+        			->from('private.park.test@gmail.com', 'PRIVATE PARK')
         			->subject($subject);
     	});
 
