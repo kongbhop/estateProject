@@ -7,27 +7,27 @@
   -o-background-size: cover;
   background-size: cover; }
 
-#planBMain {
-  background-image: url("../imgs/houseB.jpg"); }
-
 #planAMain {
   background-image: url("../imgs/houseA.jpg"); }
+
+#planBMain {
+  background-image: url("../imgs/houseB.jpg"); }
 
 .sideCover {
   padding: 0px 10%; }
 
 .planFloor {
-  background-color: #BBB;
+  background-color: #333;
   padding-top: 30vh;
-  color: #444; }
-.floorPlan {
-  float: left;
-  width: 50%;
-  text-align: center; }
-.floorPlan img {
-  width: 50%; }
-.floorPlan div {
-  font-size: 1.2em; }
+  color: #EEE; }
+  .planFloor .floorPlan {
+    float: left;
+    width: 50%;
+    text-align: center; }
+    .planFloor .floorPlan img {
+      width: 50%; }
+    .planFloor .floorPlan div {
+      font-size: 1.2em; }
 
 .textLeft {
   text-align: left; }
@@ -353,11 +353,11 @@ p {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #2F96B4;
   background-position: 0 -15px;
-  -webkit-transition: background-position 0.1s linear;
-  -moz-transition: background-position 0.1s linear;
-  -ms-transition: background-position 0.1s linear;
-  -o-transition: background-position 0.1s linear;
-  transition: background-position 0.1s linear; }
+  -webkit-transition: background-position .1s linear;
+  -moz-transition: background-position .1s linear;
+  -ms-transition: background-position .1s linear;
+  -o-transition: background-position .1s linear;
+  transition: background-position .1s linear; }
 
 #infoMenu {
   height: 20px;
