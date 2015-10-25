@@ -47,8 +47,8 @@
 	.grid figure img {
 		position: relative;
 		display: block;
-		min-height: 100%;
-		max-width: 100%;
+		height: auto;
+		width: 100%;
 		opacity: 0.8;
 	}
 
