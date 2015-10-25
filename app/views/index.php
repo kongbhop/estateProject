@@ -665,7 +665,7 @@
 	</div>
 
 	<div class="section" id="planB">
-		<div class="slide" id="planBMain" name="<?= Lang::get('content.planBTopic') ?>B">
+		<div class="slide" id="planBMain" name="<?= Lang::get('content.planBTopic') ?>">
 			<div class="textcontainer" id="textbox-1-1" ><h2><?= Lang::get('content.planBTopic') ?></h2>
 				<p><?= Lang::get('content.planBContent') ?></p>
 			</div>

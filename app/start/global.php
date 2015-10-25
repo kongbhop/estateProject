@@ -80,5 +80,6 @@ App::down(function()
 
 require app_path().'/filters.php';
 
-
+if(Session::get('lang') == "")
+	Session::put('lang', 'th');
 App::setLocale(Session::get('lang'));
