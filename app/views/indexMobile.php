@@ -28,11 +28,18 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                anchors: ['Mainpage', 'Project', 'Location', 'PlanA', 'PlanB', 'Samapan', 'Contact'],
+                anchors: ['Mainpage', 'Concept', 'Location', 'PlanA', 'PlanB', 'Samapan', 'Contact'],
                 menu: '#menu',
                 css3: true,
                 scrollingSpeed: 500
             });
+
+            var parentHeight = $('.fp-tableCell').height();
+            var childHeight = $('#mainpageText').height();
+            $('#mainpageText').css('margin-top', (parentHeight - childHeight) / 2);
+            
+
+
 
         });
     </script>
@@ -41,9 +48,19 @@
   <body>
     <div id="fullpage">
       <div class="section" id="mainpage">
+        <div class="centerText centerDiv" id="mainpageText">
+            <h1>PRIVATE PARK 3</h1>
+            <span>best of housing property in rayong</span>
+        </div>
       </div>
 
-      <div class="section" id="location">
+      <div class="section" id="concept">
+        <div class="slide" id="slide1" name="House Type A">
+          <div class="halfHeight" id="concept-1">
+          </div>
+          <div class="halfHeightBottom" id="concept-1">
+          </div>
+        </div>
       </div>
     </div>
 
