@@ -27,6 +27,7 @@
     <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 
     <script type="text/javascript" src="js/snap.min.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -70,6 +71,14 @@
         <div class="snap-drawer snap-drawer-right"></div>
     </div>
     <div id="content" class="snap-content" style="">
+      <div id="toolbar">
+        <div class="logo">
+      		<a href="#Mainpage"><img src="imgs/logo.png" /></a>
+          <a href="#" id="open-left"><i class="fa fa-bars"></i></a>
+          <a href="#" id="open-location"><i class="fa fa-map-marker"></i></a>
+      	</div>
+      </div>
+
       <div id="fullpage">
 
         <div class="section" id="mainpage">
