@@ -80,7 +80,6 @@
 // Drawer style
 
 html, body {
-  font-family: sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -198,7 +197,7 @@ html, body {
   text-align: right;
 }
 
-#open-left, #open-location {
+#open-right, #open-location {
   background: url(open.png) center center no-repeat;
   display: block;
   width: 44px;
@@ -304,17 +303,40 @@ html, body {
 }
 
 /* Default demo styles */
-.snap-content {
-  background: #BFC7D8;
-}
+// .snap-content {
+//   background: #282828;
+// }
 
 .snap-drawers {
-  background: #323949;
+  background: #282828;
 }
 
 .snap-drawer {
-	background: #323949;
+  z-index: 150;
+	background: #282828;
 	color: #eee;
+  transition: right 0.5s ease;
+  right: -100vw;
+  box-shadow: 0 0 15px #000;
+}
+
+.slideActive {
+  right: 0vw;
+}
+
+.overlay {
+  background-color: rgba(0,0,0,0);
+  z-index: -1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  transition: background-color 0.5s ease;
+}
+
+.overlayActive {
+  background-color: rgba(0,0,0,0.7);
+  z-index: 125;
+
 }
 
 .snap-drawer h3 {
@@ -335,16 +357,21 @@ html, body {
   list-style-type: none;
 }
 
-.snap-drawer li > a {
+
+.snap-drawer li {
+  font-family: 'ThaiSansLite', Arial, Helvetica;
+  font-size: 1.5em;
   display: block;
   border-bottom: 1px solid rgba(0,0,0, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 15px;
   font-weight: bold;
   text-shadow: 0 1px 0 #000;
-  text-decoration: none;
-  color: #ccc;
   text-indent: 20px;
+  a {
+    text-decoration: none;
+    color: #ccc;
+  }
 }
 
 .snap-drawer p {
