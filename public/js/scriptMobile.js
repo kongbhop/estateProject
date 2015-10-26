@@ -13,4 +13,28 @@ $(document).ready(function(){
     $('.overlay').removeClass('overlayActive');
     $('.snap-drawer').removeClass('slideActive');
   });
+
+  $("#contactRadio").click(function(){
+		$(".dateBox").slideUp();
+	});
+
+	$("#attendRadio").click(function(){
+		$(".dateBox").slideDown();
+	});
+
+  $(".customerContact").submit(function(){
+    event.preventDefault();
+    // console.log($(this).serializeArray());
+    $.ajax(
+    {
+      url: 'contact',
+      type: "POST",
+      data: $(this).serializeArray(),
+      success: function(data, textStatus,jqXHR){
+        $(".customerContactForm").slideUp();
+        $(".thankYou").slideDown();
+      }
+    });
+  });
+
 });

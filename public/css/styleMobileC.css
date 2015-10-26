@@ -9,55 +9,90 @@
 #active {
   background-color: black; }
 
+.section {
+  font-family: 'ThaiSansLite', Arial, Helvetica; }
+
+#contact {
+  background-color: #CCC;
+  color: #555;
+  text-shadow: none;
+  font-size: 1.5em; }
+
+.blankSpace {
+  height: 40px;
+  width: 100%; }
+
+.textLeft {
+  text-align: left; }
+
+.textRight {
+  text-align: right; }
+
+.textCenter {
+  text-align: center; }
+
+.sidePadding, .customerContactForm {
+  padding-left: 5%;
+  padding-right: 5%; }
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.2em; }
+
+input, textarea {
+  font-family: 'ThaiSansLite', Arial, Helvetica;
+  background-color: #BBB;
+  transition: all 0.5s ease;
+  border: none;
+  padding-left: 5px;
+  font-size: 1.2em;
+  width: 100%; }
+  input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+
+input[type=submit] {
+  width: 140px;
+  text-align: center;
+  color: #555;
+  font-size: 1.1em; }
+
+.radio input[type="radio"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  clip: rect(0 0 0 0); }
+
+.radio input[type="radio"] + label::before {
+  content: url("../imgs/radio.png");
+  margin-right: 8px;
+  width: 15px;
+  height: 15px; }
+
+.radio input[type="radio"]:checked + label::before {
+  content: url("../imgs/radio-checked.png");
+  margin-right: 8px;
+  width: 15px;
+  height: 15px; }
+
+.customerContact {
+  text-align: left; }
+
+.telContact {
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 10px; }
+
 .logo img {
   height: 80px; }
 
-.bottomMenu {
-  width: 100vw;
-  height: 30px;
-  background-color: #EEE;
-  text-align: right; }
-
-.topMenu {
-  height: 30px;
-  width: 100vw;
-  background-color: #DEDEDE;
-  text-align: right; }
-
-#menu li {
-  display: inline-block;
-  color: #000; }
-
-#menu li.active {
-  font-weight: bold;
-  color: #000; }
-
-#menu li a {
-  text-decoration: none;
-  color: #000; }
-
-#menu li.active a:hover {
-  color: #000; }
-
-#menu li:hover {
-  font-weight: bold; }
-
-#menu li a,
-#menu li.active a {
-  padding: 0px 20px;
-  display: block; }
-
-#menu li.active a {
-  color: #000; }
-
-#menu {
-  position: absolute;
-  right: 80px;
-  height: 30px;
-  z-index: 70;
-  width: 100%;
-  padding: 0;
-  margin: 0; }
+.thankYou {
+  text-align: center;
+  border-top: 2px solid #999;
+  border-bottom: 2px solid #999;
+  margin-left: 5%;
+  margin-right: 5%; }
+  .thankYou h2 {
+    margin: 10px 0; }
 
 html, body {
   margin: 0;
