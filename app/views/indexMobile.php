@@ -58,7 +58,7 @@
         <div class="slide" id="slide1" name="House Type A">
           <div class="halfHeight" id="concept-1">
           </div>
-          <div class="halfHeightBottom" id="concept-1">
+          <div class="halfHeight" id="concept-1">
           </div>
         </div>
       </div>

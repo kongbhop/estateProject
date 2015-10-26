@@ -17,13 +17,6 @@
 .halfHeight {
   height: 60%; }
 
-.halfHeightBottom {
-  position: relative;
-  bottom: 0px; }
-
-.slide.fp-slide.fp-table {
-  position: relative; }
-
 #concept-1 {
   background: url("../imgs/sec1-1.jpg");
   -webkit-background-size: cover;
