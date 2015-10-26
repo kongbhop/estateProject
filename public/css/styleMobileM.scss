@@ -1,11 +1,11 @@
 @font-face {
-	    font-family: ThaiSansLite;
-	    src: url(font/thaisanslite_r1.ttf);
-	}
+    font-family: ThaiSansLite;
+    src: url(../font/thaisanslite_r1.ttf);
+}
 
 @font-face {
     font-family: Didot;
-    src: url(font/Didot.ttc);
+    src: url(../font/Didot.ttc);
 }
 
 
@@ -66,12 +66,12 @@
 	width: 100%;
 	#head {
 		letter-spacing: 0.35em;
-		font-size: 3em;
+		font-size: 2em;
 		font-family: ThaiSansLite;
 		font-weight: normal;
 	}
 	span {
-		font-size: 2em;
+		font-size: 1.5em;
 		font-family: ThaiSansLite;
 	}
 }

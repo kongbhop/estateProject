@@ -1,10 +1,10 @@
 @font-face {
   font-family: ThaiSansLite;
-  src: url(font/thaisanslite_r1.ttf); }
+  src: url(../font/thaisanslite_r1.ttf); }
 
 @font-face {
   font-family: Didot;
-  src: url(font/Didot.ttc); }
+  src: url(../font/Didot.ttc); }
 
 #mainpage {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../imgs/sec0.jpg");
@@ -52,11 +52,11 @@
   width: 100%; }
   .centerDiv #head {
     letter-spacing: 0.35em;
-    font-size: 3em;
+    font-size: 2em;
     font-family: ThaiSansLite;
     font-weight: normal; }
   .centerDiv span {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: ThaiSansLite; }
 
 .triangle-down-right {
