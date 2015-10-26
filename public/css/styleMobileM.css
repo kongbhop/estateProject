@@ -15,7 +15,8 @@
   background-position: center center; }
 
 .halfHeight {
-  height: 60%; }
+  height: 60%;
+  top: 0px; }
 
 .halfHeightBottom {
   z-index: 4;
@@ -25,7 +26,6 @@
   height: 40%;
   font-family: ThaiSansLite; }
   .halfHeightBottom #head {
-    padding-top: 10%;
     font-size: 2em;
     color: #333;
     text-align: center; }
@@ -67,7 +67,7 @@
   border-color: transparent transparent #EDEDED transparent;
   bottom: 40%; }
 
-.fp-table {
+.fp-tableCell {
   position: relative; }
 
 .cn {
