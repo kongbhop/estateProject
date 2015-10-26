@@ -1,3 +1,14 @@
+$(document).ready(function(){
+  $("#open-left").click(function(){
+    snapper.open('right');
+  });
+  snapper.off('drag');
+  settings = {
+    touchToDrag: false,
+  };
+  snapper.settings(settings);
+});
+
 
 var addEvent = function addEvent(element, eventName, func) {
 	if (element.addEventListener) {
