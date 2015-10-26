@@ -2,19 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Private Park Project</title>
-  <meta name="author" content="Alvaro Trigo Lopez" />
-  <meta name="description" content="fullPage full-screen backgrounds." />
-  <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-touch-fullscreen" content="yes">
+  <title>Private Park 3 Project</title>
+  <meta name="author" content="" />
+  <meta name="description" content="" />
+  <meta name="keywords"  content="" />
   <meta name="Resource-type" content="Document" />
 
 
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-  
+
   <link rel="stylesheet" type="text/css" href="css/styleMobileM.css">
   <link rel="stylesheet" type="text/css" href="css/styleMobileC.css">
 
@@ -46,9 +47,12 @@
 
           var parentHeight = $('.fp-tableCell').height();
           var childHeight = $('#mainpageText').height();
-          //$('#mainpageText').css('margin-top', (parentHeight - childHeight) / 2);
+          $('#mainpageText').css('margin-top', (parentHeight - childHeight) / 2);
 
-          $('.halfHeightBottom').hei
+          $('.lineHeightDiv').each(function(){
+              var div_height = $(this).height();
+              $(this).css('lineHeight', div_height + "px");
+          });
       });
   </script>
 </head>
@@ -58,7 +62,7 @@
 
 <div id="fullpage">
   <div class="section" id="mainpage">
-      <div class="centerText centerDiv" id="mainpageText">
+      <div class="centerDiv" id="mainpageText">
           <div id="head">PRIVATE PARK3</div>
           <span>best of housing property in rayong</span>
       </div>
@@ -68,7 +72,7 @@
       <div class="slide" id="slide1">
         <div class="halfHeight" id="concept-1">
         </div>
-        <div class="halfHeightBottom" id="text-1">
+        <div class="halfHeightBottom rectangle" id="text-1">
           <div id="head">OUR CONCEPT
           </div>
           <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
@@ -78,10 +82,23 @@
         </div>
       </div>
 
-      <div class="slide" id="slide1">
-        <div class="halfHeight" id="concept-1">
+      <div class="slide" id="slide2">
+        <div class="halfHeight" id="concept-2">
         </div>
-        <div class="halfHeightBottom" id="text-1">
+        <div class="halfHeightBottom rectangle" id="text-2">
+          <div id="head">OUR CONCEPT
+          </div>
+          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          </div>
+        </div>
+        <div class="halfHeightBottom triangle-down-right">
+        </div>
+      </div>
+
+      <div class="slide" id="slide3">
+        <div class="halfHeight" id="concept-3">
+        </div>
+        <div class="halfHeightBottom rectangle" id="text-3">
           <div id="head">OUR CONCEPT
           </div>
           <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
@@ -93,9 +110,16 @@
     </div>
 
     <div class="section" id="location">
-      <div class="centerText centerDiv" id="mainpageText">
-          <div id="head">PRIVATE PARK3</div>
-          <span>best of housing property in rayong</span>
+      <div class="centerText" id="mainpageText">
+          <div id="head">LOCATION</div>
+      </div>
+      <div class="fullWidth">
+      </div>
+      <div class="halfHeightBottom rectangle centerText" id="locationText">
+           <div class="text lineHeightDiv">นำทางไปยังไพรเวทพาร์ค 3</div>
+           <div class="button lineHeightDiv"><a href="#" class="locationButton">START NAVIGATION</a></div>
+           <div class="text lineHeightDiv">หริอติดต่อเราโดยตรงผ่าน 038 618 2442</div>
+           <div class="button lineHeightDiv"><a href="#" class="locationButton">EXPLORE NEIGHBOURHOOD</a></div>
       </div>
     </div>
 
