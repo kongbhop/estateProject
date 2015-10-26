@@ -56,6 +56,17 @@
               var div_height = $(this).height();
               $(this).css('lineHeight', div_height + "px");
           });
+
+          $('.padfromnav').each(function(){
+              var div_height = $(this).parent('div').height();
+              $(this).css('height', div_height - 80 + "px");
+          });
+
+          var y = $("#locationImage").position().top;
+          var parentLocationH = $("#locationImage").parent('div').height();
+          console.log(parentLocationH);
+          $("#locationImage").css('height', (parentLocationH *80/100) - y );
+
       });
   </script>
 </head>
@@ -92,13 +103,16 @@
 </div>
 <div id="fullpage">
   <div class="section" id="mainpage">
+    <div class="padfromnav">
       <div class="centerDiv" id="mainpageText">
           <div id="head">PRIVATE PARK3</div>
           <span>best of housing property in rayong</span>
       </div>
     </div>
+  </div>
 
-    <div class="section" id="concept">
+  <div class="section" id="concept">
+    <div class="padfromnav">
       <div class="slide" id="slide1">
         <div class="halfHeight" id="concept-1">
         </div>
@@ -138,12 +152,14 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="section" id="location">
+  <div class="section" id="location">
+    <div class="padfromnav">
       <div class="centerText" id="mainpageText">
           <div id="head">LOCATION</div>
       </div>
-      <div class="fullWidth">
+      <div class="fullWidth" id="locationImage">
       </div>
       <div class="halfHeightBottom rectangle centerText" id="locationText">
            <div class="text lineHeightDiv">นำทางไปยังไพรเวทพาร์ค 3</div>
@@ -152,9 +168,7 @@
            <div class="button lineHeightDiv"><a href="#" class="locationButton">EXPLORE NEIGHBOURHOOD</a></div>
       </div>
     </div>
-
   </div>
-
 
 
 </div>
