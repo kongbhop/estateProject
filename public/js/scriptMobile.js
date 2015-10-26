@@ -1,7 +1,3 @@
-$(document).ready(function(){
-
-});
-
 
 var addEvent = function addEvent(element, eventName, func) {
 	if (element.addEventListener) {

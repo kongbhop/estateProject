@@ -1,7 +1,70 @@
-#mainpage {
-	background-color: #222;
+@font-face {
+	    font-family: ThaiSansLite;
+	    src: url(font/thaisanslite_r1.ttf);
+	}
+
+@font-face {
+    font-family: Didot;
+    src: url(font/Didot.ttc);
 }
 
-#location {
 
+#mainpage {
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../imgs/sec0.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;	
+}
+
+#concept {
+
+}
+
+.halfHeight {
+	height: 60%;
+}
+
+.halfHeightBottom {
+	position: relative;
+	bottom: 0px;
+}
+.slide.fp-slide.fp-table{
+	position: relative;
+}
+
+#concept-1 {
+	background: url("../imgs/sec1-1.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;	
+}
+
+.centerDiv {
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px 10px #000000;
+	width: 100%;
+	h1 {
+		letter-spacing: 0.35em;
+		font-size: 6em;
+		font-family: ThaiSansLite;
+	}
+	span {
+		font-size: 3em;
+		font-family: ThaiSansLite;
+	}
+}
+
+
+.cn {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
 }
