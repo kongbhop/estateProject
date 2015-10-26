@@ -18,13 +18,17 @@
 	background-position: center center;	
 }
 
-#concept {
-
+#location {
+	background-color: #EEEFF0;
 }
 
 .halfHeight {
 	height: 60%;
-	top: 0px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;	
 }
 
 .halfHeightBottom {
@@ -45,9 +49,10 @@
 	}
 }
 
-#text-1 {
+.rectangle {
 	background-color: #EDEDED;
 }
+
 
 #concept-1 {
 	background: url("../imgs/sec1-1.jpg");
@@ -56,6 +61,33 @@
 	-o-background-size: cover;
 	background-size: cover;
 	background-position: center center;	
+}
+
+#concept-2 {
+	background: url("../imgs/sec1-2.jpg");
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+#concept-3 {
+	background: url("../imgs/sec1-3.jpg");
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+#locationImage {
+	background: url("../imgs/sec1-3.jpg");
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
 }
 
 .centerDiv {
@@ -87,7 +119,7 @@
 
 .fp-tableCell {
 	position: relative;
-
+	display: block;
 }
 
 .cn {
@@ -96,4 +128,47 @@
   height: 100%;
   vertical-align: middle;
   text-align: center;
+}
+
+.centerText {
+	#head {
+		text-align: center;
+		font-size: 1.4em;
+		font-family: ThaiSansLite;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		letter-spacing: 0.1em;
+	}
+}
+#locationText{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	height: 30%;
+	.text {
+		vertical-align: middle;
+		text-align: center;
+		font-size: 1.3em;
+		height: 20%
+	}
+	.button {
+		text-align: center;
+		font-size: 1.3em;
+		height: 30%
+	}
+	a {
+		text-decoration: none;
+		color: #333;
+		font-size: 1.2em;
+		border: 2px solid #444;
+		padding: 1% 5%;
+	}
+}
+.padfromnav{
+	width: 100%;
+	padding-top: 80px;
+}
+
+.fullWidth {
+	width: 100%;
+	height: 60%;
 }

@@ -2,14 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Private Park Project</title>
-  <meta name="author" content="Alvaro Trigo Lopez" />
-  <meta name="description" content="fullPage full-screen backgrounds." />
-  <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-touch-fullscreen" content="yes">
+  <title>Private Park 3 Project</title>
+  <meta name="author" content="" />
+  <meta name="description" content="" />
+  <meta name="keywords"  content="" />
   <meta name="Resource-type" content="Document" />
 
 
@@ -51,9 +52,23 @@
 
           var parentHeight = $('.fp-tableCell').height();
           var childHeight = $('#mainpageText').height();
-          //$('#mainpageText').css('margin-top', (parentHeight - childHeight) / 2);
+          $('#mainpageText').css('margin-top', (parentHeight - childHeight) / 2);
 
-          $('.halfHeightBottom').hei
+          $('.lineHeightDiv').each(function(){
+              var div_height = $(this).height();
+              $(this).css('lineHeight', div_height + "px");
+          });
+
+          $('.padfromnav').each(function(){
+              var div_height = $(this).parent('div').height();
+              $(this).css('height', div_height - 80 + "px");
+          });
+
+          var y = $("#locationImage").position().top;
+          var parentLocationH = $("#locationImage").parent('div').height();
+          console.log(parentLocationH);
+          $("#locationImage").css('height', (parentLocationH *80/100) - y );
+
       });
   </script>
 </head>
@@ -90,17 +105,20 @@
 </div>
 <div id="fullpage">
   <div class="section" id="mainpage">
-      <div class="centerText centerDiv" id="mainpageText">
+    <div class="padfromnav">
+      <div class="centerDiv" id="mainpageText">
           <div id="head">PRIVATE PARK3</div>
           <span>best of housing property in rayong</span>
       </div>
     </div>
+  </div>
 
-    <div class="section" id="concept">
+  <div class="section" id="concept">
+    <div class="padfromnav">
       <div class="slide" id="slide1">
         <div class="halfHeight" id="concept-1">
         </div>
-        <div class="halfHeightBottom" id="text-1">
+        <div class="halfHeightBottom rectangle" id="text-1">
           <div id="head">OUR CONCEPT
           </div>
           <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
@@ -110,10 +128,23 @@
         </div>
       </div>
 
-      <div class="slide" id="slide1">
-        <div class="halfHeight" id="concept-1">
+      <div class="slide" id="slide2">
+        <div class="halfHeight" id="concept-2">
         </div>
-        <div class="halfHeightBottom" id="text-1">
+        <div class="halfHeightBottom rectangle" id="text-2">
+          <div id="head">OUR CONCEPT
+          </div>
+          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          </div>
+        </div>
+        <div class="halfHeightBottom triangle-down-right">
+        </div>
+      </div>
+
+      <div class="slide" id="slide3">
+        <div class="halfHeight" id="concept-3">
+        </div>
+        <div class="halfHeightBottom rectangle" id="text-3">
           <div id="head">OUR CONCEPT
           </div>
           <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
@@ -123,73 +154,81 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="section" id="location">
-      <div class="centerText centerDiv" id="mainpageText">
-          <div id="head">PRIVATE PARK3</div>
-          <span>best of housing property in rayong</span>
+  <div class="section" id="location">
+    <div class="padfromnav">
+      <div class="centerText" id="mainpageText">
+          <div id="head">LOCATION</div>
+      </div>
+      <div class="fullWidth" id="locationImage">
+      </div>
+      <div class="halfHeightBottom rectangle centerText" id="locationText">
+           <div class="text lineHeightDiv">นำทางไปยังไพรเวทพาร์ค 3</div>
+           <div class="button lineHeightDiv"><a href="#" class="locationButton">START NAVIGATION</a></div>
+           <div class="text lineHeightDiv">หริอติดต่อเราโดยตรงผ่าน 038 618 2442</div>
+           <div class="button lineHeightDiv"><a href="#" class="locationButton">EXPLORE NEIGHBOURHOOD</a></div>
       </div>
     </div>
+  </div>
 
-    <!-- ==================CONTACT SECTION================== -->
-    <div class="section" id="contact">
-      <div class="blankSpace"></div>
-      <div>
-          <div class="textLeft sidePadding">
-            <h1><?= Lang::get('content.contactTopic') ?></h1>
+  <!-- ==================CONTACT SECTION================== -->
+  <div class="section" id="contact">
+    <div class="blankSpace"></div>
+    <div>
+        <div class="textLeft sidePadding">
+          <h1><?= Lang::get('content.contactTopic') ?></h1>
+        </div>
+
+        <div class="thankYou" style="display:none;">
+          <h2>
+            <?= Lang::get('content.formThankYouMsg') ?>
+          </h2>
+        </div>
+
+        <div class="customerContactForm">
+          <span><?= Lang::get('content.contactDesp') ?></span>
+
+          <div class="contactToggle">
+            <div class="radio">
+              <input type="radio" id="contactRadio" name="contactType" checked/>
+              <label for="contactRadio"><?= Lang::get('content.formContactButton') ?></label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="attendRadio" name="contactType" />
+              <label for="attendRadio"><?= Lang::get('content.formAttendButton') ?></label>
+            </div>
+
+            <div class="clear"></div>
           </div>
 
-          <div class="thankYou" style="display:none;">
-            <h2>
-              <?= Lang::get('content.formThankYouMsg') ?>
-            </h2>
-          </div>
-
-          <div class="customerContactForm">
-            <span><?= Lang::get('content.contactDesp') ?></span>
-
-            <div class="contactToggle">
-              <div class="radio">
-                <input type="radio" id="contactRadio" name="contactType" checked/>
-                <label for="contactRadio"><?= Lang::get('content.formContactButton') ?></label>
-              </div>
-              <div class="radio">
-                <input type="radio" id="attendRadio" name="contactType" />
-                <label for="attendRadio"><?= Lang::get('content.formAttendButton') ?></label>
-              </div>
-
-      				<div class="clear"></div>
-      			</div>
-
-            <form class="customerContact">
-      				<div class="dateBox" style="width:100%; display:none;">
-      					<label><?= Lang::get('content.formDate') ?></label><br>
-      					<input type="date" name="appointment" value=""><br>
-      				</div>
-      				<label><?= Lang::get('content.formFirstname') ?></label> <br>
-      				<input type="text" name="firstname"> <br>
-      				<label><?= Lang::get('content.formLastname') ?></label> <br>
-      				<input type="text" name="lastname"> <br>
-      				<label><?= Lang::get('content.formTel') ?></label> <br>
-      				<input type="text" name="mobile"> <br>
-      				<label><?= Lang::get('content.formEmail') ?></label> <br>
-      				<input type="text" name="email"> <br>
-      				<label><?= Lang::get('content.formDesp') ?></label> <br>
-      				<textarea rows="4" name="description"></textarea> <br>
-      				<input type="submit" value="<?= Lang::get('content.formSubmitButton') ?>">
-      			</form>
-          </div>
-      </div>
-
-      <div class="telContact">
-        <i class="fa fa-phone"></i> 038 618 2442
-      </div>
-
-      <div class="textCenter">
-        Samaphan Property Ltd. All right reserved.
-      </div>
+          <form class="customerContact">
+            <div class="dateBox" style="width:100%; display:none;">
+              <label><?= Lang::get('content.formDate') ?></label><br>
+              <input type="date" name="appointment" value=""><br>
+            </div>
+            <label><?= Lang::get('content.formFirstname') ?></label> <br>
+            <input type="text" name="firstname"> <br>
+            <label><?= Lang::get('content.formLastname') ?></label> <br>
+            <input type="text" name="lastname"> <br>
+            <label><?= Lang::get('content.formTel') ?></label> <br>
+            <input type="text" name="mobile"> <br>
+            <label><?= Lang::get('content.formEmail') ?></label> <br>
+            <input type="text" name="email"> <br>
+            <label><?= Lang::get('content.formDesp') ?></label> <br>
+            <textarea rows="4" name="description"></textarea> <br>
+            <input type="submit" value="<?= Lang::get('content.formSubmitButton') ?>">
+          </form>
+        </div>
     </div>
 
+    <div class="telContact">
+      <i class="fa fa-phone"></i> 038 618 2442
+    </div>
+
+    <div class="textCenter">
+      Samaphan Property Ltd. All right reserved.
+    </div>
   </div>
 
 
