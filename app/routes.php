@@ -26,11 +26,11 @@ Route::get('/', function()
 {
 	$Agent = new Agent();
 	// return View::make('index');
-	// if ( $Agent->isMobile() ) {
- //      return View::make('indexMobile');
- //  } else {
+	 if ( $Agent->isMobile() ) {
+       return View::make('indexMobile');
+   } else {
       return View::make('index');
-  // }
+   }
 });
 
 Route::get('/th', function()
