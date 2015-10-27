@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="IE=edge" />
-  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width, height=device-height">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-touch-fullscreen" content="yes">
   <title>Private Park 3 Project</title>
@@ -178,9 +178,9 @@
         <div class="halfHeight" id="houseAImg-1">
         </div>
         <div class="halfHeightBottom rectangle" id="houseAText-1">
-          <div id="head">PRIVATE A
+          <div id="head"><?= Lang::get('content.planATopic') ?>
           </div>
-          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          <div id="description"><?= Lang::get('content.planAContent') ?>
           </div>
         </div>
         <div class="halfHeightBottom triangle-down-right">
@@ -191,9 +191,9 @@
         <div class="halfHeight" id="houseAImg-2">
         </div>
         <div class="halfHeightBottom rectangle" id="houseAText-2">
-          <div id="head">OUR CONCEPT
+          <div id="head"><?= Lang::get('content.planADownTopic') ?>
           </div>
-          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          <div id="description"><?= Lang::get('content.planADownContent') ?>
           </div>
         </div>
       </div>
@@ -202,9 +202,9 @@
         <div class="halfHeight" id="houseAImg-3">
         </div>
         <div class="halfHeightBottom rectangle" id="houseAText-3">
-          <div id="head">OUR CONCEPT
+          <div id="head"><?= Lang::get('content.planAUpTopic') ?>
           </div>
-          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          <div id="description"><?= Lang::get('content.planAUpContent') ?>
           </div>
         </div>
       </div>
@@ -215,9 +215,9 @@
         <div class="halfHeight" id="houseBImg-1">
         </div>
         <div class="halfHeightBottom rectangle" id="houseBText-1">
-          <div id="head">PRIVATE B
+          <div id="head"><?= Lang::get('content.planBTopic') ?>
           </div>
-          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          <div id="description"><?= Lang::get('content.planBContent') ?>
           </div>
         </div>
         <div class="halfHeightBottom triangle-down-right">
@@ -228,9 +228,9 @@
         <div class="halfHeight" id="houseBImg-2">
         </div>
         <div class="halfHeightBottom rectangle" id="houseBText-2">
-          <div id="head">OUR CONCEPT
+          <div id="head"><?= Lang::get('content.planBDownTopic') ?>
           </div>
-          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          <div id="description"><?= Lang::get('content.planBDownContent') ?>
           </div>
         </div>
       </div>
@@ -239,9 +239,9 @@
         <div class="halfHeight" id="houseBImg-3">
         </div>
         <div class="halfHeightBottom rectangle" id="houseBText-3">
-          <div id="head">OUR CONCEPT
+          <div id="head"><?= Lang::get('content.planBUpTopic') ?>
           </div>
-          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          <div id="description"><?= Lang::get('content.planBUpContent') ?>
           </div>
         </div>
       </div>
