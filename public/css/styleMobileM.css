@@ -6,12 +6,82 @@
   font-family: Didot;
   src: url(../font/Didot.ttc); }
 
+.fp-controlArrow.fp-prev {
+  left: 10px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: url(../imgs/left.png) no-repeat;
+  cursor: pointer;
+  background-size: contain; }
+
+.fp-controlArrow.fp-next {
+  right: 10px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: url(../imgs/right.png) no-repeat;
+  cursor: pointer;
+  background-size: contain; }
+
 #mainpage {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../imgs/sec0.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center center; }
+
+#houseAImg-1 {
+  background: url("../imgs/houseA.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center; }
+
+#houseAImg-2 {
+  background: white url("../imgs/A1.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  background-position: center center; }
+
+#houseAImg-3 {
+  background: white url("../imgs/A2.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  background-position: center center; }
+
+#houseBImg-1 {
+  background: url("../imgs/houseB.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center; }
+
+#houseBImg-2 {
+  background: white url("../imgs/B1.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  background-position: center center; }
+
+#houseBImg-3 {
+  background: white url("../imgs/B2.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
   background-position: center center; }
 
 #location {

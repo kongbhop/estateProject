@@ -172,6 +172,85 @@
     </div>
   </div>
 
+  <div class="section" id="houseA">
+    <div class="padfromnav">
+      <div class="slide" id="houseA-1">
+        <div class="halfHeight" id="houseAImg-1">
+        </div>
+        <div class="halfHeightBottom rectangle" id="houseAText-1">
+          <div id="head">PRIVATE A
+          </div>
+          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          </div>
+        </div>
+        <div class="halfHeightBottom triangle-down-right">
+        </div>
+      </div>
+
+      <div class="slide" id="slide2">
+        <div class="halfHeight" id="houseAImg-2">
+        </div>
+        <div class="halfHeightBottom rectangle" id="houseAText-2">
+          <div id="head">OUR CONCEPT
+          </div>
+          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" id="slide3">
+        <div class="halfHeight" id="houseAImg-3">
+        </div>
+        <div class="halfHeightBottom rectangle" id="houseAText-3">
+          <div id="head">OUR CONCEPT
+          </div>
+          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="houseB">
+    <div class="padfromnav">
+      <div class="slide" id="houseB-1">
+        <div class="halfHeight" id="houseBImg-1">
+        </div>
+        <div class="halfHeightBottom rectangle" id="houseBText-1">
+          <div id="head">PRIVATE B
+          </div>
+          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          </div>
+        </div>
+        <div class="halfHeightBottom triangle-down-right">
+        </div>
+      </div>
+
+      <div class="slide" id="slide2">
+        <div class="halfHeight" id="houseBImg-2">
+        </div>
+        <div class="halfHeightBottom rectangle" id="houseBText-2">
+          <div id="head">OUR CONCEPT
+          </div>
+          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" id="slide3">
+        <div class="halfHeight" id="houseBImg-3">
+        </div>
+        <div class="halfHeightBottom rectangle" id="houseBText-3">
+          <div id="head">OUR CONCEPT
+          </div>
+          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- ==================CONTACT SECTION================== -->
   <div class="section" id="contact">
     <div class="blankSpace"></div>
