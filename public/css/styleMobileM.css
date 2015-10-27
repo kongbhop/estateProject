@@ -7,20 +7,20 @@
   src: url(../font/Didot.ttc); }
 
 .fp-controlArrow.fp-prev {
-  left: 10px;
+  left: 0px;
   border: none;
   width: 50px;
   height: 50px;
-  background: url(../imgs/left.png) no-repeat;
+  background: url(../imgs/leftM.png) no-repeat;
   cursor: pointer;
   background-size: contain; }
 
 .fp-controlArrow.fp-next {
-  right: 10px;
+  right: 0px;
   border: none;
   width: 50px;
   height: 50px;
-  background: url(../imgs/right.png) no-repeat;
+  background: url(../imgs/rightM.png) no-repeat;
   cursor: pointer;
   background-size: contain; }
 
