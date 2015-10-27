@@ -101,7 +101,7 @@
   <div class="logo">
     <a href="#Mainpage"><img src="imgs/logo.png" /></a>
     <a href="#" id="open-right"><i class="fa fa-bars"></i></a>
-    <a href="#" id="open-location"><i class="fa fa-map-marker"></i></a>
+    <a data-menuanchor="Location"  href="#Location" id="open-location"><i class="fa fa-map-marker"></i></a>
   </div>
 </div>
 <div id="fullpage">
@@ -166,7 +166,7 @@
         </div>
         <div class="halfHeightBottom rectangle centerText" id="locationText">
              <div class="text lineHeightDiv">นำทางไปยังไพรเวทพาร์ค 3</div>
-             <div class="button lineHeightDiv"><a href="#" class="locationButton">START NAVIGATION</a></div>
+             <div class="button lineHeightDiv"><a href="http://maps.apple.com/maps?q=Ban+Samaphan+Private+Park" class="locationButton">START NAVIGATION</a></div>
              <div class="text lineHeightDiv">หริอติดต่อเราโดยตรงผ่าน 038 618 2442</div>
              <div class="button lineHeightDiv"><a href="#" class="locationButton">EXPLORE NEIGHBOURHOOD</a></div>
         </div>
