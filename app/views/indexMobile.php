@@ -107,8 +107,8 @@
   <div class="section" id="mainpage">
     <div class="padfromnav">
       <div class="centerDiv" id="mainpageText">
-          <div id="head">PRIVATE PARK3</div>
-          <span>best of housing property in rayong</span>
+          <div id="head"><?= Lang::get('content.mainPageTopic') ?></div>
+          <span><?= Lang::get('content.mainPageContent') ?></span>
       </div>
     </div>
   </div>
@@ -119,9 +119,9 @@
         <div class="halfHeight" id="concept-1">
         </div>
         <div class="halfHeightBottom rectangle" id="text-1">
-          <div id="head">OUR CONCEPT
+          <div id="head"><?= Lang::get('content.concept1Topic') ?>
           </div>
-          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          <div id="description"><?= Lang::get('content.concept1Content') ?>
           </div>
         </div>
         <div class="halfHeightBottom triangle-down-right">
@@ -132,9 +132,9 @@
         <div class="halfHeight" id="concept-2">
         </div>
         <div class="halfHeightBottom rectangle" id="text-2">
-          <div id="head">OUR CONCEPT
+          <div id="head"><?= Lang::get('content.concept2Topic') ?>
           </div>
-          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          <div id="description"><?= Lang::get('content.concept2Content') ?>
           </div>
         </div>
         <div class="halfHeightBottom triangle-down-right">
@@ -145,9 +145,9 @@
         <div class="halfHeight" id="concept-3">
         </div>
         <div class="halfHeightBottom rectangle" id="text-3">
-          <div id="head">OUR CONCEPT
+          <div id="head"><?= Lang::get('content.concept3Topic') ?>
           </div>
-          <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor finibus neque ac tempus. Nullam euismod dolor eget maximus eleifend. Praesent luctus dui eget justo ornare
+          <div id="description"><?= Lang::get('content.concept3Content') ?>
           </div>
         </div>
         <div class="halfHeightBottom triangle-down-right">
@@ -159,7 +159,7 @@
   <div class="section" id="location">
     <div class="padfromnav">
       <div class="centerText" id="mainpageText">
-          <div id="head">LOCATION</div>
+          <div id="head"><?= Lang::get('content.locationOnMapTopic') ?></div>
       </div>
       <div class="fullWidth" id="locationImage">
       </div>
