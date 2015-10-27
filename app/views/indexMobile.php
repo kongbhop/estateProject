@@ -173,7 +173,6 @@
   </div>
 
   <div class="section" id="houseA">
-    <div class="padfromnav">
       <div class="slide" id="houseA-1">
         <div class="halfHeight" id="houseAImg-1">
         </div>
@@ -208,11 +207,9 @@
           </div>
         </div>
       </div>
-    </div>
   </div>
 
   <div class="section" id="houseB">
-    <div class="padfromnav">
       <div class="slide" id="houseB-1">
         <div class="halfHeight" id="houseBImg-1">
         </div>
@@ -247,7 +244,6 @@
           </div>
         </div>
       </div>
-    </div>
   </div>
 
 
