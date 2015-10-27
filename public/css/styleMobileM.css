@@ -199,13 +199,12 @@
   #locationText .button {
     text-align: center;
     font-size: 1.3em;
-    height: 30%; }
-  #locationText a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1.2em;
-    border: 2px solid #444;
-    padding: 1% 5%; }
+    height: 30% a;
+      height-text-decoration: none;
+      height-color: #333;
+      height-font-size: 1.2em;
+      height-border: 2px solid #444;
+      height-padding: 1% 5%; }
 
 .padfromnav {
   width: 100%;
