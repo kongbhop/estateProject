@@ -93,7 +93,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+  padding-top: 80px; }
 
 .halfHeightBottom {
   z-index: 4;
@@ -190,7 +191,8 @@
 #locationText {
   padding-top: 5%;
   padding-bottom: 5%;
-  height: 30%; }
+  height: 30%;
+  bottom: 80px; }
   #locationText .text {
     vertical-align: middle;
     text-align: center;
@@ -200,12 +202,13 @@
     text-align: center;
     font-size: 1.3em;
     height: 30%; }
-  #locationText a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1.2em;
-    border: 2px solid #444;
-    padding: 1% 5%; }
+
+.locationButton {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2em;
+  border: 2px solid #444;
+  padding: 1% 5%; }
 
 .padfromnav {
   width: 100%;

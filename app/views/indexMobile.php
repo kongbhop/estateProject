@@ -47,7 +47,8 @@
               menu: '#menu',
               css3: true,
               scrollingSpeed: 500,
-              scrollOverflow: true
+              scrollOverflow: true,
+              loopHorizontal: false
           });
 
           var parentHeight = $('.fp-tableCell').height();
@@ -67,7 +68,7 @@
           var y = $("#locationImage").position().top;
           var parentLocationH = $("#locationImage").parent('div').height();
           console.log(parentLocationH);
-          $("#locationImage").css('height', (parentLocationH *80/100) - y );
+          $("#locationImage").css('height', (parentLocationH *50/100) - y );
 
       });
   </script>
@@ -114,60 +115,60 @@
   </div>
 
   <div class="section" id="concept">
-    <div class="padfromnav">
-      <div class="slide" id="slide1">
-        <div class="halfHeight" id="concept-1">
+    <div class="slide" id="slide1">
+      <div class="halfHeight" id="concept-1">
+      </div>
+      <div class="halfHeightBottom rectangle" id="text-1">
+        <div id="head"><?= Lang::get('content.concept1Topic') ?>
         </div>
-        <div class="halfHeightBottom rectangle" id="text-1">
-          <div id="head"><?= Lang::get('content.concept1Topic') ?>
-          </div>
-          <div id="description"><?= Lang::get('content.concept1Content') ?>
-          </div>
-        </div>
-        <div class="halfHeightBottom triangle-down-right">
+        <div id="description"><?= Lang::get('content.concept1Content') ?>
         </div>
       </div>
+      <div class="halfHeightBottom triangle-down-right">
+      </div>
+    </div>
 
-      <div class="slide" id="slide2">
-        <div class="halfHeight" id="concept-2">
+    <div class="slide" id="slide2">
+      <div class="halfHeight" id="concept-2">
+      </div>
+      <div class="halfHeightBottom rectangle" id="text-2">
+        <div id="head"><?= Lang::get('content.concept2Topic') ?>
         </div>
-        <div class="halfHeightBottom rectangle" id="text-2">
-          <div id="head"><?= Lang::get('content.concept2Topic') ?>
-          </div>
-          <div id="description"><?= Lang::get('content.concept2Content') ?>
-          </div>
-        </div>
-        <div class="halfHeightBottom triangle-down-right">
+        <div id="description"><?= Lang::get('content.concept2Content') ?>
         </div>
       </div>
+      <div class="halfHeightBottom triangle-down-right">
+      </div>
+    </div>
 
-      <div class="slide" id="slide3">
-        <div class="halfHeight" id="concept-3">
+    <div class="slide" id="slide3">
+      <div class="halfHeight" id="concept-3">
+      </div>
+      <div class="halfHeightBottom rectangle" id="text-3">
+        <div id="head"><?= Lang::get('content.concept3Topic') ?>
         </div>
-        <div class="halfHeightBottom rectangle" id="text-3">
-          <div id="head"><?= Lang::get('content.concept3Topic') ?>
-          </div>
-          <div id="description"><?= Lang::get('content.concept3Content') ?>
-          </div>
+        <div id="description"><?= Lang::get('content.concept3Content') ?>
         </div>
-        <div class="halfHeightBottom triangle-down-right">
-        </div>
+      </div>
+      <div class="halfHeightBottom triangle-down-right">
       </div>
     </div>
   </div>
 
   <div class="section" id="location">
     <div class="padfromnav">
-      <div class="centerText" id="mainpageText">
-          <div id="head"><?= Lang::get('content.locationOnMapTopic') ?></div>
-      </div>
-      <div class="fullWidth" id="locationImage">
-      </div>
-      <div class="halfHeightBottom rectangle centerText" id="locationText">
-           <div class="text lineHeightDiv">นำทางไปยังไพรเวทพาร์ค 3</div>
-           <div class="button lineHeightDiv"><a href="#" class="locationButton">START NAVIGATION</a></div>
-           <div class="text lineHeightDiv">หริอติดต่อเราโดยตรงผ่าน 038 618 2442</div>
-           <div class="button lineHeightDiv"><a href="#" class="locationButton">EXPLORE NEIGHBOURHOOD</a></div>
+      <div class="slide" id="location-1">
+        <div class="centerText" id="mainpageText">
+            <div id="head"><?= Lang::get('content.locationOnMapTopic') ?></div>
+        </div>
+        <div class="fullWidth" id="locationImage">
+        </div>
+        <div class="halfHeightBottom rectangle centerText" id="locationText">
+             <div class="text lineHeightDiv">นำทางไปยังไพรเวทพาร์ค 3</div>
+             <div class="button lineHeightDiv"><a href="#" class="locationButton">START NAVIGATION</a></div>
+             <div class="text lineHeightDiv">หริอติดต่อเราโดยตรงผ่าน 038 618 2442</div>
+             <div class="button lineHeightDiv"><a href="#" class="locationButton">EXPLORE NEIGHBOURHOOD</a></div>
+        </div>
       </div>
     </div>
   </div>
