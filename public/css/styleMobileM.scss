@@ -149,6 +149,14 @@
     background-position: center center;
 }
 
+#coverBackground {
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
 #concept-3 {
 	background: url("../imgs/sec1-3.jpg");
 	-webkit-background-size: cover;
@@ -159,6 +167,15 @@
 }
 
 #locationImage {
+	background: url("../imgs/sec1-3.jpg");
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+#locationImg-2 {
 	background: url("../imgs/sec1-3.jpg");
 	-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -194,6 +211,13 @@
 	bottom: 40%;
 }
 
+#neighbourTri {
+	bottom: 25%;
+}
+#neighbourRec {
+	height: 25%;
+}
+
 .fp-tableCell {
 	position: relative;
 	display: block;
@@ -221,7 +245,6 @@
 	padding-top: 5%;
 	padding-bottom: 5%;
 	height: 30%;
-	bottom: 80px;
 	.text {
 		vertical-align: middle;
 		text-align: center;

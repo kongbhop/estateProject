@@ -51,7 +51,7 @@
               loopHorizontal: false
           });
 
-          var parentHeight = $('.fp-tableCell').height();
+          var parentHeight = $('.fp-tableCell').height()-80;
           var childHeight = $('#mainpageText').height();
           $('#mainpageText').css('margin-top', (parentHeight - childHeight) / 2);
 
@@ -68,7 +68,7 @@
           var y = $("#locationImage").position().top;
           var parentLocationH = $("#locationImage").parent('div').height();
           console.log(parentLocationH);
-          $("#locationImage").css('height', (parentLocationH *50/100) - y );
+          $("#locationImage").css('height', (parentLocationH *80/100) - y );
 
       });
   </script>
@@ -156,8 +156,9 @@
   </div>
 
   <div class="section" id="location">
-    <div class="padfromnav">
-      <div class="slide" id="location-1">
+    
+    <div class="slide" id="location-1">
+      <div class="padfromnav">
         <div class="centerText" id="mainpageText">
             <div id="head"><?= Lang::get('content.locationOnMapTopic') ?></div>
         </div>
@@ -171,6 +172,21 @@
         </div>
       </div>
     </div>
+
+    <?php foreach(Lang::get('content.neighbourhoodPicture') as $pic): ?>
+      <div class="slide">
+        <div class="halfHeight" style="background:url(<?= $pic['picUrl'] ?>); background-size: cover;" id="coverBackground">
+        </div>
+        <div class="halfHeightBottom rectangle" id="neighbourRec">
+          <div id="head"><?= $pic['title'] ?>
+          </div>
+          <div id="description" style="text-align: center;"><?= $pic['desp'] ?>
+          </div>
+        </div>
+        <div class="halfHeightBottom triangle-down-right" id="neighbourTri">
+        </div>
+      </div>
+    <?php endforeach ?>
   </div>
 
   <div class="section" id="houseA">
