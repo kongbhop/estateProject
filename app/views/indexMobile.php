@@ -39,6 +39,12 @@
   <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
   <script type="text/javascript" src="js/snap.min.js"></script>
 
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css" media="screen" />
+
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+
 
   <script type="text/javascript">
       $(document).ready(function() {
@@ -156,7 +162,7 @@
   </div>
 
   <div class="section" id="location">
-    
+
     <div class="slide" id="location-1">
       <div class="padfromnav">
         <div class="centerText" id="mainpageText">
@@ -297,7 +303,10 @@
           <form class="customerContact">
             <div class="dateBox" style="width:100%; display:none;">
               <label><?= Lang::get('content.formDate') ?></label><br>
-              <input type="date" name="appointment" value=""><br>
+    					<div class="input-append date form_datetime">
+  						    <input size="16" type="text" value="" name="appointment" readonly>
+  						    <span class="add-on"><i class="icon-th"></i></span>
+  						</div>
             </div>
             <label><?= Lang::get('content.formFirstname') ?></label> <br>
             <input type="text" name="firstname"> <br>

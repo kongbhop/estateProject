@@ -31,4 +31,9 @@ $(document).ready(function(){
 	});
 
 	$(".fancybox").fancybox();
+
+	$(".form_datetime").datetimepicker({
+			 format: "dd MM yyyy - hh:ii",
+			 autoclose: true,
+	 });
 });

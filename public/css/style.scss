@@ -68,6 +68,11 @@
   }
 }
 
+.datetimepicker {
+  font-size: 1.4em !important;
+}
+
+
 #contact {
   background-color: #CCC;
   padding-top: 70px;
@@ -266,7 +271,7 @@ p{
 #menu li {
 	display:inline-block;
 	// margin: 10px;
-	color: #000;
+	color: #999;
 	// background:#fff;
 	// background: rgba(255,255,255, 0.5);
 	// -webkit-border-radius: 10px;
@@ -275,19 +280,18 @@ p{
 #menu li.active{
 	// background:#666;
 	// background: rgba(0,0,0, 0.5);
-  font-weight: bold;
+  // font-weight: bold;
 	color: #000;
 }
 #menu li a{
 	text-decoration:none;
-	color: #000;
+	color: #888;
 }
 #menu li.active a:hover{
 	color: #000;
 }
-#menu li:hover{
-	// background: rgba(255,255,255, 0.8);
-  font-weight: bold;
+#menu li a:hover{
+  color: #000;
 }
 #menu li a,
 #menu li.active a{

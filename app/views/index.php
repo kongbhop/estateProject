@@ -12,6 +12,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
 	<style>
 
 	@font-face {
@@ -462,15 +463,22 @@
 		</script>
 	<![endif]-->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
 	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css" media="screen" />
+
+
 
 
 	<script type="text/javascript">
@@ -723,7 +731,10 @@
   			<form class="customerContact">
   				<div class="dateBox" style="width:100%; display:none;">
   					<label><?= Lang::get('content.formDate') ?></label><br>
-  					<input type="date" name="appointment" value=""><br>
+  					<div class="input-append date form_datetime">
+						    <input size="16" type="text" value="" name="appointment" readonly>
+						    <span class="add-on"><i class="icon-th"></i></span>
+						</div>
   				</div>
   				<label><?= Lang::get('content.formFirstname') ?></label> <br>
   				<input type="text" name="firstname"> <br>
