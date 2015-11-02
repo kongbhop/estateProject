@@ -49,7 +49,7 @@
 		overflow: hidden;
 		margin: 10px 1%;
 		width: 30%;
-		background: #3085a3;
+		background: #ffffff;
 		text-align: center;
 		cursor: pointer;
 	}
@@ -59,12 +59,12 @@
 		display: block;
 		height: auto;
 		width: 100%;
-		opacity: 0.8;
+		opacity: 0.7;
 	}
 
 	.grid figure figcaption {
 		padding: 2em;
-		color: #fff;
+		color: #444;
 		text-transform: uppercase;
 		font-size: 1.25em;
 		-webkit-backface-visibility: hidden;
@@ -110,8 +110,9 @@
 	}
 
 	.grid figure p {
+		font-weight: bold;
 		letter-spacing: 1px;
-		font-size: 68.5%;
+		font-size: 80%;
 	}
 
 	/* Style for our header texts
@@ -259,10 +260,19 @@
 		width: 450px;
 		margin-right: auto;
 		margin-left: auto;
-		-webkit-transform: translate3d(0px, -75px, 0px);
-		-moz-transform: translate3d(0px, -75px, 0px);
-		-ms-transform:translate3d(0px, -75px, 0px);
-		transform: translate3d(0px, -75px, 0px);
+		opacity: 0;
+		-webkit-transition: all 0.75s ease-in-out;
+		-moz-transition: all 0.75s ease-in-out;
+		-o-transition: all 0.75s ease-in-out;
+		transition: all 0.75s ease-in-out;
+	}
+
+	.headTextcontainer.active {
+		opacity: 1;
+		-webkit-transform: translate3d(0px, -35px, 0px);
+		-moz-transform: translate3d(0px, -35px, 0px);
+		-ms-transform:translate3d(0px, -35px, 0px);
+		transform: translate3d(0px, -35px, 0px);
 	}
 
 	.headTextcontainer h1{
@@ -408,14 +418,14 @@
 	    text-decoration: none;
 	    color: #111;
 	    font-size: 1.25em;
-	    line-height: 40px;
+	    line-height: 35px;
 	}
 
 	.fp-slidesNav ul li {
 		display: inline-block;
 	    width: 200px;
-	    height: 40px;
-	    background-color: rgba(162,163,159,0.5);
+	    height: 35px;
+	    background-color: rgba(162,163,159,0.6);
 	    margin: 0px 0px;
 	}
 
@@ -462,7 +472,44 @@
 		padding-top: 60px;
 		padding-left: 5%;
 	}
+	#scrollDown {
+		position: absolute;
+		bottom: 40px;
+		text-align: center;
+		width: 100%;
+		height: 30px;
+	}
 
+	#scrollDownImg {
+		background: url("imgs/down.png") no-repeat;
+		-webkit-background-size: contain;
+	    -moz-background-size: contain;
+	    -o-background-size: contain;
+	    background-size: contain;
+	    background-position: center center;
+	    height: 100%;
+	    width: 30px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    -webkit-transition: all 0.3s ease-in-out;
+	    -moz-transition: all 0.3s ease-in-out;
+	    -o-transition: all 0.3s ease-in-out;
+	    transition: all 0.3s ease-in-out;
+	}
+
+	#scrollDownImg:hover {
+		opacity: 0.5;	
+		-webkit-transform: translate3d(0px, 5px, 0px);
+		-moz-transform: translate3d(0px, 5px, 0px);
+		-ms-transform:translate3d(0px, 5px, 0px);
+		transform: translate3d(0px, 5px, 0px);
+	}
+
+	#scrollDown p{
+		margin: 0 0 2px;
+		color: #fff;
+		font-size: 1.25em;
+	}
 
 	</style>
 
@@ -513,11 +560,13 @@
 		            	$('.slide.fp-slide.active').find('.textcontainer').addClass('active');
 		             	$('.fp-slidesNav').addClass('active');
 		            }
-								if(anchorLink == "Mainpage"){
-									$('.logo img').addClass("active");
-									$('.bottomMenu').addClass("menuActive");
-									$('.topMenu').addClass("menuActive");
-								}
+
+					if(anchorLink == "Mainpage"){
+						$('.headTextcontainer').addClass("active");
+						$('.logo img').addClass("active");
+						$('.bottomMenu').addClass("menuActive");
+						$('.topMenu').addClass("menuActive");
+					}
 
 
 		        },
@@ -532,10 +581,12 @@
 							console.log(nextIndex);
 
 								if(nextIndex == 1){
+									$('.headTextcontainer').addClass("active");
 									$('.logo img').addClass("active");
 									$('.bottomMenu').addClass("menuActive");
 									$('.topMenu').addClass("menuActive");
 								} else {
+									$('.headTextcontainer').removeClass("active");
 									$('.logo img').removeClass("active");
 									$('.bottomMenu').removeClass("menuActive");
 									$('.topMenu').removeClass("menuActive");
@@ -612,6 +663,12 @@
 		<div class="headTextcontainer">
 			<h1><?= Lang::get('content.mainPageTopic') ?></h1>
 			<p><?= Lang::get('content.mainPageContent') ?></p>
+		</div>
+		<div id="scrollDown">
+			<p></p>
+			<a href="#Project" id="">
+				<div id="scrollDownImg"></div>
+			</a>
 		</div>
 	</div>
 
