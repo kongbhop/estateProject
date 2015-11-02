@@ -19,7 +19,14 @@
 
 	@font-face {
 	    font-family: ThaiSansLite;
-	    src: url(font/thaisanslite_r1.ttf);
+	    src: url('font/thaisanslite_r1-webfont.eot');
+	    src: url('font/thaisanslite_r1-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('font/thaisanslite_r1-webfont.woff2') format('woff2'),
+	         url('font/thaisanslite_r1-webfont.woff') format('woff'),
+	         url('font/thaisanslite_r1-webfont.ttf') format('truetype');
+	    font-weight: normal;
+	    font-style: normal;
+
 	}
 	@font-face {
 	    font-family: Didot;
