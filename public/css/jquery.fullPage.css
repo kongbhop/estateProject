@@ -74,19 +74,19 @@ html.fp-enabled,
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    left: 10px;
+    left: 20px;
     border: none;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background: url(../imgs/left.png) no-repeat;
     cursor: pointer;
     background-size: contain;
 }
 .fp-controlArrow.fp-next {
-    right: 10px;
+    right: 20px;
     border: none;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background: url(../imgs/right.png) no-repeat;
     cursor: pointer;
     background-size: contain;

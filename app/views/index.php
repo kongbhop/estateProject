@@ -40,7 +40,7 @@
 		overflow: hidden;
 		margin: 10px 1%;
 		width: 30%;
-		background: #3085a3;
+		background: #ffffff;
 		text-align: center;
 		cursor: pointer;
 	}
@@ -50,12 +50,12 @@
 		display: block;
 		height: auto;
 		width: 100%;
-		opacity: 0.8;
+		opacity: 0.7;
 	}
 
 	.grid figure figcaption {
 		padding: 2em;
-		color: #fff;
+		color: #444;
 		text-transform: uppercase;
 		font-size: 1.25em;
 		-webkit-backface-visibility: hidden;
@@ -101,8 +101,9 @@
 	}
 
 	.grid figure p {
+		font-weight: bold;
 		letter-spacing: 1px;
-		font-size: 68.5%;
+		font-size: 80%;
 	}
 
 	/* Style for our header texts
@@ -453,7 +454,33 @@
 		padding-top: 60px;
 		padding-left: 5%;
 	}
+	#scrollDown {
+		position: absolute;
+		bottom: 60px;
+		text-align: center;
+		width: 100%;
+		height: 30px;
+	}
 
+	#scrollDownImg {
+		background: url("imgs/down.png") no-repeat;
+		-webkit-background-size: contain;
+	    -moz-background-size: contain;
+	    -o-background-size: contain;
+	    background-size: contain;
+	    background-position: center center;
+	    height: 100%;
+	    width: 30px;
+	    margin-left: auto;
+	    margin-right: auto;
+
+	}
+
+	#scrollDown p{
+		margin: 0 0 2px;
+		color: #fff;
+		font-size: 1.25em;
+	}
 
 	</style>
 
@@ -588,6 +615,12 @@
 		<div class="headTextcontainer">
 			<h1><?= Lang::get('content.mainPageTopic') ?></h1>
 			<p><?= Lang::get('content.mainPageContent') ?></p>
+		</div>
+		<div id="scrollDown">
+			<p>scroll</p>
+			<a href="#Project" id="">
+				<div id="scrollDownImg"></div>
+			</a>
 		</div>
 	</div>
 
