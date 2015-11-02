@@ -30,7 +30,9 @@ $(document).ready(function(){
 		});
 	});
 
-	$(".fancybox").fancybox();
+	$(".fancybox").fancybox({
+		padding: 0 
+	});
 
 	$(".form_datetime").datetimepicker({
 			 format: "dd MM yyyy - hh:ii",
