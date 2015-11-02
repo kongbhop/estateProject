@@ -9,6 +9,8 @@
 	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
 	<meta name="Resource-type" content="Document" />
 
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css" media="screen" />
 
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -475,8 +477,6 @@
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
 	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css" media="screen" />
 
 
 
