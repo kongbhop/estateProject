@@ -248,11 +248,24 @@ p{
     position: absolute;
   }
   img {
+    transition: 0.5s height ease;
     height: 60px;
+  }
+
+  .active {
+    height: 80px !important;
   }
 }
 
+.menuActive {
+  height: 40px !important;
+  padding-top: 6px;
+  font-size: 1.2em;
+
+}
+
 .bottomMenu{
+  transition: 0.5s all ease;
   width: 100vw;
   height: 30px;
   background-color: #EEE;
@@ -261,6 +274,7 @@ p{
 }
 
 .topMenu{
+  transition: 0.5s all ease;
   height: 30px;
   width: 100vw;
   background-color: #DEDEDE;

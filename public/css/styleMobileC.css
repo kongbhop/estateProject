@@ -78,6 +78,9 @@ input[type=submit] {
   width: 15px;
   height: 15px; }
 
+.table-condensed {
+  width: 250px; }
+
 .customerContact {
   text-align: left; }
 
