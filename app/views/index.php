@@ -256,7 +256,7 @@
 		background-color:rgba(210, 210, 204, 0.7);
 		top: 50%;
 		position: relative;
-		height: 150px;
+		padding: 30px;
 		width: 450px;
 		margin-right: auto;
 		margin-left: auto;
@@ -474,10 +474,22 @@
 	}
 	#scrollDown {
 		position: absolute;
-		bottom: 40px;
+		bottom: 30px;
 		text-align: center;
 		width: 100%;
 		height: 30px;
+		opacity: 0;
+		-webkit-transition: all 1.5s ease-in-out;
+	    -moz-transition: all 1.5s ease-in-out;
+	    -o-transition: all 1.5s ease-in-out;
+	    transition: all 1.5s ease-in-out;
+	}
+	#scrollDown.active{
+		-webkit-transform: translate3d(0px, 5px, 0px);
+		-moz-transform: translate3d(0px, 5px, 0px);
+		-ms-transform:translate3d(0px, 5px, 0px);
+		transform: translate3d(0px, 5px, 0px);
+		opacity: 1;
 	}
 
 	#scrollDownImg {
@@ -509,6 +521,18 @@
 		margin: 0 0 2px;
 		color: #fff;
 		font-size: 1.25em;
+	}
+
+	.fancybox img:hover {
+		-webkit-transition: all 0.1s ease-in-out;
+	    -moz-transition: all 0.1s ease-in-out;
+	    -o-transition: all 0.1s ease-in-out;
+	    transition: all 0.1s ease-in-out;
+	    -webkit-transform:scale(1.05); /* Safari and Chrome */
+	    -moz-transform:scale(1.05); /* Firefox */
+	    -ms-transform:scale(1.05); /* IE 9 */
+	    -o-transform:scale(1.05); /* Opera */
+	     transform:scale(1.05);
 	}
 
 	</style>
@@ -563,6 +587,7 @@
 
 					if(anchorLink == "Mainpage"){
 						$('.headTextcontainer').addClass("active");
+						$('#scrollDown').addClass("active");
 						$('.logo img').addClass("active");
 						$('.bottomMenu').addClass("menuActive");
 						$('.topMenu').addClass("menuActive");
@@ -587,6 +612,7 @@
 									$('.topMenu').addClass("menuActive");
 								} else {
 									$('.headTextcontainer').removeClass("active");
+									$('#scrollDown').removeClass("active");
 									$('.logo img').removeClass("active");
 									$('.bottomMenu').removeClass("menuActive");
 									$('.topMenu').removeClass("menuActive");
