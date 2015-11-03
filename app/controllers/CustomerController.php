@@ -7,7 +7,7 @@ class CustomerController extends BaseController {
     		'viewCustomerData', 'exportCustomerData'
     	)));
 	}
-	
+
 	public function requestData(){
 		return View::make('customers.requestData');
 	}
@@ -26,12 +26,12 @@ class CustomerController extends BaseController {
 
 		if($customerData->appointment){
 			$appointment_dt = date_create($data['appointment']);
-			$appointment_dt = $appointment_dt->format('d M Y');
-			$customerData->appointment = $appointment_dt; 
+			$appointment_dt = $appointment_dt->format('d M y - hh:mm');
+			$customerData->appointment = $appointment_dt;
 		}
 		else {
 			$customerData->appointment = '-';
-		} 
+		}
 
 		$subject = (string)('customer contact #'.$customerData->id);
 
@@ -56,7 +56,7 @@ class CustomerController extends BaseController {
 		$customers = CustomerData::orderBy('id')->get();
 		$customers = $customers->toArray();
 		$filename = CustomerData::exportData($customers);
-		
+
 		return Response::download(public_path($filename));
 	}
 }

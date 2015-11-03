@@ -24,8 +24,9 @@ $(document).ready(function(){
 			type: "POST",
 			data: $(this).serializeArray(),
 			success: function(data, textStatus,jqXHR){
-				$(".customerContactForm").slideUp();
-				$(".thankYou").slideDown();
+				$("input[type='text']").val("");
+				$("textarea").val("");
+				$("#thankYouModal").modal("show");
 			}
 		});
 	});
@@ -39,7 +40,7 @@ $(document).ready(function(){
 	  } // helpers
 	});
 
-	
+
 
 	$(".form_datetime").datetimepicker({
 			 format: "dd MM yyyy - hh:ii",
@@ -53,6 +54,7 @@ $(document).ready(function(){
 	      $(".form_datetime").datetimepicker('show');
 				console.log("ADFASF");
 	});
+
 
 
 
