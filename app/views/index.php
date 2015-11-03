@@ -498,7 +498,7 @@
 	}
 
 	#scrollDownImg:hover {
-		opacity: 0.5;	
+		opacity: 0.5;
 		-webkit-transform: translate3d(0px, 5px, 0px);
 		-moz-transform: translate3d(0px, 5px, 0px);
 		-ms-transform:translate3d(0px, 5px, 0px);
@@ -519,9 +519,9 @@
 		</script>
 	<![endif]-->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type='text/javascript'></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js" type='text/javascript'></script>
+	<script src="https://maps.googleapis.com/maps/api/js" type='text/javascript'></script>
 
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -578,7 +578,6 @@
 			            $('.fp-slidesNav').removeClass('active');
 			        }
 
-							console.log(nextIndex);
 
 								if(nextIndex == 1){
 									$('.headTextcontainer').addClass("active");
@@ -691,17 +690,17 @@
 	    </div>
 	</div>
 	<div class="section" id="location">
-		<div class="slide" id="slide2-1" name="Location">
+		<div class="slide" id="slide2-1" name="Location ">
 
 	    </div>
-	    <div class="slide" id="slide2-2" name="Map">
+	    <div class="slide" id="slide2-2" name="Map ">
 	    	<div class="mapcontainer" id="map">
 	    	</div>
 	    	<div class="textcontainer" id="textbox-2-2" ><h2><?= Lang::get('content.locationOnMapTopic') ?></h2>
 	    		<p><?= Lang::get('content.locationOnMapContent') ?></p>
 	    	</div>
 	    </div>
-	    <div class="slide" id="slide2-3" name="Neighbourhood">
+	    <div class="slide" id="slide2-3" name="Neighbourhood ">
 	    	<div class="textcontainer centertext" id="textbox-2-3" ><h2><?= Lang::get('content.neighbourhoodTopic') ?></h2>
 	    		<p><?= Lang::get('content.neighbourhoodContent') ?></p>
 	    		<ul>
@@ -812,10 +811,14 @@
   			<form class="customerContact">
   				<div class="dateBox" style="width:100%; display:none;">
   					<label><?= Lang::get('content.formDate') ?></label><br>
-  					<div class="input-append date form_datetime">
-						    <input size="16" type="text" value="" name="appointment" readonly>
+  					<!-- <div class="input-append date form_datetime">
+						    <input size="16" type="text" value="" name="appointment" aria-invalid="false" aria-required="true" aria-describedby="meetdatetime-error" readonly >
 						    <span class="add-on"><i class="icon-th"></i></span>
-						</div>
+						</div> -->
+						<div class="input-group date form_datetime" data-date="2012-12-21T15:25:00Z">
+                                                <input name="meetdatetime" class="form-control" id="meetdatetime" aria-invalid="false" aria-required="true" aria-describedby="meetdatetime-error" type="text" size="16" readonly=""><span class="help-block help-block-error" id="meetdatetime-error"></span>
+												
+                                            </div>
   				</div>
   				<label><?= Lang::get('content.formFirstname') ?></label> <br>
   				<input type="text" name="firstname"> <br>

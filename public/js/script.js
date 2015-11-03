@@ -31,11 +31,29 @@ $(document).ready(function(){
 	});
 
 	$(".fancybox").fancybox({
-		padding: 0 
+		padding: 0 ,
+		helpers : {
+	   overlay: {
+	    css: {'background-color': 'rgba(0,0,0,0.4)'} // or your preferred hex color value
+	   } // overlay
+	  } // helpers
 	});
+
+	
 
 	$(".form_datetime").datetimepicker({
 			 format: "dd MM yyyy - hh:ii",
 			 autoclose: true,
-	 });
+	 }).off('focus')
+	  .click(function () {
+	      $(this).datetimepicker('show');
+		});
+
+	$(".form_datetime input").click(function () {
+	      $(".form_datetime").datetimepicker('show');
+				console.log("ADFASF");
+	});
+
+
+
 });
