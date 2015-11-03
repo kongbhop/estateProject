@@ -559,7 +559,7 @@
 		-moz-transform: translate3d(-5px, 60px, 0px);
 		-ms-transform:translate3d(-5px, 60px, 0px);
 		transform: translate3d(-5px, 60px, 0px);
-	} 
+	}
 
 	.fp-controlArrow.fp-next {
 		-webkit-transform: translate3d(0px, 60px, 0px);
@@ -583,7 +583,7 @@
 		-moz-transform: translate3d(5px, 60px, 0px);
 		-ms-transform:translate3d(5px, 60px, 0px);
 		transform: translate3d(5px, 60px, 0px);
-	} 
+	}
 
 	</style>
 
@@ -617,7 +617,7 @@
 				loopHorizontal: false,
 				'css3': true,
 				menu: '.mainMenu',
-				anchors: ['Mainpage', 'Project', 'Location', 'PlanA', 'PlanB', 'Samapan', 'Contact'],
+				anchors: ['MainpageNav', 'ProjectNav', 'LocationNav', 'PlanANav', 'PlanBNav', 'SamapanNav', 'ContactNav'],
 
 		        afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
 		            var loadedSlide = $(this);
@@ -636,7 +636,7 @@
 		             	$('.fp-slidesNav').addClass('active');
 		            }
 
-					if(anchorLink == "Mainpage"){
+					if(anchorLink == "MainpageNav"){
 						$('.headTextcontainer').addClass("active");
 						$('#scrollDown').addClass("active");
 						$('.logo img').addClass("active");
@@ -711,7 +711,7 @@
 
 <div id="header">
 	<div class="logo">
-		<a href="#Mainpage"><img src="imgs/logo.png" /></a>
+		<a href="#MainpageNav"><img src="imgs/logo.png" /></a>
 	</div>
 	<div class="topMenu">
 		<ul id="menu">
@@ -722,12 +722,12 @@
 	</div>
 	<div class="bottomMenu">
 		<ul id="menu" class="mainMenu">
-			<li data-menuanchor="Project"><a href="#Project"><?= Lang::get('content.navProject') ?></a></li>
-			<li data-menuanchor="Location"><a href="#Location"><?= Lang::get('content.navLocation') ?></a></li>
-			<li data-menuanchor="PlanA"><a href="#PlanA"><?= Lang::get('content.navPlanA') ?></a></li>
-			<li data-menuanchor="PlanB"><a href="#PlanB"><?= Lang::get('content.navPlanB') ?></a></li>
-			<li data-menuanchor="Samapan"><a href="#Samapan"><?= Lang::get('content.navSamapan') ?></a></li>
-			<li data-menuanchor="Contact"><a href="#Contact"><?= Lang::get('content.navContact') ?></a></li>
+			<li data-menuanchor="ProjectNav"><a href="#ProjectNav"><?= Lang::get('content.navProject') ?></a></li>
+			<li data-menuanchor="LocationNav"><a href="#LocationNav"><?= Lang::get('content.navLocation') ?></a></li>
+			<li data-menuanchor="PlanANav"><a href="#PlanANav"><?= Lang::get('content.navPlanA') ?></a></li>
+			<li data-menuanchor="PlanBNav"><a href="#PlanBNav"><?= Lang::get('content.navPlanB') ?></a></li>
+			<li data-menuanchor="SamapanNav"><a href="#SamapanNav"><?= Lang::get('content.navSamapan') ?></a></li>
+			<li data-menuanchor="ContactNav"><a href="#ContactNav"><?= Lang::get('content.navContact') ?></a></li>
 		</ul>
 	</div>
 
@@ -742,7 +742,7 @@
 		</div>
 		<div id="scrollDown">
 			<p></p>
-			<a href="#Project" id="">
+			<a href="#ProjectNav" id="">
 				<div id="scrollDownImg"></div>
 			</a>
 		</div>
@@ -927,7 +927,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <p><?= Lang::get('content.formThankYouMsg') ?></p>
-				<button type="button" class="myBtn" data-dismiss="modal">OK</button>				
+				<button type="button" class="myBtn" data-dismiss="modal">OK</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
