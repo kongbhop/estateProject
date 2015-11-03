@@ -15,6 +15,8 @@
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
+
 	<style>
 
 	@font-face {
@@ -886,14 +888,10 @@
   			<form class="customerContact">
   				<div class="dateBox" style="width:100%; display:none;">
   					<label><?= Lang::get('content.formDate') ?></label><br>
-  					<!-- <div class="input-append date form_datetime">
+  					<div class="input-append date form_datetime">
 						    <input size="16" type="text" value="" name="appointment" aria-invalid="false" aria-required="true" aria-describedby="meetdatetime-error" readonly >
 						    <span class="add-on"><i class="icon-th"></i></span>
-						</div> -->
-						<div class="input-group date form_datetime" data-date="2012-12-21T15:25:00Z">
-                                                <input name="meetdatetime" class="form-control" id="meetdatetime" aria-invalid="false" aria-required="true" aria-describedby="meetdatetime-error" type="text" size="16" readonly=""><span class="help-block help-block-error" id="meetdatetime-error"></span>
-												
-                                            </div>
+						</div>
   				</div>
   				<label><?= Lang::get('content.formFirstname') ?></label> <br>
   				<input type="text" name="firstname"> <br>
@@ -914,6 +912,14 @@
 			<h2>
 				<?= Lang::get('content.contactDesp') ?>
 			</h2>
+
+			<h3>
+				<div class="telContact">
+					<i class="fa fa-phone"></i> 038 618 2442
+				</div>
+			</h3>
+
+
 		</div>
 
 	</div>
