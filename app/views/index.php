@@ -537,6 +537,54 @@
 	     transform:scale(1.05);
 	}
 
+	.fp-controlArrow.fp-prev {
+		-webkit-transform: translate3d(0px, 60px, 0px);
+		-moz-transform: translate3d(0px, 60px, 0px);
+		-ms-transform:translate3d(0px, 60px, 0px);
+		transform: translate3d(0px, 60px, 0px);
+		-webkit-transition: all 0.3s ease-in-out;
+	    -moz-transition: all 0.3s ease-in-out;
+	    -o-transition: all 0.3s ease-in-out;
+	    transition: all 0.3s ease-in-out;
+
+	}
+
+	.fp-controlArrow.fp-prev:hover {
+		-webkit-transition: all 0.3s ease-in-out;
+	    -moz-transition: all 0.3s ease-in-out;
+	    -o-transition: all 0.3s ease-in-out;
+	    transition: all 0.3s ease-in-out;
+	    opacity: 0.7;
+		-webkit-transform: translate3d(-5px, 60px, 0px);
+		-moz-transform: translate3d(-5px, 60px, 0px);
+		-ms-transform:translate3d(-5px, 60px, 0px);
+		transform: translate3d(-5px, 60px, 0px);
+	} 
+
+	.fp-controlArrow.fp-next {
+		-webkit-transform: translate3d(0px, 60px, 0px);
+		-moz-transform: translate3d(0px, 60px, 0px);
+		-ms-transform:translate3d(0px, 60px, 0px);
+		transform: translate3d(0px, 60px, 0px);
+		-webkit-transition: all 0.3s ease-in-out;
+	    -moz-transition: all 0.3s ease-in-out;
+	    -o-transition: all 0.3s ease-in-out;
+	    transition: all 0.3s ease-in-out;
+
+	}
+
+	.fp-controlArrow.fp-next:hover {
+		-webkit-transition: all 0.3s ease-in-out;
+	    -moz-transition: all 0.3s ease-in-out;
+	    -o-transition: all 0.3s ease-in-out;
+	    transition: all 0.3s ease-in-out;
+	    opacity: 0.7;
+		-webkit-transform: translate3d(5px, 60px, 0px);
+		-moz-transform: translate3d(5px, 60px, 0px);
+		-ms-transform:translate3d(5px, 60px, 0px);
+		transform: translate3d(5px, 60px, 0px);
+	} 
+
 	</style>
 
 	<!--[if IE]>
@@ -566,6 +614,7 @@
 			$('#fullpage').fullpage({
 				verticalCentered: false,
 				slidesNavigation: true,
+				loopHorizontal: false,
 				'css3': true,
 				menu: '.mainMenu',
 				anchors: ['Mainpage', 'Project', 'Location', 'PlanA', 'PlanB', 'Samapan', 'Contact'],
