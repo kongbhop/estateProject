@@ -34,7 +34,7 @@
 				    <td>{{ $each_customer['mobile'] }}</td>
 				    <td>{{ $each_customer['description'] }}</td>
 				    @if ($each_customer['appointment'])
-				    	<td>{{ date_create($each_customer['appointment'])->format('d M Y')}}</td>
+				    	<td>{{ date_create($each_customer['appointment'])->format('d F Y - H:i')}}</td>
 				    @else
 				    	<td>-</td>
 				    @endif
