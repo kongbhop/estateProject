@@ -19,6 +19,10 @@
 
 	<style>
 
+	a {
+		outline: 0px !important;
+	}
+
 	@font-face {
 	    font-family: ThaiSansLite;
 	    src: url('font/thaisanslite_r1-webfont.eot');
@@ -611,9 +615,6 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
-			if (navigator.userAgent.search("MSIE") >= 0) {
-                alert("Browser is Internet Explorer");
-            }
 			$('#fullpage').fullpage({
 				verticalCentered: false,
 				slidesNavigation: true,
