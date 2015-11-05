@@ -611,6 +611,9 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
+			if (navigator.userAgent.search("MSIE") >= 0) {
+                alert("Browser is Internet Explorer");
+            }
 			$('#fullpage').fullpage({
 				verticalCentered: false,
 				slidesNavigation: true,
