@@ -4,26 +4,28 @@
 
  <!-- Compiled and minified JavaScript -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
-				 
-<div>
-	<h4>เข้าสู่ระบบ</h4>
-</div>
 
-<div>
+<div class="container">
 	<div>
-	{{ Form::label('username', 'Username') }}
-	{{ Form::text('username', null) }}
+		<h4>เข้าสู่ระบบ</h4>
 	</div>
-</div>
 
-<div>
 	<div>
-		{{ Form::label('password', 'Password') }}
-		{{ Form::password('password', null) }}
+		<div>
+		{{ Form::label('username', 'Username') }}
+		{{ Form::text('username', null) }}
+		</div>
 	</div>
-</div>
 
-<button type="submit" name="action">
-	เข้าสู่ระบบ
-</button>
+	<div>
+		<div>
+			{{ Form::label('password', 'Password') }}
+			{{ Form::password('password', null) }}
+		</div>
+	</div>
+
+	<button class="waves-effect waves-light btn" type="submit" name="action">
+		เข้าสู่ระบบ
+	</button>
+</div>
 {{ Form::close() }}
