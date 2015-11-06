@@ -40,7 +40,7 @@
 
   <script type="text/javascript" src="js/snap.min.js"></script>
 
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css" media="screen" />
 
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -80,8 +80,83 @@
             </div>
 
             <!-- ============= INSERT CONTENT HERE ============== -->
-            
+
+
+
+            <!-- ============== Contact Section =============== -->
+            <div class="contactSection">
+              <div class="blankSpace"></div>
+              <div>
+                  <div class="textLeft sidePadding">
+                    <h1 class="sectionHeader"><?= Lang::get('content.contactTopic') ?></h1>
+                  </div>
+
+                  <div class="thankYou" style="display:none;">
+                    <h2>
+                      <?= Lang::get('content.formThankYouMsg') ?>
+                    </h2>
+                  </div>
+
+                  <div class="customerContactForm">
+                    <span><?= Lang::get('content.contactDesp') ?></span>
+
+                    <div class="contactToggle">
+                      <div class="radio">
+                        <input type="radio" id="contactRadio" name="contactType" checked/>
+                        <label for="contactRadio"><?= Lang::get('content.formContactButton') ?></label>
+                      </div>
+                      <div class="radio">
+                        <input type="radio" id="attendRadio" name="contactType" />
+                        <label for="attendRadio"><?= Lang::get('content.formAttendButton') ?></label>
+                      </div>
+
+                      <div class="clear"></div>
+                    </div>
+
+                    <form class="customerContact">
+                      <div class="dateBox" style="width:100%; display:none;">
+                        <label><?= Lang::get('content.formDate') ?></label><br>
+              					<div class="input-append date form_datetime">
+            						    <input size="16" type="text" value="" name="appointment" readonly>
+            						    <span class="add-on"><i class="icon-th"></i></span>
+            						</div>
+                      </div>
+                      <label><?= Lang::get('content.formFirstname') ?></label> <br>
+                      <input type="text" name="firstname"> <br>
+                      <label><?= Lang::get('content.formLastname') ?></label> <br>
+                      <input type="text" name="lastname"> <br>
+                      <label><?= Lang::get('content.formTel') ?></label> <br>
+                      <input type="text" name="mobile"> <br>
+                      <label><?= Lang::get('content.formEmail') ?></label> <br>
+                      <input type="text" name="email"> <br>
+                      <label><?= Lang::get('content.formDesp') ?></label> <br>
+                      <textarea rows="4" name="description"></textarea> <br>
+                      <input type="submit" value="<?= Lang::get('content.formSubmitButton') ?>">
+                    </form>
+                  </div>
+              </div>
+
+              <div class="telContact">
+                <i class="fa fa-phone"></i> 038 618 2442
+              </div>
+
+              <div class="center">
+                Samaphan Property Ltd. All right reserved.
+              </div>
+            </div>
         </div>
+
+        <div class="modal fade" id="thankYouModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p style="font-size: 2em"><?= Lang::get('content.formThankYouMsg') ?></p>
+        				<button type="button" class="myBtn" data-dismiss="modal" style="font-size: 1.5em">OK</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
 
 </body>
 </html>

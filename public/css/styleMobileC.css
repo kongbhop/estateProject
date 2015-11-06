@@ -40,6 +40,91 @@
   color: #eee;
   box-shadow: 0 0 15px #000; }
 
+.contactSection {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5em;
+  background-color: #EEE; }
+
+.blankSpace {
+  widows: 100%;
+  height: 30px; }
+
+.sectionHeader {
+  font-size: 2em; }
+
+input, textarea {
+  font-family: 'ThaiSansLite', Arial, Helvetica;
+  background-color: #BBB;
+  transition: all 0.5s ease;
+  border: none;
+  padding-left: 5px;
+  font-size: 1.2em;
+  width: 100%; }
+  input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+
+input[type=submit] {
+  width: 140px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1em; }
+
+.radio input[type="radio"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  clip: rect(0 0 0 0); }
+
+.radio input[type="radio"] + label::before {
+  content: url("../imgs/radio.png");
+  margin-right: 8px;
+  width: 15px;
+  height: 15px; }
+
+.radio input[type="radio"]:checked + label::before {
+  content: url("../imgs/radio-checked.png");
+  margin-right: 8px;
+  width: 15px;
+  height: 15px; }
+
+.telContact {
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 10px; }
+
+#thankYouModal .modal-body {
+  text-align: center;
+  border-radius: 0px;
+  background: #EEE; }
+  #thankYouModal .modal-body button {
+    font-family: 'ThaiSansLite', Arial, Helvetica;
+    background-color: #CCC;
+    transition: all 0.2s ease;
+    border: none;
+    padding-left: 5px;
+    font-size: 1.2em;
+    width: 30%; }
+    #thankYouModal .modal-body button:focus {
+      outline: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+    #thankYouModal .modal-body button:active {
+      background-color: #999;
+      color: #333; }
+
+.datetimepicker {
+  font-size: 1.4em !important;
+  font-family: 'ThaiSansNeue', Arial, Helvetica; }
+  .datetimepicker table {
+    width: 250px; }
+
+.hour {
+  padding: 2px; }
+
+.center {
+  text-align: center; }
+
 html, body {
   font-family: 'ThaiSansLite', Arial, Helvetica;
   margin: 0;
