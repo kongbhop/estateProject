@@ -21,20 +21,24 @@ class CustomerController extends BaseController {
 		$customerData->email = $data['email'];
 		$customerData->mobile = $data['mobile'];
 		$customerData->description = $data['description'];
-		$customerData->appointment = $data['appointment'];
+
+		if($data['appointment']){
+			$appointment_dt = date_create_from_format('d F Y - H:i', $data['appointment']);
+			$customerData->appointment = $appointment_dt;
+		}
+		else {
+			$customerData->appointment = null;
+		}
 		$customerData->save();
 
 		if($customerData->appointment){
-			$appointment_dt = date_create($data['appointment']);
-			$appointment_dt = $appointment_dt->format('d M y - hh:mm');
-			$customerData->appointment = $appointment_dt;
+			$customerData->appointment = $customerData->appointment->format('d F Y - H:i');
 		}
 		else {
 			$customerData->appointment = '-';
 		}
 
 		$subject = (string)('customer contact #'.$customerData->id);
-
 		Mail::send('customers.email', array('data'=> $customerData), function($message) use ($subject){
         	$message->to('private.park.test@gmail.com', 'AUTHOR - PRIVATE CONTACT')
         			->from('private.park.test@gmail.com', 'PRIVATE PARK')

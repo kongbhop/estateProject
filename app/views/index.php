@@ -19,6 +19,10 @@
 
 	<style>
 
+	a {
+		outline: 0px !important;
+	}
+
 	@font-face {
 	    font-family: ThaiSansLite;
 	    src: url('font/thaisanslite_r1-webfont.eot');

@@ -6,24 +6,22 @@
          
 
 {{ Form::open(array('url' => 'createUser', 'class' => ''))}}
+    <div class="container">
+        <h4 class="row">register</h4>
 
-    <h4>register</h4>
-
-    <div>
-        <div>
+        <div class="row">
             {{Form::label('username', 'Username')}}
             {{Form::text('username', null)}}
         </div>
-        <div>
+        <div class="row">
             {{Form::label('password', 'Password')}}
             {{Form::password('password', null)}}
         </div>
-    </div>
 
-    <div>
-        <button type="submit" name="action">
-            create
-        </button>
+        <div class="row">
+            <button class="waves-effect waves-light btn" type="submit" name="action">
+                create
+            </button>
+        </div>
     </div>
-
 {{ Form::close() }}
