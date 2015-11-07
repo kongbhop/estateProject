@@ -14,10 +14,7 @@
   <meta name="Resource-type" content="Document" />
 
 
-  <!-- <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" /> -->
 
-  <link rel="stylesheet" type="text/css" href="css/styleMobileM.css">
-  <link rel="stylesheet" type="text/css" href="css/styleMobileC.css">
 
   <!--[if IE]>
     <script type="text/javascript">
@@ -45,6 +42,19 @@
 
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" /> -->
+
+  <link rel="stylesheet" type="text/css" href="css/styleMobileM.css">
+  <link rel="stylesheet" type="text/css" href="css/styleMobileC.css">
+
+  <script>
+    $( document ).ready(function() {
+        mainTextH = $("#headTextContainer").height()
+        $("#headTextContainer").css("margin-top", "-" + ((mainTextH/2)-60) +"px");
+        console.log(mainTextH);
+    });
+  </script>
 
 
 </head>
@@ -84,6 +94,49 @@
 
 
             <!-- ============== Contact Section =============== -->
+            <div class="container full-height no-padding" id="mainPage">
+              <div class="container" id="headTextContainer">
+                <h1>PRIVATE PARK3</h1>
+                <p>Best of housing property in Rayong</p>
+              </div>
+            </div>  
+
+            <div class="container" id="concept">
+              <div class="row scroll">
+
+                <div class="col-md-12 inline nine-width pad-five">
+                  <div class="row" id="concept-1">
+                    <img src="imgs/sec0.jpg">
+                  </div>
+                  <div class="row concept-text">
+                    <h1>Our Concept</h1>
+                    <p class="warp">With the growing economy of the  industry, people flogging to rayong  province to theirerefqvewevERberabe rabaebababrraebaebreabraebrrababra rbaebrearbaebearbe  </p>
+                  </div>
+                </div>
+
+                <div class="col-md-12 inline nine-width pad-five">
+                  <div class="row" id="concept-1">
+                    <img src="imgs/sec0.jpg">
+                  </div>
+                  <div class="row concept-text">
+                    <h1>Our Concept</h1>
+                    <p class="warp">With the growing economy of the  industry, people flogging to rayong  province to theirerefqvewevERberabe rabaebababrraebaebreabraebrrababra rbaebrearbaebearbe  </p>
+                  </div>
+                </div>
+
+                <div class="col-md-12 inline nine-width pad-five">
+                  <div class="row" id="concept-1">
+                    <img src="imgs/sec0.jpg">
+                  </div>
+                  <div class="row concept-text">
+                    <h1>Our Concept</h1>
+                    <p class="warp">With the growing economy of the  industry, people flogging to rayong  province to theirerefqvewevERberabe rabaebababrraebaebreabraebrrababra rbaebrearbaebearbe  </p>
+                  </div>
+                </div>  
+
+              </div>
+            </div>
+
             <div class="contactSection">
               <div class="blankSpace"></div>
               <div>

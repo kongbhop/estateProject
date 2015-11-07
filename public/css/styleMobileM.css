@@ -15,12 +15,36 @@
 .full-height {
   height: 100%; }
 
+.full-width {
+  width: 100%; }
+
+.nine-width {
+  width: 90%; }
+
+.warp {
+  white-space: normal; }
+
+.concept-text {
+  text-align: center; }
+
+.pad-five {
+  padding: 0 5%; }
+
 #mainPage {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/sec0.jpg) center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+#concept {
+  background-color: #eee;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #concept img {
+    width: 100%; }
 
 #headTextContainer {
   top: 50%;
@@ -34,3 +58,14 @@
     letter-spacing: 0.05em; }
   #headTextContainer p {
     font-size: 1.5em; }
+
+.inline {
+  display: inline-block; }
+
+.scroll {
+  overflow: scroll;
+  white-space: nowrap; }
+
+.row.scroll {
+  white-space: nowrap;
+  margin: 10% 2%; }
