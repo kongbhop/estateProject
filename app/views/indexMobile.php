@@ -93,13 +93,12 @@
 
 
 
-            <!-- ============== Contact Section =============== -->
             <div class="container full-height no-padding" id="mainPage">
               <div class="container" id="headTextContainer">
                 <h1>PRIVATE PARK3</h1>
                 <p>Best of housing property in Rayong</p>
               </div>
-            </div>  
+            </div>
 
             <div class="container" id="concept">
               <div class="row scroll">
@@ -132,11 +131,36 @@
                     <h1>Our Concept</h1>
                     <p class="warp">With the growing economy of the  industry, people flogging to rayong  province to theirerefqvewevERberabe rabaebababrraebaebreabraebrrababra rbaebrearbaebearbe  </p>
                   </div>
-                </div>  
+                </div>
 
               </div>
             </div>
 
+
+            <!-- =================BAAN SAMAPAN SECTION=================== -->
+            <div class="baanSamapanSection">
+
+              <div class="horizonatalSection">
+                <img src="imgs/baansamapanlogo.png" alt="">
+                <p>
+                  <h2><?= Lang::get('content.baanSamapanTopic') ?></h2>
+
+                  <?= Lang::get('content.baanSamapanContent') ?>
+                </p>
+              </div>
+
+              <div class="horizonatalSection">
+                <img src="imgs/logo.png" alt="">
+                <p>
+                  <h2><?= Lang::get('content.privateParkTopic') ?></h2>
+
+                  <?= Lang::get('content.privateParkContent') ?>
+                </p>
+              </div>
+
+            </div>
+
+            <!-- ============== Contact Section =============== -->
             <div class="contactSection">
               <div class="blankSpace"></div>
               <div>
