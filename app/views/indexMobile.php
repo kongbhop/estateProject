@@ -24,11 +24,13 @@
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
   <script src="https://maps.googleapis.com/maps/api/js"></script>
 
   <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
   <script type="text/javascript" src="js/jquery.fullPage.js"></script>
   <script type="text/javascript" src="js/scriptMobile.js"></script>
+  <script type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
 
   <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
   <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
@@ -51,8 +53,9 @@
   <script>
     $( document ).ready(function() {
         mainTextH = $("#headTextContainer").height()
-        $("#headTextContainer").css("margin-top", "-" + ((mainTextH/2)-60) +"px");
+        $("#headTextContainer").css("margin-top", "-" + ((mainTextH/2)) +"px");
         console.log(mainTextH);
+
     });
   </script>
 
@@ -94,38 +97,43 @@
 
 
             <div class="container full-height no-padding" id="mainPage">
-              <div class="container" id="headTextContainer">
-                <h1>PRIVATE PARK3</h1>
-                <p>Best of housing property in Rayong</p>
+              <div class="container no-padding" id="headTextContainer">
+                <h1 class="nowrap">PRIVATE PARK3</h1>
+                <p class="nowrap">Best of housing property in Rayong</p>
               </div>
+              
+              <div class="triangle-down-left"></div>
             </div>
 
-            <div class="container" id="concept">
+            <div class="container no-padding" id="concept">
               <div class="row scroll">
 
-                <div class="col-md-12 inline nine-width pad-five">
+                <div class="col-md-12 inline nine-width pad-five valign-top">
                   <div class="row" id="concept-1">
-                    <img src="imgs/sec0.jpg">
+                    <div class="sixvw-height" id="concept-img-1">
+                    </div>
                   </div>
                   <div class="row concept-text">
                     <h1>Our Concept</h1>
-                    <p class="warp">With the growing economy of the  industry, people flogging to rayong  province to theirerefqvewevERberabe rabaebababrraebaebreabraebrrababra rbaebrearbaebearbe  </p>
+                    <p class="warp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam sit amet orci consectetur gravida. Aliquam viverra, nisl nec tristique blandit, urna nisl pellentesque tortor, vitae pellentesque magna eros ut ex. Nam rutrum lectus dui, ut porttitor risus hendrerit sed. Integer augue orci  </p>
                   </div>
                 </div>
 
-                <div class="col-md-12 inline nine-width pad-five">
-                  <div class="row" id="concept-1">
-                    <img src="imgs/sec0.jpg">
+                <div class="col-md-12 inline nine-width pad-five valign-top">
+                  <div class="row" id="concept-2">
+                    <div class="sixvw-height" id="concept-img-2">
+                    </div>
                   </div>
                   <div class="row concept-text">
                     <h1>Our Concept</h1>
-                    <p class="warp">With the growing economy of the  industry, people flogging to rayong  province to theirerefqvewevERberabe rabaebababrraebaebreabraebrrababra rbaebrearbaebearbe  </p>
+                    <p class="warp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam sit amet orci consectetur gravida. Aliquam viverra, nisl nec tristique blandit, urna nisl pellentesque tortor, vitae pellentesque magna eros ut ex. Nam rutrum lectus dui, ut porttitor risus hendrerit sed. Integer augue orci</p>
                   </div>
                 </div>
 
-                <div class="col-md-12 inline nine-width pad-five">
-                  <div class="row" id="concept-1">
-                    <img src="imgs/sec0.jpg">
+                <div class="col-md-12 inline nine-width pad-five valign-top">
+                  <div class="row" id="concept-3">
+                    <div class="sixvw-height" id="concept-img-3">
+                    </div>
                   </div>
                   <div class="row concept-text">
                     <h1>Our Concept</h1>
