@@ -51,7 +51,7 @@
   <script>
     $( document ).ready(function() {
         mainTextH = $("#headTextContainer").height()
-        $("#headTextContainer").css("margin-top", "-" + ((mainTextH/2)-60) +"px");
+        $("#headTextContainer").css("margin-top", "-" + ((mainTextH/2)-30) +"px");
         console.log(mainTextH);
     });
   </script>
@@ -95,18 +95,20 @@
 
             <!-- ============== Contact Section =============== -->
             <div class="container full-height no-padding" id="mainPage">
-              <div class="container" id="headTextContainer">
-                <h1>PRIVATE PARK3</h1>
-                <p>Best of housing property in Rayong</p>
+              <div class="container no-padding" id="headTextContainer">
+                <h1 class="nowrap">PRIVATE PARK3</h1>
+                <p class="nowrap">Best of housing property in Rayong</p>
               </div>
+              <div class="triangle-down-left"></div>
             </div>  
 
-            <div class="container" id="concept">
+            <div class="container no-padding" id="concept">
               <div class="row scroll">
 
                 <div class="col-md-12 inline nine-width pad-five">
                   <div class="row" id="concept-1">
-                    <img src="imgs/sec0.jpg">
+                    <div class="sixvw-height" id="concept-img-1">
+                    </div>
                   </div>
                   <div class="row concept-text">
                     <h1>Our Concept</h1>
@@ -115,8 +117,9 @@
                 </div>
 
                 <div class="col-md-12 inline nine-width pad-five">
-                  <div class="row" id="concept-1">
-                    <img src="imgs/sec0.jpg">
+                  <div class="row" id="concept-2">
+                    <div class="sixvw-height" id="concept-img-2">
+                    </div>
                   </div>
                   <div class="row concept-text">
                     <h1>Our Concept</h1>
@@ -125,8 +128,9 @@
                 </div>
 
                 <div class="col-md-12 inline nine-width pad-five">
-                  <div class="row" id="concept-1">
-                    <img src="imgs/sec0.jpg">
+                  <div class="row" id="concept-3">
+                    <div class="sixvw-height" id="concept-img-3">
+                    </div>
                   </div>
                   <div class="row concept-text">
                     <h1>Our Concept</h1>
