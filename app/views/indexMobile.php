@@ -49,39 +49,46 @@
 
 </head>
 <body>
-        <div class="snap-drawers">
-            <div class="snap-drawer snap-drawer-left">
-                <div>
-                    <ul>
-                      <li data-menuanchor="Project"><a href="#Project"><?= Lang::get('content.navProject') ?></a></li>
-                      <li data-menuanchor="Location"><a href="#Location"><?= Lang::get('content.navLocation') ?></a></li>
-                      <li data-menuanchor="PlanA"><a href="#PlanA"><?= Lang::get('content.navPlanA') ?></a></li>
-                      <li data-menuanchor="PlanB"><a href="#PlanB"><?= Lang::get('content.navPlanB') ?></a></li>
-                      <li data-menuanchor="Samapan"><a href="#Samapan"><?= Lang::get('content.navSamapan') ?></a></li>
-                      <li data-menuanchor="Contact"><a href="#Contact"><?= Lang::get('content.navContact') ?></a></li>
-                      <li>
-                        <span class="<?= (Session::get('lang') == 'th')? 'active':'' ?>"><a href="th"><img src="imgs/th_icon.png" alt=""> ไทย</a></span>
-                         |
-                        <span class="<?= (Session::get('lang') == 'en')? 'active':'' ?>"><a href="en"><img src="imgs/us_icon.png" alt=""> ENGLISH</a></span>
-                      </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="snap-drawer snap-drawer-right"></div>
-        </div>
+  <div class="snap-drawers">
+    <div class="snap-drawer snap-drawer-left">
+      <div>
+        <ul>
+          <li data-menuanchor="Project"><a href="#Project"><?= Lang::get('content.navProject') ?></a></li>
+          <li data-menuanchor="Location"><a href="#Location"><?= Lang::get('content.navLocation') ?></a></li>
+          <li data-menuanchor="PlanA"><a href="#PlanA"><?= Lang::get('content.navPlanA') ?></a></li>
+          <li data-menuanchor="PlanB"><a href="#PlanB"><?= Lang::get('content.navPlanB') ?></a></li>
+          <li data-menuanchor="Samapan"><a href="#Samapan"><?= Lang::get('content.navSamapan') ?></a></li>
+          <li data-menuanchor="Contact"><a href="#Contact"><?= Lang::get('content.navContact') ?></a></li>
+          <li>
+            <span class="<?= (Session::get('lang') == 'th')? 'active':'' ?>"><a href="th"><img src="imgs/th_icon.png" alt=""> ไทย</a></span>
+            |
+            <span class="<?= (Session::get('lang') == 'en')? 'active':'' ?>"><a href="en"><img src="imgs/us_icon.png" alt=""> ENGLISH</a></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="snap-drawer snap-drawer-right"></div>
+  </div>
 
-        <div id="content" class="snap-content">
-            <div id="toolbar">
-              <div class="logo">
-                <a href="#Mainpage"><img src="imgs/logo.png" /></a>
-                <a href="#" id="open-right"><i class="fa fa-bars"></i></a>
-                <a data-menuanchor="Location"  href="#Location" id="open-location"><i class="fa fa-map-marker"></i></a>
-              </div>
-            </div>
+  <div id="content" class="snap-content">
+    <div id="toolbar">
+      <div class="logo">
+        <a href="#Mainpage"><img src="imgs/logo.png" /></a>
+        <a href="#" id="open-right"><i class="fa fa-bars"></i></a>
+        <a data-menuanchor="Location"  href="#Location" id="open-location"><i class="fa fa-map-marker"></i></a>
+      </div>
+    </div>
 
-            <!-- ============= INSERT CONTENT HERE ============== -->
-            
-        </div>
+    <!-- ============= INSERT CONTENT HERE ============== -->
+    <div class="container full-height no-padding" id="mainPage">
+      <div class="container" id="headTextContainer">
+        <h1>PRIVATE PARK3</h1>
+        <p>Best of housing property in Rayong</p>
+      </div>
+    </div>
+    
+
+  </div>
 
 </body>
 </html>
