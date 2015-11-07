@@ -44,6 +44,10 @@
 	padding: 0 5%;
 }
 
+.valign-top {
+	vertical-align: top;
+}
+
 #mainPage {
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../imgs/sec0.jpg) center center; 
 	-webkit-background-size: cover;
@@ -61,8 +65,11 @@
 
 .concept-text {
 	padding: 0 1vw;
+	h1 {
+		margin: 0.75em 0 0 0;
+	}
 	p {
-		font-size: 1.25em;
+		font-size: 1.4em;
 	}
 }
 
