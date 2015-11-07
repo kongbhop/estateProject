@@ -21,19 +21,20 @@ $(document).ready(function(){
 	});
 
   $(".customerContact").submit(function(){
-    event.preventDefault();
-    // console.log($(this).serializeArray());
-    $.ajax(
-    {
-      url: 'contact',
-      type: "POST",
-      data: $(this).serializeArray(),
-      success: function(data, textStatus,jqXHR){
-        $(".customerContactForm").slideUp();
-        $(".thankYou").slideDown();
-      }
-    });
-  });
+		event.preventDefault();
+		// console.log($(this).serializeArray());
+		$.ajax(
+		{
+			url: 'contact',
+			type: "POST",
+			data: $(this).serializeArray(),
+			success: function(data, textStatus,jqXHR){
+				$("input[type='text']").val("");
+				$("textarea").val("");
+				$("#thankYouModal").modal("show");
+			}
+		});
+	});
 
   $(".form_datetime").datetimepicker({
        format: "dd MM yyyy - hh:ii",
