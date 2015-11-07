@@ -43,7 +43,8 @@ $(document).ready(function(){
 
    var snapper = new Snap({
     element: document.getElementById('content'),
-    disable: 'left'
+    disable: 'left',
+    dragger: '.open-right'
   });
 
 
