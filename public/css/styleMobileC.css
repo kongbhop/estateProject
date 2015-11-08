@@ -65,6 +65,45 @@
   width: 100vw;
   display: inline-block; }
 
+.planBSection {
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+  position: relative; }
+  .planBSection img {
+    height: 50vh;
+    z-index: 0; }
+  .planBSection .horizonatalSection {
+    margin-top: 0px;
+    top: 0px;
+    padding: 0px;
+    overflow: hidden; }
+    .planBSection .horizonatalSection .textSection {
+      padding-top: 1em;
+      padding-left: 10px;
+      padding-right: 10px; }
+  .planBSection .scrollContent {
+    white-space: nowrap;
+    overflow-y: scroll;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .planBSection .overlayContent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .planBSection .triangle-down-right {
+    top: 50%;
+    z-index: 100; }
+  .planBSection .msgBox {
+    background-color: #EDEDED;
+    height: 43%;
+    top: 50%;
+    position: relative;
+    z-index: 100; }
+
 .blankSpace {
   widows: 100%;
   height: 30px; }
@@ -143,6 +182,9 @@ input[type=submit] {
 
 .center {
   text-align: center; }
+
+.relativePos {
+  position: relative; }
 
 html, body {
   font-family: 'ThaiSansLite', Arial, Helvetica;

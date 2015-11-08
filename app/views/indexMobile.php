@@ -101,7 +101,7 @@
                 <h1 class="nowrap">PRIVATE PARK3</h1>
                 <p class="nowrap">Best of housing property in Rayong</p>
               </div>
-              
+
               <div class="triangle-down-left"></div>
             </div>
 
@@ -144,8 +144,39 @@
               </div>
             </div>
 
+            <!-- =============== Plan B Section ============== -->
+            <div class="planBSection">
 
-            <!-- =================BAAN SAMAPAN SECTION=================== -->
+              <!-- Overlay box section -->
+              <div class="overlayContent">
+                <div class="triangle-down-right relativePos"></div>
+                <div class="msgBox"></div>
+              </div>
+
+              <div class="scrollContent">
+                <div class="horizonatalSection">
+                  <img src="imgs/houseB.jpg" alt="">
+                  <div class="textSection">
+                    <h2><?= Lang::get('content.baanSamapanTopic') ?></h2>
+
+                    <?= Lang::get('content.baanSamapanContent') ?>
+                  </div>
+                </div>
+
+                <div class="horizonatalSection">
+                  <img src="imgs/logo.png" alt="">
+                  <div class="textSection">
+                    <h2><?= Lang::get('content.privateParkTopic') ?></h2>
+
+                    <?= Lang::get('content.privateParkContent') ?>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <!-- ================= BAAN SAMAPAN SECTION =================== -->
             <div class="baanSamapanSection">
 
               <div class="horizonatalSection">
