@@ -59,7 +59,7 @@
     width: 40vw; }
 
 .horizonatalSection {
-  padding: 15px;
+  padding: 15px 30px;
   margin-top: 8vh;
   white-space: normal;
   width: 100vw;
@@ -185,6 +185,16 @@ input[type=submit] {
 
 .relativePos {
   position: relative; }
+
+.swiper-container {
+  width: 100%;
+  height: 100%; }
+
+.mobileNextBtn {
+  background-image: url("../imgs/rightM.png") !important; }
+
+.mobilePrevBtn {
+  background-image: url("../imgs/leftM.png") !important; }
 
 html, body {
   font-family: 'ThaiSansLite', Arial, Helvetica;

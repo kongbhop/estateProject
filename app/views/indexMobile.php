@@ -39,16 +39,18 @@
 
   <script type="text/javascript" src="js/snap.min.js"></script>
 
-<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css" media="screen" />
 
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.0/js/swiper.jquery.min.js"></script>
 
     <!-- <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" /> -->
 
   <link rel="stylesheet" type="text/css" href="css/styleMobileM.css">
   <link rel="stylesheet" type="text/css" href="css/styleMobileC.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.0/css/swiper.min.css">
 
   <script>
     $( document ).ready(function() {
@@ -179,7 +181,7 @@
             <!-- ================= BAAN SAMAPAN SECTION =================== -->
             <div class="baanSamapanSection">
 
-              <div class="horizonatalSection">
+              <!-- <div class="horizonatalSection">
                 <img src="imgs/baansamapanlogo.png" alt="">
                 <p>
                   <h2><?= Lang::get('content.baanSamapanTopic') ?></h2>
@@ -195,6 +197,41 @@
 
                   <?= Lang::get('content.privateParkContent') ?>
                 </p>
+              </div> -->
+
+              <!-- Slider main container -->
+              <div class="swiper-container">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide horizonatalSection">
+                        <img src="imgs/baansamapanlogo.png" alt="">
+                        <p>
+                          <h2><?= Lang::get('content.baanSamapanTopic') ?></h2>
+
+                          <?= Lang::get('content.baanSamapanContent') ?>
+                        </p>
+                      </div>
+                      <div class="swiper-slide horizonatalSection">
+                        <img src="imgs/logo.png" alt="">
+                        <p>
+                          <h2><?= Lang::get('content.privateParkTopic') ?></h2>
+
+                          <?= Lang::get('content.privateParkContent') ?>
+                        </p>
+                      </div>
+                      <!-- <div class="swiper-slide">Slide 3</div> -->
+                      <!-- ... -->
+                  </div>
+                  <!-- If we need pagination -->
+                  <!-- <div class="swiper-pagination"></div> -->
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev mobilePrevBtn"></div>
+                  <div class="swiper-button-next mobileNextBtn"></div>
+
+                  <!-- If we need scrollbar -->
+                  <div class="swiper-scrollbar"></div>
               </div>
 
             </div>
