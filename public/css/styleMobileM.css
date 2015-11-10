@@ -51,34 +51,43 @@
   background-size: cover; }
 
 .concept-text {
-  padding: 0 1vw; }
+  padding: 0 4vw; }
   .concept-text h1 {
-    margin: 0.75em 0 0 0; }
+    margin: 0.8em 0 0 0; }
   .concept-text p {
-    font-size: 1.4em; }
+    font-size: 1.2em;
+    text-align: left; }
+
+.concept-slide {
+  padding: 2vh 2vw; }
+
+#head-concept p {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0 0; }
 
 #concept-img-1 {
-  background-image: url(../imgs/sec1-1.jpg);
+  background: url(../imgs/sec1-1.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 #concept-img-2 {
-  background-image: url(../imgs/sec1-2.jpg);
+  background: url(../imgs/sec1-2.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 #concept-img-3 {
-  background-image: url(../imgs/sec1-3.jpg);
+  background: url(../imgs/sec1-3.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
-.sixvw-height {
+.concept-img {
   height: 60vw; }
 
 #headTextContainer {

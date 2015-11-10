@@ -108,7 +108,49 @@
             </div>
 
             <div class="container no-padding" id="concept">
-              <div class="row scroll">
+              <div class="row" id="head-concept">
+                <p>PRIVATE PARK</p>
+              </div>
+              <div class="swiper-container">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide concept-slide ">
+                        <div class="concept-img" id="concept-img-1">
+                        </div>
+                        <div class="row concept-text">
+                          <h1>Our Concept</h1>
+                          <p class="warp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam sit amet orci consectetur gravida. Aliquam viverra, nisl nec tristique blandit, urna nisl pellentesque tortor, vitae pellentesque magna eros ut ex. Nam rutrum lectus dui, ut porttitor risus hendrerit sed. Integer augue orci  </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide concept-slide">
+                        <div class="concept-img" id="concept-img-2">
+                        </div>
+                        <div class="row concept-text">
+                          <h1>Our Concept</h1>
+                          <p class="warp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam sit amet orci consectetur gravida. Aliquam viverra, nisl nec tristique blandit, urna nisl pellentesque tortor, vitae pellentesque magna eros ut ex. Nam rutrum lectus dui, ut porttitor risus hendrerit sed. Integer augue orci  </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide concept-slide">
+                        <div class="concept-img" id="concept-img-3">
+                        </div>
+                        <div class="row concept-text">
+                          <h1>Our Concept</h1>
+                          <p class="warp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam sit amet orci consectetur gravida. Aliquam viverra, nisl nec tristique blandit, urna nisl pellentesque tortor, vitae pellentesque magna eros ut ex. Nam rutrum lectus dui, ut porttitor risus hendrerit sed. Integer augue orci  </p>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <!-- <div class="swiper-pagination"></div> -->
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev mobilePrevBtn"></div>
+                  <div class="swiper-button-next mobileNextBtn"></div>
+
+                  <!-- If we need scrollbar -->
+                  <div class="swiper-scrollbar"></div>
+              </div>
+              <!-- <div class="row scroll">
 
                 <div class="col-md-12 inline nine-width pad-five valign-top">
                   <div class="row" id="concept-1">
@@ -143,7 +185,7 @@
                   </div>
                 </div>
 
-              </div>
+              </div> -->
             </div>
 
             <!-- =============== Plan B Section ============== -->
