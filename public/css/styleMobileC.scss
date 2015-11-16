@@ -90,18 +90,27 @@
   width: 100%;
   text-align: center;
   position: relative;
-  img {
-    // width: 100vw;
-    height: 50vh;
-    z-index: 0;
-  }
+  font-size: 1.1em;
+  // img {
+  //   // width: 100vw;
+  //   height: 50vh;
+  //   z-index: 0;
+  // }
   .horizonatalSection {
     margin-top: 0px;
     top:0px;
     padding: 0px;
     overflow: hidden;
+    .imgSection {
+      height: 50vh;
+      z-index: 0;
+      background-position: center center;
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+    }
+
     .textSection{
-      padding-top: 1em;
+      padding-top: 0.5em;
       padding-left: 10px;
       padding-right: 10px;
     }
@@ -348,7 +357,8 @@ html, body {
 
 /* Show the "Drag" background in the demo */
 #content {
-	background: #BFC7D8 url(drag.png) center 75% no-repeat;
+	// background: #BFC7D8 url(drag.png) center 75% no-repeat;
+  background-color: #EEE;
 }
 
 

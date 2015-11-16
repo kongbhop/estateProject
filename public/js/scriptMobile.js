@@ -56,8 +56,8 @@ $(document).ready(function(){
      pagination: '.swiper-pagination',
 
      // Navigation arrows
-     nextButton: '.swiper-button-next',
-     prevButton: '.swiper-button-prev',
+     nextButton: '.baan-swiper>.swiper-button-next',
+     prevButton: '.baan-swiper>.swiper-button-prev',
 
      // And if we need scrollbar
      scrollbar: '.swiper-scrollbar',
@@ -72,8 +72,24 @@ $(document).ready(function(){
      pagination: '.swiper-pagination',
 
      // Navigation arrows
-     nextButton: '.swiper-button-next',
-     prevButton: '.swiper-button-prev',
+     nextButton: '.concept-swiper>.swiper-button-next',
+     prevButton: '.concept-swiper>.swiper-button-prev',
+
+     // And if we need scrollbar
+     scrollbar: '.swiper-scrollbar',
+   });
+
+  var baanSamapanSlider = new Swiper ('.planb-swiper', {
+     // Optional parameters
+     direction: 'horizontal',
+     loop: true,
+
+     // If we need pagination
+     pagination: '.swiper-pagination',
+
+     // Navigation arrows
+     nextButton: '.planb-swiper>.swiper-button-next',
+     prevButton: '.planb-swiper>.swiper-button-prev',
 
      // And if we need scrollbar
      scrollbar: '.swiper-scrollbar',

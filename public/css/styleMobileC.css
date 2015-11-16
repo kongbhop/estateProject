@@ -69,17 +69,21 @@
   height: 80vh;
   width: 100%;
   text-align: center;
-  position: relative; }
-  .planBSection img {
-    height: 50vh;
-    z-index: 0; }
+  position: relative;
+  font-size: 1.1em; }
   .planBSection .horizonatalSection {
     margin-top: 0px;
     top: 0px;
     padding: 0px;
     overflow: hidden; }
+    .planBSection .horizonatalSection .imgSection {
+      height: 50vh;
+      z-index: 0;
+      background-position: center center;
+      background-size: auto 100%;
+      background-repeat: no-repeat; }
     .planBSection .horizonatalSection .textSection {
-      padding-top: 1em;
+      padding-top: 0.5em;
       padding-left: 10px;
       padding-right: 10px; }
   .planBSection .scrollContent {
@@ -274,7 +278,7 @@ html, body {
 
 /* Show the "Drag" background in the demo */
 #content {
-  background: #BFC7D8 url(drag.png) center 75% no-repeat; }
+  background-color: #EEE; }
 
 /* Show the translucent white "Toggle" boxes in the demo */
 .toggler {

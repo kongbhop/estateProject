@@ -148,7 +148,7 @@
                   <div class="swiper-button-next mobileNextBtn"></div>
 
                   <!-- If we need scrollbar -->
-                  <div class="swiper-scrollbar"></div>
+                  <!-- <div class="swiper-scrollbar"></div> -->
               </div>
               <!-- <div class="row scroll">
 
@@ -192,29 +192,65 @@
             <div class="planBSection">
 
               <!-- Overlay box section -->
-              <div class="overlayContent">
+              <!-- <div class="overlayContent">
                 <div class="triangle-down-right relativePos"></div>
                 <div class="msgBox"></div>
-              </div>
+              </div> -->
 
-              <div class="scrollContent">
+              <!-- <div class="scrollContent">
                 <div class="horizonatalSection">
-                  <img src="imgs/houseB.jpg" alt="">
-                  <div class="textSection">
-                    <h2><?= Lang::get('content.baanSamapanTopic') ?></h2>
 
-                    <?= Lang::get('content.baanSamapanContent') ?>
-                  </div>
                 </div>
 
                 <div class="horizonatalSection">
-                  <img src="imgs/logo.png" alt="">
-                  <div class="textSection">
-                    <h2><?= Lang::get('content.privateParkTopic') ?></h2>
 
-                    <?= Lang::get('content.privateParkContent') ?>
-                  </div>
                 </div>
+              </div> -->
+
+              <!-- Slider main container -->
+              <div class="swiper-container planb-swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide horizonatalSection">
+                        <div class="imgSection" style="background-image:url('imgs/houseB.jpg')"></div>
+                        <!-- <img src="imgs/houseB.jpg" alt=""> -->
+                        <div class="textSection">
+                          <h2><?= Lang::get('content.baanSamapanTopic') ?></h2>
+
+                          <?= Lang::get('content.baanSamapanContent') ?>
+                        </div>
+                      </div>
+                      <div class="swiper-slide horizonatalSection">
+                        <div class="imgSection" style="background-image:url('imgs/B1.jpg')"></div>
+                        <!-- <img src="imgs/B1.jpg" alt=""> -->
+                        <div class="textSection">
+                          <h2><?= Lang::get('content.planBDownTopic') ?></h2>
+
+                          <?= Lang::get('content.planBDownContent') ?>
+                        </div>
+                      </div>
+                      <div class="swiper-slide horizonatalSection">
+                        <div class="imgSection" style="background-image:url('imgs/B2.jpg')"></div>
+                        <!-- <img src="imgs/B2.jpg" alt=""> -->
+                        <div class="textSection">
+                          <h2><?= Lang::get('content.planBUpTopic') ?></h2>
+
+                          <?= Lang::get('content.planBUpContent') ?>
+                        </div>
+                      </div>
+                      <!-- <div class="swiper-slide">Slide 3</div> -->
+                      <!-- ... -->
+                  </div>
+                  <!-- If we need pagination -->
+                  <!-- <div class="swiper-pagination"></div> -->
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev mobilePrevBtn"></div>
+                  <div class="swiper-button-next mobileNextBtn"></div>
+
+                  <!-- If we need scrollbar -->
+                  <!-- <div class="swiper-scrollbar"></div> -->
               </div>
 
             </div>
@@ -222,24 +258,6 @@
 
             <!-- ================= BAAN SAMAPAN SECTION =================== -->
             <div class="baanSamapanSection">
-
-              <!-- <div class="horizonatalSection">
-                <img src="imgs/baansamapanlogo.png" alt="">
-                <p>
-                  <h2><?= Lang::get('content.baanSamapanTopic') ?></h2>
-
-                  <?= Lang::get('content.baanSamapanContent') ?>
-                </p>
-              </div>
-
-              <div class="horizonatalSection">
-                <img src="imgs/logo.png" alt="">
-                <p>
-                  <h2><?= Lang::get('content.privateParkTopic') ?></h2>
-
-                  <?= Lang::get('content.privateParkContent') ?>
-                </p>
-              </div> -->
 
               <!-- Slider main container -->
               <div class="swiper-container baan-swiper">
@@ -280,7 +298,6 @@
 
             <!-- ============== Contact Section =============== -->
             <div class="contactSection">
-              <div class="blankSpace"></div>
               <div>
                   <div class="textLeft sidePadding">
                     <h1 class="sectionHeader"><?= Lang::get('content.contactTopic') ?></h1>
