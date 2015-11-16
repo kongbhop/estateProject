@@ -111,7 +111,7 @@
               <div class="row" id="head-concept">
                 <p>PRIVATE PARK</p>
               </div>
-              <div class="swiper-container">
+              <div class="swiper-container concept-swiper">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper">
                       <!-- Slides -->
@@ -242,7 +242,7 @@
               </div> -->
 
               <!-- Slider main container -->
-              <div class="swiper-container">
+              <div class="swiper-container baan-swiper">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper">
                       <!-- Slides -->

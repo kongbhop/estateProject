@@ -47,7 +47,7 @@ $(document).ready(function(){
     dragger: '.open-right'
   });
 
-  var baanSamapanSlider = new Swiper ('.swiper-container', {
+  var baanSamapanSlider = new Swiper ('.baan-swiper', {
      // Optional parameters
      direction: 'horizontal',
      loop: true,
@@ -61,7 +61,23 @@ $(document).ready(function(){
 
      // And if we need scrollbar
      scrollbar: '.swiper-scrollbar',
-   })
+   });
+
+  var baanSamapanSlider = new Swiper ('.concept-swiper', {
+     // Optional parameters
+     direction: 'horizontal',
+     loop: true,
+
+     // If we need pagination
+     pagination: '.swiper-pagination',
+
+     // Navigation arrows
+     nextButton: '.swiper-button-next',
+     prevButton: '.swiper-button-prev',
+
+     // And if we need scrollbar
+     scrollbar: '.swiper-scrollbar',
+   });
 
 
 /* Prevent Safari opening links when viewing as a Mobile App */
