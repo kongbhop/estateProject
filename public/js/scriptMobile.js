@@ -50,7 +50,7 @@ $(document).ready(function(){
   var baanSamapanSlider = new Swiper ('.baan-swiper', {
      // Optional parameters
      direction: 'horizontal',
-     loop: true,
+     loop: false,
 
      // If we need pagination
      pagination: '.swiper-pagination',
@@ -66,7 +66,7 @@ $(document).ready(function(){
   var baanSamapanSlider = new Swiper ('.concept-swiper', {
      // Optional parameters
      direction: 'horizontal',
-     loop: true,
+     loop: false,
 
      // If we need pagination
      pagination: '.swiper-pagination',
@@ -82,7 +82,7 @@ $(document).ready(function(){
   var baanSamapanSlider = new Swiper ('.planb-swiper', {
      // Optional parameters
      direction: 'horizontal',
-     loop: true,
+     loop: false,
 
      // If we need pagination
      pagination: '.swiper-pagination',
@@ -90,6 +90,22 @@ $(document).ready(function(){
      // Navigation arrows
      nextButton: '.planb-swiper>.swiper-button-next',
      prevButton: '.planb-swiper>.swiper-button-prev',
+
+     // And if we need scrollbar
+     scrollbar: '.swiper-scrollbar',
+   });
+
+  var baanSamapanSlider = new Swiper ('.plana-swiper', {
+     // Optional parameters
+     direction: 'horizontal',
+     loop: false,
+
+     // If we need pagination
+     pagination: '.swiper-pagination',
+
+     // Navigation arrows
+     nextButton: '.plana-swiper>.swiper-button-next',
+     prevButton: '.plana-swiper>.swiper-button-prev',
 
      // And if we need scrollbar
      scrollbar: '.swiper-scrollbar',

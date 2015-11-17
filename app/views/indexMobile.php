@@ -188,25 +188,51 @@
               </div> -->
             </div>
 
+            <!-- =============== Plan A Section ============== -->
+            <div class="planASection">
+              <!-- Slider main container -->
+              <div class="swiper-container plana-swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide horizonatalSection">
+                        <div class="imgSection" style="background-image:url('imgs/houseA.jpg')"></div>
+                        <!-- <img src="imgs/houseB.jpg" alt=""> -->
+                        <div class="textSection">
+                          <h2><?= Lang::get('content.planATopic') ?></h2>
+
+                          <?= Lang::get('content.planAContent') ?>
+                        </div>
+                      </div>
+                      <div class="swiper-slide horizonatalSection">
+                        <div class="imgSection" style="background-image:url('imgs/A1.jpg')"></div>
+                        <!-- <img src="imgs/B1.jpg" alt=""> -->
+                        <div class="textSection">
+                          <h2><?= Lang::get('content.planADownTopic') ?></h2>
+
+                          <?= Lang::get('content.planADownContent') ?>
+                        </div>
+                      </div>
+                      <div class="swiper-slide horizonatalSection">
+                        <div class="imgSection" style="background-image:url('imgs/A2.jpg')"></div>
+                        <!-- <img src="imgs/B2.jpg" alt=""> -->
+                        <div class="textSection">
+                          <h2><?= Lang::get('content.planAUpTopic') ?></h2>
+
+                          <?= Lang::get('content.planAUpContent') ?>
+                        </div>
+                      </div>
+                  </div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev mobilePrevBtn"></div>
+                  <div class="swiper-button-next mobileNextBtn"></div>
+              </div>
+
+            </div>
+
             <!-- =============== Plan B Section ============== -->
             <div class="planBSection">
-
-              <!-- Overlay box section -->
-              <!-- <div class="overlayContent">
-                <div class="triangle-down-right relativePos"></div>
-                <div class="msgBox"></div>
-              </div> -->
-
-              <!-- <div class="scrollContent">
-                <div class="horizonatalSection">
-
-                </div>
-
-                <div class="horizonatalSection">
-
-                </div>
-              </div> -->
-
               <!-- Slider main container -->
               <div class="swiper-container planb-swiper">
                   <!-- Additional required wrapper -->
@@ -216,9 +242,9 @@
                         <div class="imgSection" style="background-image:url('imgs/houseB.jpg')"></div>
                         <!-- <img src="imgs/houseB.jpg" alt=""> -->
                         <div class="textSection">
-                          <h2><?= Lang::get('content.baanSamapanTopic') ?></h2>
+                          <h2><?= Lang::get('content.planBTopic') ?></h2>
 
-                          <?= Lang::get('content.baanSamapanContent') ?>
+                          <?= Lang::get('content.planBContent') ?>
                         </div>
                       </div>
                       <div class="swiper-slide horizonatalSection">
@@ -239,18 +265,11 @@
                           <?= Lang::get('content.planBUpContent') ?>
                         </div>
                       </div>
-                      <!-- <div class="swiper-slide">Slide 3</div> -->
-                      <!-- ... -->
                   </div>
-                  <!-- If we need pagination -->
-                  <!-- <div class="swiper-pagination"></div> -->
 
                   <!-- If we need navigation buttons -->
                   <div class="swiper-button-prev mobilePrevBtn"></div>
                   <div class="swiper-button-next mobileNextBtn"></div>
-
-                  <!-- If we need scrollbar -->
-                  <!-- <div class="swiper-scrollbar"></div> -->
               </div>
 
             </div>

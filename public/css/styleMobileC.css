@@ -65,43 +65,43 @@
   width: 100vw;
   display: inline-block; }
 
-.planBSection {
+.planBSection, .planASection {
   height: 80vh;
   width: 100%;
   text-align: center;
   position: relative;
   font-size: 1.1em; }
-  .planBSection .horizonatalSection {
+  .planBSection .horizonatalSection, .planASection .horizonatalSection {
     margin-top: 0px;
     top: 0px;
     padding: 0px;
     overflow: hidden; }
-    .planBSection .horizonatalSection .imgSection {
+    .planBSection .horizonatalSection .imgSection, .planASection .horizonatalSection .imgSection {
       height: 50vh;
       z-index: 0;
       background-position: center center;
       background-size: auto 100%;
       background-repeat: no-repeat; }
-    .planBSection .horizonatalSection .textSection {
+    .planBSection .horizonatalSection .textSection, .planASection .horizonatalSection .textSection {
       padding-top: 0.5em;
       padding-left: 10px;
       padding-right: 10px; }
-  .planBSection .scrollContent {
+  .planBSection .scrollContent, .planASection .scrollContent {
     white-space: nowrap;
     overflow-y: scroll;
     position: absolute;
     width: 100%;
     height: 100%; }
-  .planBSection .overlayContent {
+  .planBSection .overlayContent, .planASection .overlayContent {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0; }
-  .planBSection .triangle-down-right {
+  .planBSection .triangle-down-right, .planASection .triangle-down-right {
     top: 50%;
     z-index: 100; }
-  .planBSection .msgBox {
+  .planBSection .msgBox, .planASection .msgBox {
     background-color: #EDEDED;
     height: 43%;
     top: 50%;
