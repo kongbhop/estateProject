@@ -129,6 +129,13 @@ $(document).ready(function(){
      scrollbar: '.swiper-scrollbar',
    });
 
+  $('.menuAnchor').click(function(){
+      console.log("HELLO");
+      $('#content').animate({
+          scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+      }, 500);
+  });
+
 
 /* Prevent Safari opening links when viewing as a Mobile App */
 (function (a, b, c) {

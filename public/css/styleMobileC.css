@@ -219,6 +219,15 @@ input[type=submit] {
     background-color: #777;
     color: white !important; }
 
+#placeItem {
+  width: 80% !important;
+  padding-top: 2em;
+  margin-left: 1.5em; }
+  #placeItem #placeImg {
+    margin: 1em;
+    background-size: auto 100%;
+    height: 250px; }
+
 .swiper-container {
   width: 100%;
   height: 100%; }
