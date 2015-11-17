@@ -41,7 +41,7 @@ $(document).ready(function(){
        autoclose: true,
    });
 
-   var snapper = new Snap({
+  var snapper = new Snap({
     element: document.getElementById('content'),
     disable: 'left',
     dragger: '.open-right'
@@ -63,7 +63,7 @@ $(document).ready(function(){
      scrollbar: '.swiper-scrollbar',
    });
 
-  var baanSamapanSlider = new Swiper ('.concept-swiper', {
+  var conceptSlider = new Swiper ('.concept-swiper', {
      // Optional parameters
      direction: 'horizontal',
      loop: false,
@@ -79,7 +79,7 @@ $(document).ready(function(){
      scrollbar: '.swiper-scrollbar',
    });
 
-  var baanSamapanSlider = new Swiper ('.planb-swiper', {
+  var planBSlider = new Swiper ('.planb-swiper', {
      // Optional parameters
      direction: 'horizontal',
      loop: false,
@@ -88,14 +88,14 @@ $(document).ready(function(){
      pagination: '.swiper-pagination',
 
      // Navigation arrows
-     nextButton: '.planb-swiper>.swiper-button-next',
+     nextButton: '.planb-swiper>.swiper-button-next, .planBNextBtn',
      prevButton: '.planb-swiper>.swiper-button-prev',
 
      // And if we need scrollbar
      scrollbar: '.swiper-scrollbar',
    });
 
-  var baanSamapanSlider = new Swiper ('.plana-swiper', {
+  var planASlider = new Swiper ('.plana-swiper', {
      // Optional parameters
      direction: 'horizontal',
      loop: false,
@@ -104,8 +104,26 @@ $(document).ready(function(){
      pagination: '.swiper-pagination',
 
      // Navigation arrows
-     nextButton: '.plana-swiper>.swiper-button-next',
+     nextButton: '.plana-swiper>.swiper-button-next, .planANextBtn',
      prevButton: '.plana-swiper>.swiper-button-prev',
+
+     // And if we need scrollbar
+     scrollbar: '.swiper-scrollbar',
+   });
+
+  var locationSlider = new Swiper ('.location-swiper', {
+     // Optional parameters
+     direction: 'horizontal',
+     loop: false,
+     slidesPerView: 'auto',
+     freeMode: true,
+
+     // If we need pagination
+     pagination: '.swiper-pagination',
+
+     // Navigation arrows
+     nextButton: '.location-swiper>.swiper-button-next, .locationNextBtn',
+     prevButton: '.location-swiper>.swiper-button-prev',
 
      // And if we need scrollbar
      scrollbar: '.swiper-scrollbar',

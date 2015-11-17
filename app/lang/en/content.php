@@ -34,6 +34,8 @@ return array(
 
 	"locationOnMapTopic" => "Location on Map",
 	"locationOnMapContent" => "Luxuriate in the large swimming pool or relax in one of the three spacious",
+	"locationNavigate" => "Let us navigate you to Private Park3",
+	"locationDirectContact" => "or contact us directly via 038 618 2422",
 
 	"neighbourhoodTopic" => "Neighbourhood",
 	"neighbourhoodContent" => "Luxuriate in the large swimming pool or relax in one of the three spacious",

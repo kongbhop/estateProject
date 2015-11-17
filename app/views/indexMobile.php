@@ -120,7 +120,7 @@
                         </div>
                         <div class="row concept-text">
                           <h1>Our Concept</h1>
-                          <p class="warp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam sit amet orci consectetur gravida. Aliquam viverra, nisl nec tristique blandit, urna nisl pellentesque tortor, vitae pellentesque magna eros ut ex. Nam rutrum lectus dui, ut porttitor risus hendrerit sed. Integer augue orci  </p>
+                          <p class="warp normText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam sit amet orci consectetur gravida. Aliquam viverra, nisl nec tristique blandit, urna nisl pellentesque tortor, vitae pellentesque magna eros ut ex. Nam rutrum lectus dui, ut porttitor risus hendrerit sed. Integer augue orci  </p>
                         </div>
                       </div>
                       <div class="swiper-slide concept-slide">
@@ -128,7 +128,7 @@
                         </div>
                         <div class="row concept-text">
                           <h1>Our Concept</h1>
-                          <p class="warp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam sit amet orci consectetur gravida. Aliquam viverra, nisl nec tristique blandit, urna nisl pellentesque tortor, vitae pellentesque magna eros ut ex. Nam rutrum lectus dui, ut porttitor risus hendrerit sed. Integer augue orci  </p>
+                          <p class="warp normText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam sit amet orci consectetur gravida. Aliquam viverra, nisl nec tristique blandit, urna nisl pellentesque tortor, vitae pellentesque magna eros ut ex. Nam rutrum lectus dui, ut porttitor risus hendrerit sed. Integer augue orci  </p>
                         </div>
                       </div>
                       <div class="swiper-slide concept-slide">
@@ -136,56 +136,58 @@
                         </div>
                         <div class="row concept-text">
                           <h1>Our Concept</h1>
-                          <p class="warp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam sit amet orci consectetur gravida. Aliquam viverra, nisl nec tristique blandit, urna nisl pellentesque tortor, vitae pellentesque magna eros ut ex. Nam rutrum lectus dui, ut porttitor risus hendrerit sed. Integer augue orci  </p>
+                          <p class="warp normText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam sit amet orci consectetur gravida. Aliquam viverra, nisl nec tristique blandit, urna nisl pellentesque tortor, vitae pellentesque magna eros ut ex. Nam rutrum lectus dui, ut porttitor risus hendrerit sed. Integer augue orci  </p>
                         </div>
                       </div>
                   </div>
-                  <!-- If we need pagination -->
-                  <!-- <div class="swiper-pagination"></div> -->
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev mobilePrevBtn"></div>
+                  <div class="swiper-button-next mobileNextBtn"></div
+              </div>
+            </div>
+
+            <div class="textHead">
+              LOCATION
+            </div>
+            <!-- =============== Location Section ============== -->
+            <div class="locationSection">
+              <!-- Slider main container -->
+              <div class="swiper-container location-swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide horizonatalSection">
+                        <div class="imgSection" style="background-image:url('imgs/A1.jpg')"></div>
+                        <!-- <img src="imgs/B1.jpg" alt=""> -->
+                        <div class="textSection">
+                          <h3><?= Lang::get('content.locationNavigate') ?></h3>
+
+                          <div>
+                            <a class="defaultBtn" href="http://maps.apple.com/maps?q=Ban+Samaphan+Private+Park">START NAVIGATION</a>
+                          </div>
+
+                          <h4 class="normText"><?= Lang::get('content.locationDirectContact') ?></h4>
+
+                          <div>
+                            <a class="defaultBtn locationNextBtn">EXPLORE OUR NEIGHBORHOOD</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+
+                      </div>
+                  </div>
 
                   <!-- If we need navigation buttons -->
                   <div class="swiper-button-prev mobilePrevBtn"></div>
                   <div class="swiper-button-next mobileNextBtn"></div>
-
-                  <!-- If we need scrollbar -->
-                  <!-- <div class="swiper-scrollbar"></div> -->
               </div>
-              <!-- <div class="row scroll">
 
-                <div class="col-md-12 inline nine-width pad-five valign-top">
-                  <div class="row" id="concept-1">
-                    <div class="sixvw-height" id="concept-img-1">
-                    </div>
-                  </div>
-                  <div class="row concept-text">
-                    <h1>Our Concept</h1>
-                    <p class="warp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam sit amet orci consectetur gravida. Aliquam viverra, nisl nec tristique blandit, urna nisl pellentesque tortor, vitae pellentesque magna eros ut ex. Nam rutrum lectus dui, ut porttitor risus hendrerit sed. Integer augue orci  </p>
-                  </div>
-                </div>
+            </div>
 
-                <div class="col-md-12 inline nine-width pad-five valign-top">
-                  <div class="row" id="concept-2">
-                    <div class="sixvw-height" id="concept-img-2">
-                    </div>
-                  </div>
-                  <div class="row concept-text">
-                    <h1>Our Concept</h1>
-                    <p class="warp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam sit amet orci consectetur gravida. Aliquam viverra, nisl nec tristique blandit, urna nisl pellentesque tortor, vitae pellentesque magna eros ut ex. Nam rutrum lectus dui, ut porttitor risus hendrerit sed. Integer augue orci</p>
-                  </div>
-                </div>
-
-                <div class="col-md-12 inline nine-width pad-five valign-top">
-                  <div class="row" id="concept-3">
-                    <div class="sixvw-height" id="concept-img-3">
-                    </div>
-                  </div>
-                  <div class="row concept-text">
-                    <h1>Our Concept</h1>
-                    <p class="warp">With the growing economy of the  industry, people flogging to rayong  province to theirerefqvewevERberabe rabaebababrraebaebreabraebrrababra rbaebrearbaebearbe  </p>
-                  </div>
-                </div>
-
-              </div> -->
+            <div class="textHead">
+              HOUSE TYPE
             </div>
 
             <!-- =============== Plan A Section ============== -->
@@ -201,7 +203,12 @@
                         <div class="textSection">
                           <h2><?= Lang::get('content.planATopic') ?></h2>
 
-                          <?= Lang::get('content.planAContent') ?>
+                          <div class="normText"><?= Lang::get('content.planAContent') ?></div>
+
+                          <div>
+                            <a class="defaultBtn planANextBtn">MORE DETAILS</a>
+                          </div>
+
                         </div>
                       </div>
                       <div class="swiper-slide horizonatalSection">
@@ -210,7 +217,7 @@
                         <div class="textSection">
                           <h2><?= Lang::get('content.planADownTopic') ?></h2>
 
-                          <?= Lang::get('content.planADownContent') ?>
+                          <div class="normText"><?= Lang::get('content.planADownContent') ?></div>
                         </div>
                       </div>
                       <div class="swiper-slide horizonatalSection">
@@ -219,7 +226,7 @@
                         <div class="textSection">
                           <h2><?= Lang::get('content.planAUpTopic') ?></h2>
 
-                          <?= Lang::get('content.planAUpContent') ?>
+                          <div class="normText"><?= Lang::get('content.planAUpContent') ?></div>
                         </div>
                       </div>
                   </div>
@@ -244,7 +251,11 @@
                         <div class="textSection">
                           <h2><?= Lang::get('content.planBTopic') ?></h2>
 
-                          <?= Lang::get('content.planBContent') ?>
+                          <div class="normText"><?= Lang::get('content.planBContent') ?></div>
+
+                          <div>
+                            <a class="defaultBtn planBNextBtn">MORE DETAILS</a>
+                          </div>
                         </div>
                       </div>
                       <div class="swiper-slide horizonatalSection">
@@ -253,7 +264,7 @@
                         <div class="textSection">
                           <h2><?= Lang::get('content.planBDownTopic') ?></h2>
 
-                          <?= Lang::get('content.planBDownContent') ?>
+                          <div class="normText"><?= Lang::get('content.planBDownContent') ?></div>
                         </div>
                       </div>
                       <div class="swiper-slide horizonatalSection">
@@ -262,7 +273,7 @@
                         <div class="textSection">
                           <h2><?= Lang::get('content.planBUpTopic') ?></h2>
 
-                          <?= Lang::get('content.planBUpContent') ?>
+                          <div class="normText"><?= Lang::get('content.planBUpContent') ?></div>
                         </div>
                       </div>
                   </div>
@@ -288,7 +299,7 @@
                         <p>
                           <h2><?= Lang::get('content.baanSamapanTopic') ?></h2>
 
-                          <?= Lang::get('content.baanSamapanContent') ?>
+                          <div class="normText"><?= Lang::get('content.baanSamapanContent') ?></div>
                         </p>
                       </div>
                       <div class="swiper-slide horizonatalSection">
@@ -296,7 +307,7 @@
                         <p>
                           <h2><?= Lang::get('content.privateParkTopic') ?></h2>
 
-                          <?= Lang::get('content.privateParkContent') ?>
+                          <div class="normText"><?= Lang::get('content.privateParkContent') ?></div>
                         </p>
                       </div>
                       <!-- <div class="swiper-slide">Slide 3</div> -->

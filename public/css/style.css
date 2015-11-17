@@ -130,7 +130,8 @@
   .rightContact input[type=submit] {
     width: 140px;
     text-align: center;
-    color: #555; }
+    color: #555;
+    font-weight: bold; }
     .rightContact input[type=submit]:active {
       background-color: #999;
       color: #333; }
