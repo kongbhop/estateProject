@@ -130,10 +130,22 @@ $(document).ready(function(){
    });
 
   $('.menuAnchor').click(function(){
-      console.log("HELLO");
       $('#content').animate({
           scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
       }, 500);
+  });
+
+  $('#content').scroll(function () { 
+      // $('#toolbar').top()
+    clearTimeout($.data(this, 'scrollTimer'));
+    $.data(this, 'scrollTimer', setTimeout(function() {
+        
+        // $('#toolbar').animate({
+        //     top: $('#content').scrollTop()
+        // }, 500);
+      $('#toolbar').css({top:$('#content').scrollTop()});
+
+    }, 10));
   });
 
 
