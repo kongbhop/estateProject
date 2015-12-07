@@ -382,18 +382,18 @@
 	.mapcontainer {
 		background-color:rgba(210, 210, 204, 0.7);
 		color:#000;
-		max-height: 600px;
+		max-height: 1000px;
 		min-height: 300px;
-		width: 60%	;
-		height: 60%;
+		width: 55%	;
+		height: 100%;
 		opacity: 1;
 		font-family: ThaiSansLite;
-		padding-bottom: 40px;
-		padding-top: 40px;
+		padding-bottom: 0px;
+		padding-top: 0px;
 		position: relative;
 		float: right;
-		top: 15%;
-		right: 2.5%;
+		top: 0%;
+		right: 0%;
 
 	}
 
