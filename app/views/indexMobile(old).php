@@ -16,8 +16,8 @@
 
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 
-  <link rel="stylesheet" type="text/css" href="css/styleMobileM.css">
-  <link rel="stylesheet" type="text/css" href="css/styleMobileC.css">
+  <link rel="stylesheet" type="text/css" href="css/styleMobileM(Old).css">
+  <link rel="stylesheet" type="text/css" href="css/styleMobileC(Old).css">
 
   <!--[if IE]>
     <script type="text/javascript">
@@ -31,7 +31,7 @@
 
   <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
   <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-  <script type="text/javascript" src="js/scriptMobile.js"></script>
+  <script type="text/javascript" src="js/scriptMobile(Old).js"></script>
 
   <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
   <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>

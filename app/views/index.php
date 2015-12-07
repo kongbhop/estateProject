@@ -171,7 +171,10 @@
 	}
 
 	#slide2-1{
-		background-color: #C6C6C4;
+		background-image: url(imgs/map.png);
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		background-color: #D8D4CE;
 	}
 	#slide2-2{
 		background-color: #DDDDDD;
