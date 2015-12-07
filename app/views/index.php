@@ -754,17 +754,17 @@
 
 	<div class="section" id="project">
 
-	    <div class="slide" id="slide1" name="House Type A">
+	    <div class="slide" id="slide1" name="Exclusive Architecture">
 	    	<div class="textcontainer" id="textbox-1-1" ><h2><?= Lang::get('content.concept1Topic') ?></h2>
 	    		<p><?= Lang::get('content.concept1Content') ?></p>
 	    	</div>
 	    </div>
-	    <div class="slide" id="slide2" name="1st Floor Plan">
+	    <div class="slide" id="slide2" name="Exclusive Lifestyle">
 	    	<div class="textcontainer" id="textbox-1-2" ><h2><?= Lang::get('content.concept2Topic') ?></h2>
 	    		<p><?= Lang::get('content.concept2Content') ?></p>
 	    	</div>
 	    </div>
-	    <div class="slide" id="slide3" name="2nd Floor Plan">
+	    <div class="slide" id="slide3" name="Exclusive Neighbourhood">
 	    	<div class="textcontainer" id="textbox-1-2" ><h2><?= Lang::get('content.concept3Topic') ?></h2>
 	    		<p><?= Lang::get('content.concept3Content') ?></p>
 	    	</div>
@@ -781,7 +781,7 @@
 	    		<p><?= Lang::get('content.locationOnMapContent') ?></p>
 	    	</div>
 	    </div>
-	    <div class="slide" id="slide2-3" name="Neighbourhood ">
+	    <!-- <div class="slide" id="slide2-3" name="Neighbourhood ">
 	    	<div class="textcontainer centertext" id="textbox-2-3" ><h2><?= Lang::get('content.neighbourhoodTopic') ?></h2>
 	    		<p><?= Lang::get('content.neighbourhoodContent') ?></p>
 	    		<ul>
@@ -804,7 +804,7 @@
 						<?php endforeach ?>
 			    </div>
 		    </div>
-	    </div>
+	    </div> -->
 	</div>
 
 	<div class="section" id="planA">
@@ -916,7 +916,7 @@
 
 			<h3>
 				<div class="telContact">
-					<i class="fa fa-phone"></i> 038 618 2442
+					<i class="fa fa-phone"></i> 038 023 023 </br> <i class="fa fa-phone"></i> 082 083 1999
 				</div>
 			</h3>
 
