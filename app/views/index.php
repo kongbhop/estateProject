@@ -463,6 +463,15 @@
 	.fp-slidesNav ul li:hover a span{
 
 	}
+	
+	#textbox-type-A {
+		top: 55%;
+	}
+
+	#textbox-type-B {
+		top: 15%;
+		left: 50%;
+	}
 
 	#textbox-2-2 {
 		width: 40%;
@@ -815,7 +824,7 @@
 
 	<div class="section" id="planA">
 		<div class="slide" id="planAMain" name="<?= Lang::get('content.planATopic') ?>">
-			<div class="textcontainer" id="textbox-1-1" ><h2><?= Lang::get('content.planATopic') ?></h2>
+			<div class="textcontainer" id="textbox-type-A" ><h2><?= Lang::get('content.planATopic') ?></h2>
 				<p><?= Lang::get('content.planAContent') ?></p>
 			</div>
 		</div>
@@ -841,7 +850,7 @@
 
 	<div class="section" id="planB">
 		<div class="slide" id="planBMain" name="<?= Lang::get('content.planBTopic') ?>">
-			<div class="textcontainer" id="textbox-1-1" ><h2><?= Lang::get('content.planBTopic') ?></h2>
+			<div class="textcontainer" id="textbox-type-B" ><h2><?= Lang::get('content.planBTopic') ?></h2>
 				<p><?= Lang::get('content.planBContent') ?></p>
 			</div>
 		</div>
