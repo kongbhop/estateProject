@@ -866,13 +866,13 @@
 
 	<div class="section" id="samapan">
 		<div class="slide" id="samapanSlide" name="<?= Lang::get('content.baanSamapanTopic') ?>">
-			<img style="width: 12%; height: auto;" src="imgs/baansamapanlogo.png" alt="">
+			<img src="imgs/baansamapanlogo.png" alt="">
 			<p class="textTopic"><?= Lang::get('content.baanSamapanTopic') ?></p>
 			<p class="textDesp"><?= Lang::get('content.baanSamapanContent') ?>
 			</p>
 		</div>
 		<div class="slide" id="privateSlide" name="<?= Lang::get('content.privateParkTopic') ?>">
-			<img style="width: 12%; height: auto;" src="imgs/logo.png" alt="">
+			<img src="imgs/logo.png" alt="">
 			<p class="textTopic"><?= Lang::get('content.privateParkTopic') ?></p>
 			<p class="textDesp"><?= Lang::get('content.privateParkContent') ?>
 			</p>
