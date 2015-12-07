@@ -88,7 +88,7 @@
 			preload    : 3,
 			modal      : false,
 			loop       : true,
-
+			
 			ajax  : {
 				dataType : 'html',
 				headers  : { 'X-fancyBox': true }
@@ -804,7 +804,7 @@
 			// 'modal' propery is just a shortcut
 			if (coming.modal) {
 				$.extend(true, coming, {
-					closeBtn   : false,
+					closeBtn   : true,
 					closeClick : false,
 					nextClick  : false,
 					arrows     : false,
