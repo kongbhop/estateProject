@@ -775,13 +775,15 @@
 	</div>
 	<div class="section" id="location">
 		<div class="slide" id="slide2-1" name="Location ">
-
+			<div class="textcontainer" id="textbox-2-2" ><h2><?= Lang::get('content.locationOnMapTopic') ?></h2>
+	    		<p><?= Lang::get('content.locationOnMapContent') ?></p>
+	    	</div>
 	    </div>
 	    <div class="slide" id="slide2-2" name="Map ">
 	    	<div class="mapcontainer" id="map">
 	    	</div>
-	    	<div class="textcontainer" id="textbox-2-2" ><h2><?= Lang::get('content.locationOnMapTopic') ?></h2>
-	    		<p><?= Lang::get('content.locationOnMapContent') ?></p>
+	    	<div class="textcontainer" id="textbox-2-2" ><h2><?= Lang::get('content.locationOnGoogleMapTopic') ?></h2>
+	    		<p><?= Lang::get('content.locationOnGoogleMapContent') ?></p>
 	    	</div>
 	    </div>
 	    <!-- <div class="slide" id="slide2-3" name="Neighbourhood ">
