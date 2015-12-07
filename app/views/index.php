@@ -467,7 +467,8 @@
 	#textbox-2-2 {
 		width: 40%;
 		margin-top: 50px;
-
+		top: 50%;
+		left: 50%;
 	}
 
 	#textbox-2-3 {
@@ -782,7 +783,7 @@
 	    <div class="slide" id="slide2-2" name="Map ">
 	    	<div class="mapcontainer" id="map">
 	    	</div>
-	    	<div class="textcontainer" id="textbox-2-2" ><h2><?= Lang::get('content.locationOnGoogleMapTopic') ?></h2>
+	    	<div class="textcontainer" id="" ><h2><?= Lang::get('content.locationOnGoogleMapTopic') ?></h2>
 	    		<p><?= Lang::get('content.locationOnGoogleMapContent') ?></p>
 	    	</div>
 	    </div>
