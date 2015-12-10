@@ -12,6 +12,24 @@
 .section {
   font-family: 'ThaiSansLite', Arial, Helvetica; }
 
+.textTopic {
+  font-size: 1.2em;
+  font-weight: bold; }
+
+#samapan {
+  color: white !important;
+  font-size: 1.5em; }
+  #samapan #samapanSlide, #samapan #privateSlide {
+    text-align: center;
+    padding-top: 10vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #2A2728; }
+    #samapan #samapanSlide img, #samapan #privateSlide img {
+      margin: 20px 0px;
+      width: 80%;
+      height: auto; }
+
 #contact {
   background-color: #CCC;
   color: #555;

@@ -17,6 +17,28 @@
   font-family: 'ThaiSansLite', Arial, Helvetica;
 }
 
+.textTopic {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#samapan {
+  color: white !important;
+  font-size: 1.5em;
+  #samapanSlide, #privateSlide {
+    text-align: center;
+    padding-top: 10vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #2A2728;
+    img {
+      margin: 20px 0px;
+      width: 80%;
+      height: auto;
+    }
+  }
+}
+
 #contact {
   background-color: #CCC;
   color: #555;
