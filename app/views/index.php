@@ -122,11 +122,11 @@
 
 	<script>
       function initialize() {
-      	var myLatLng = {lat: -25.363, lng: 131.044};
+      	var myLatLng = {lat: 12.675997, lng: 101.224394};
         var mapCanvas = document.getElementById('map');
         var mapOptions = {
           center: myLatLng,
-          zoom: 10,
+          zoom: 15,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           scrollwheel: false,
         }
@@ -141,6 +141,24 @@
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
+
+    <script>
+  $( document ).ready(function() {
+    $('#map-navigate-container').css({
+        'position' : 'absolute',
+        'top' : '50%',
+        'margin-top' : -$('#map-navigate-container').height()/2
+    });
+  });
+
+  $( window ).resize(function() {
+    $('#map-navigate-container').css({
+        'position' : 'absolute',
+        'top' : '50%',
+        'margin-top' : -$('#map-navigate-container').outerHeight()/2
+    });
+  });
+  </script>
 
 </head>
 <body>
@@ -213,9 +231,13 @@
 	    <div class="slide" id="slide2-2" name="Map ">
 	    	<div class="mapcontainer" id="map">
 	    	</div>
-	    	<div class="textcontainer" id="" ><h2><?= Lang::get('content.locationOnGoogleMapTopic') ?></h2>
-	    		<p><?= Lang::get('content.locationOnGoogleMapContent') ?></p>
-	    	</div>
+	    	<div id="map-navigate-outer">
+		    	<div id="map-navigate-container">
+		    		<p>ให้เรานำทางท่านไปยังไพรเวทพาร์ค 3</p><br>
+		    		<a href="http://maps.apple.com/maps?q=Ban+Samaphan+Private+Park" class="no-dec"><div class="locationButton">START NAVIGATION</div></a>
+		    	</div>
+		    </div>
+	    	
 	    </div>
 	    <!-- <div class="slide" id="slide2-3" name="Neighbourhood ">
 	    	<div class="textcontainer centertext" id="textbox-2-3" ><h2><?= Lang::get('content.neighbourhoodTopic') ?></h2>
