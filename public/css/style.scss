@@ -784,18 +784,18 @@ a {
 
 	@font-face {
 	    font-family: ThaiSansLite;
-	    src: url('font/thaisanslite_r1-webfont.eot');
-	    src: url('font/thaisanslite_r1-webfont.eot?#iefix') format('embedded-opentype'),
-	         url('font/thaisanslite_r1-webfont.woff2') format('woff2'),
-	         url('font/thaisanslite_r1-webfont.woff') format('woff'),
-	         url('font/thaisanslite_r1-webfont.ttf') format('truetype');
+	    src: url('../font/thaisanslite_r1-webfont.eot');
+	    src: url('../font/thaisanslite_r1-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('../font/thaisanslite_r1-webfont.woff2') format('woff2'),
+	         url('../font/thaisanslite_r1-webfont.woff') format('woff'),
+	         url('../font/thaisanslite_r1-webfont.ttf') format('truetype');
 	    font-weight: normal;
 	    font-style: normal;
 
 	}
 	@font-face {
 	    font-family: Didot;
-	    src: url(font/Didot.ttc);
+	    src: url(../font/Didot.ttc);
 	}
 
 	.grid {
@@ -1154,6 +1154,9 @@ a {
 		float: right;
 		top: 0%;
 		right: 0%;
+		-webkit-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.4);
+		-moz-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.4);
+		box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.4);
 
 	}
 
@@ -1380,4 +1383,13 @@ a {
 	    z-index: 1;
 	    margin: 1vw;
 	    opacity: 0.6;
+	}
+
+	#map-navigate-container {
+		position: absolute;
+    	top: 50%;
+		background-color: #EDEDED;
+		p {
+			font-size: 1em;
+		}
 	}
