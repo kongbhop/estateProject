@@ -83,7 +83,7 @@ h1 {
 input, textarea, button {
   font-family: 'ThaiSansLite', Arial, Helvetica;
   background-color: #BBB;
-  transition: all 0.5s ease;
+  transition: all 0.1s ease;
   border: none;
   padding-left: 5px;
   font-size: 1.2em;
@@ -92,6 +92,7 @@ input, textarea, button {
     outline: none;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
+
 }
 
 input[type=submit], button{
@@ -99,6 +100,10 @@ input[type=submit], button{
   text-align: center;
   color: #555;
   font-size: 1.1em;
+  &:active {
+    background-color: #999;
+    color: #333;
+  }
 }
 
 label {
@@ -475,18 +480,29 @@ body {
   font-size: 12px;
 }
 
+.clear {
+  clear: both;
+}
 
-#thankYouModal {
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+#thankYouModal, #navigateModal {
   .modal-body {
     font-family: 'ThaiSansLite';
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
     border-radius: 0px;
     background: #EEE;
     button {
       font-family: 'ThaiSansLite', Arial, Helvetica;
       background-color: #CCC;
-      transition: all 0.2s ease;
+      // transition: all 0.2s ease;
       border: none;
       padding-left: 5px;
       width: 30%;
@@ -499,5 +515,21 @@ body {
         color: #333;
       }
     }
+  }
+}
+
+#navigateModal {
+  font-size: 0.85em;
+  .modal-body {
+    padding: 5px;
+  }
+  .xButton {
+    width: 100%;
+    text-align: right;
+    font-size: 2em;
+    line-height: 0.9em;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
   }
 }
