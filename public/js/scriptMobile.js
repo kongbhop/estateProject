@@ -31,8 +31,10 @@ $(document).ready(function(){
       type: "POST",
       data: $(this).serializeArray(),
       success: function(data, textStatus,jqXHR){
-        $(".customerContactForm").slideUp();
-        $(".thankYou").slideDown();
+        $("input[type='text']").val("");
+				$("textarea").val("");
+				$("#thankYouModal").modal("show");
+        $("#backtoFirstSection").click();
       }
     });
   });

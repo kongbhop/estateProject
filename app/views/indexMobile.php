@@ -25,7 +25,7 @@
     </script>
   <![endif]-->
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js"></script>
 
@@ -346,6 +346,15 @@
 
 
 </div>
-
+<div class="modal fade" id="thankYouModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p><?= Lang::get('content.formThankYouMsg') ?></p>
+				<button type="button" class="myBtn" data-dismiss="modal">OK</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 </body>
 </html>
