@@ -1,4 +1,8 @@
 $(document).ready(function(){
+  setTimeout(function(){
+    $("#navigateModal").modal("show");
+  }, 1000);
+
   $('#open-right').click(function(){
     $('.snap-drawer').addClass('slideActive');
     $('.overlay').addClass('overlayActive');
@@ -37,6 +41,10 @@ $(document).ready(function(){
         $("#backtoFirstSection").click();
       }
     });
+  });
+
+  $(".hideNavigateModal").click(function(){
+    $("#navigateModal").modal("hide");
   });
 
   $("#submitFirstSection").click(function(e){
