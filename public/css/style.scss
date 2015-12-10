@@ -53,7 +53,9 @@
 }
 .textDesp {
   font-size: 1.4em;
-  padding: 0px 10%;
+  width: 40%;
+  min-width: 500px;
+  margin: auto;
 }
 
 #samapan {
@@ -63,8 +65,8 @@
     background-color: #2A2728;
     img {
       margin: 20px 0px;
-      width: 12%;
-      height: auto;
+      height: 20%;
+      width: auto;
     }
   }
 }

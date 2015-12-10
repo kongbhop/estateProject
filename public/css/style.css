@@ -40,7 +40,9 @@
 
 .textDesp {
   font-size: 1.4em;
-  padding: 0px 10%; }
+  width: 40%;
+  min-width: 500px;
+  margin: auto; }
 
 #samapan {
   color: white !important; }
@@ -49,8 +51,8 @@
     background-color: #2A2728; }
     #samapan #samapanSlide img, #samapan #privateSlide img {
       margin: 20px 0px;
-      width: 12%;
-      height: auto; }
+      height: 20%;
+      width: auto; }
 
 .datetimepicker {
   font-size: 1.4em !important; }
