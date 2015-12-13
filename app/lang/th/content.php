@@ -20,7 +20,8 @@ return array(
 	"navSamapan" => "บ้านสมาพันธ์",
 	"navContact" => "ติดต่อเรา",
 
-	"mainPageTopic" => "ไพรเวทพาร์ค 3</br>The Exclusive Community",
+	"mainPageTopic" => "Private Park 3",
+	"mainPageChild" => "The Exclusive Community",
 	"mainPageContent" => "“บ้านสุดพิเศษใจกลางเมืองระยอง”</br>มากกว่าความสมบูรณ์แบบ...ด้วยความเป็นส่วนตัว",
 
 	"concept1Topic" => "Exclusive Architecture",

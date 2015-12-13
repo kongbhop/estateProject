@@ -1045,9 +1045,14 @@ a {
 	}
 
 	.headTextcontainer h1{
-		font-family: ThaiSansLite;
+		font-family: Didot;
 		color: #333;
 		font-size: 3em;
+	}
+	.headTextcontainer h2{
+		font-family: Didot;
+		color: #333;
+		font-size: 1.5em;
 	}
 
 	.headTextcontainer p{
@@ -1382,8 +1387,23 @@ a {
 	    bottom: 0px;
 	    z-index: 1;
 	    margin: 1vw;
-	    opacity: 0.6;
+	    opacity: 0;
+	    -webkit-transition: all 0.4s ease-in-out;
+	    -moz-transition: all 0.4s ease-in-out;
+	    -o-transition: all 0.4s ease-in-out;
+	    transition: all 0.4s ease-in-out;
+	    &.active {
+	    	opacity: 0.6;
+	    	-webkit-transition: all 1s ease-in-out;
+		    -moz-transition: all 1s ease-in-out;
+		    -o-transition: all 1s ease-in-out;
+		    transition: all 1s ease-in-out;
+		    -webkit-transition-delay: 1s; /* Safari */
+    		transition-delay: 1s;
+	    }
 	}
+
+
 
 	#map-navigate-container {
 		position: absolute;
@@ -1430,4 +1450,10 @@ a {
 		&:active {
 			text-decoration: none;
 		}
+	}
+
+	hr {
+		margin: 0.7rem;
+		border-top: 1px solid #4D4C4A;
+
 	}

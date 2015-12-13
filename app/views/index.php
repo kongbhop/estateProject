@@ -78,6 +78,7 @@
 						$('.logo img').addClass("active");
 						$('.bottomMenu').addClass("menuActive");
 						$('.topMenu').addClass("menuActive");
+						$('#private-logo').addClass("active");
 					}
 
 
@@ -91,18 +92,19 @@
 			        }
 
 
-								if(nextIndex == 1){
-									$('.headTextcontainer').addClass("active");
-									$('.logo img').addClass("active");
-									$('.bottomMenu').addClass("menuActive");
-									$('.topMenu').addClass("menuActive");
-								} else {
-									$('.headTextcontainer').removeClass("active");
-									$('#scrollDown').removeClass("active");
-									$('.logo img').removeClass("active");
-									$('.bottomMenu').removeClass("menuActive");
-									$('.topMenu').removeClass("menuActive");
-								}
+					if(nextIndex == 1){
+						$('.headTextcontainer').addClass("active");
+						$('.logo img').addClass("active");
+						$('.bottomMenu').addClass("menuActive");
+						$('.topMenu').addClass("menuActive");
+					} else {
+						$('.headTextcontainer').removeClass("active");
+						$('#scrollDown').removeClass("active");
+						$('.logo img').removeClass("active");
+						$('.bottomMenu').removeClass("menuActive");
+						$('.topMenu').removeClass("menuActive");
+						$('#private-logo').removeClass("active");
+					}
 
 
 		        },
@@ -192,6 +194,8 @@
 	<div class="section" id="mainpage">
 		<div class="headTextcontainer">
 			<h1><?= Lang::get('content.mainPageTopic') ?></h1>
+			<h2><?= Lang::get('content.mainPageChild') ?></h2>
+			<hr>
 			<p><?= Lang::get('content.mainPageContent') ?></p>
 		</div>
 		<div id="scrollDown">
