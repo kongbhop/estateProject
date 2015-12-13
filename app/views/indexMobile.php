@@ -71,11 +71,47 @@
               $(this).css('height', div_height - 80 + "px");
           });
 
-          var y = $("#locationImage").position().top;
-          var parentLocationH = $("#locationImage").parent('div').height();
-          console.log(parentLocationH);
-          $("#locationImage").css('height', (parentLocationH *80/100) - y );
+          
 
+        
+        // $('#concept-2').css('height', $(window).height() - $('#concept-2').next('.halfHeightBottom.rectangle').height());
+        // $('#concept-2').closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', $('#concept-2').next('.halfHeightBottom.rectangle').height());
+      });
+
+      $(window).load(function(){
+        console.log($('#houseBImg-1').next().outerHeight());
+          $('.halfHeight').each(function(){
+            var nextH = $(this).next('.halfHeightBottom.rectangle').outerHeight();
+            console.log(nextH);
+            $(this).css('height', $(window).height() - nextH);
+            $(this).closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', nextH);
+          });
+          var nextH = $('#houseAImg-1').next('.halfHeightBottom.rectangle').outerHeight();
+          console.log(nextH);
+          $('#houseAImg-1').css('height', $(window).height() - nextH);
+          $('#houseAImg-1').closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', nextH);
+          var nextH = $('#houseBImg-1').next('.halfHeightBottom.rectangle').outerHeight();
+          console.log(nextH);
+          $('#houseBImg-1').css('height', $(window).height() - nextH);
+          $('#houseBImg-1').closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', nextH);
+      });
+
+      $(window).on('resize', function(){
+        console.log($('#houseBImg-1').next().outerHeight());
+          $('.halfHeight').each(function(){
+            var nextH = $(this).next('.halfHeightBottom.rectangle').outerHeight();
+            console.log(nextH);
+            $(this).css('height', $(window).height() - nextH);
+            $(this).closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', nextH);
+          });
+          var nextH = $('#houseAImg-1').next('.halfHeightBottom.rectangle').outerHeight();
+          console.log(nextH);
+          $('#houseAImg-1').css('height', $(window).height() - nextH);
+          $('#houseAImg-1').closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', nextH);
+          var nextH = $('#houseBImg-1').next('.halfHeightBottom.rectangle').outerHeight();
+          console.log(nextH);
+          $('#houseBImg-1').css('height', $(window).height() - nextH);
+          $('#houseBImg-1').closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', nextH);
       });
   </script>
 </head>
@@ -145,6 +181,7 @@
       </div>
       <div class="halfHeightBottom triangle-down-right">
       </div>
+      
     </div>
 
     <div class="slide" id="slide3">
@@ -173,8 +210,6 @@
         <div class="halfHeightBottom rectangle centerText" id="locationText">
              <div class="text lineHeightDiv">นำทางไปยังไพรเวทพาร์ค 3</div>
              <div class="button lineHeightDiv"><a href="http://maps.apple.com/maps?q=Ban+Samaphan+Private+Park" class="locationButton">START NAVIGATION</a></div>
-             <div class="text lineHeightDiv">หริอติดต่อเราโดยตรงผ่าน 038 618 2442</div>
-             <div class="button lineHeightDiv"><a href="#" class="locationButton">EXPLORE NEIGHBOURHOOD</a></div>
         </div>
       </div>
     </div>
@@ -205,7 +240,7 @@
           <div id="description"><?= Lang::get('content.planAContent') ?>
           </div>
         </div>
-        <div class="halfHeightBottom triangle-down-right">
+        <div class="halfHeightBottom triangle-down-right" id="hAtri">
         </div>
       </div>
 
