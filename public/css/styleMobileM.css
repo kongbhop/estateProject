@@ -237,3 +237,10 @@
 .fullWidth {
   width: 100%;
   height: 60%; }
+
+#locationBtn {
+  background: url(../imgs/place.png) no-repeat;
+  background-size: contain;
+  height: 80%;
+  margin-top: 10%;
+  background-position: center center; }

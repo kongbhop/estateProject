@@ -143,7 +143,7 @@
   <div class="logo">
     <a href="#Mainpage"><img src="imgs/logo.png" /></a>
     <a href="#" id="open-right"><i class="fa fa-bars"></i></a>
-    <a data-menuanchor="Location"  href="#Location" id="open-location"><i class="fa fa-map-marker"></i></a>
+    <a data-menuanchor="Location"  href="#Location" id="open-location"><div id="locationBtn"></div></i></a>
   </div>
 </div>
 <div id="fullpage">
@@ -200,7 +200,6 @@
 
   <div class="section" id="location">
 
-    <div class="slide" id="location-1">
       <div class="padfromnav">
         <div class="centerText" id="mainpageText">
             <div id="head"><?= Lang::get('content.locationOnMapTopic') ?></div>
@@ -212,22 +211,7 @@
              <div class="button lineHeightDiv"><a href="http://maps.apple.com/maps?q=Ban+Samaphan+Private+Park" class="locationButton">START NAVIGATION</a></div>
         </div>
       </div>
-    </div>
 
-    <?php foreach(Lang::get('content.neighbourhoodPicture') as $pic): ?>
-      <div class="slide">
-        <div class="halfHeight" style="background:url(<?= $pic['picUrl'] ?>); background-size: cover;" id="coverBackground">
-        </div>
-        <div class="halfHeightBottom rectangle" id="neighbourRec">
-          <div id="head"><?= $pic['title'] ?>
-          </div>
-          <div id="description" style="text-align: center;"><?= $pic['desp'] ?>
-          </div>
-        </div>
-        <div class="halfHeightBottom triangle-down-right" id="neighbourTri">
-        </div>
-      </div>
-    <?php endforeach ?>
   </div>
 
   <div class="section" id="houseA">
@@ -312,7 +296,7 @@
       </p>
     </div>
     <div class="slide" id="privateSlide" name="<?= Lang::get('content.privateParkTopic') ?>">
-      <img src="imgs/logo.png" alt="">
+      <img src="imgs/private_logo.png" alt="">
       <p class="textTopic"><?= Lang::get('content.privateParkTopic') ?></p>
       <p class="textDesp"><?= Lang::get('content.privateParkContent') ?>
       </p>
