@@ -91,6 +91,7 @@
 			            $('.fp-slidesNav').removeClass('active');
 			        }
 
+							$(this).find('.textcontainer').removeClass('invisible');
 
 					if(nextIndex == 1){
 						$('.headTextcontainer').addClass("active");
@@ -113,7 +114,8 @@
 		            var leavingSlide = $(this);
 
 		             $('.slide.fp-slide.active').find('.textcontainer').removeClass('active');
-
+								 $(this).find('.textcontainer').removeClass('invisible');
+								 
 
 		        }
 

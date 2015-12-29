@@ -54,6 +54,11 @@
   font-size: 1.2em;
 }
 
+.invisible {
+  transition: all 0.5s ease !important;
+  opacity: 0 !important;
+}
+
 
 .textTopic {
   font-size: 2.2em;

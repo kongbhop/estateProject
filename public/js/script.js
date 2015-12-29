@@ -55,6 +55,14 @@ $(document).ready(function(){
 				console.log("ADFASF");
 	});
 
+	$(".slide").click(function(){
+		if($(this).find('.textcontainer').hasClass('invisible') == false) {
+			$(this).find('.textcontainer').addClass('invisible');
+		} else {
+			$(this).find('.textcontainer').removeClass('invisible');
+		}
+	});
+
 
 
 
