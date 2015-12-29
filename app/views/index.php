@@ -115,7 +115,7 @@
 
 		             $('.slide.fp-slide.active').find('.textcontainer').removeClass('active');
 								 $(this).find('.textcontainer').removeClass('invisible');
-								 
+
 
 		        }
 
@@ -208,6 +208,10 @@
 		</div>
 		<div id="private-logo">
 		</div>
+
+		<div class="bottomText">
+			ภาพจำลองและเงื่อนไขเป็นไปตามที่บริษัทกำหนด
+		</div>
 	</div>
 
 	<div class="section" id="project">
@@ -216,16 +220,25 @@
 	    	<div class="textcontainer" id="textbox-1-1" ><h2><?= Lang::get('content.concept1Topic') ?></h2>
 	    		<p><?= Lang::get('content.concept1Content') ?></p>
 	    	</div>
+				<div class="bottomText">
+					ภาพจำลอง
+				</div>
 	    </div>
 	    <div class="slide" id="slide2" name="Exclusive Lifestyle">
 	    	<div class="textcontainer" id="textbox-1-2" ><h2><?= Lang::get('content.concept2Topic') ?></h2>
 	    		<p><?= Lang::get('content.concept2Content') ?></p>
 	    	</div>
+				<div class="bottomText">
+					ภาพจำลอง
+				</div>
 	    </div>
 	    <div class="slide" id="slide3" name="Exclusive Neighbourhood">
 	    	<div class="textcontainer" id="textbox-1-2" ><h2><?= Lang::get('content.concept3Topic') ?></h2>
 	    		<p><?= Lang::get('content.concept3Content') ?></p>
 	    	</div>
+				<div class="bottomText">
+					ภาพจำลอง
+				</div>
 	    </div>
 	</div>
 	<div class="section" id="location">
@@ -276,6 +289,9 @@
 			<div class="textcontainer" id="textbox-type-A" ><h2><?= Lang::get('content.planATopic') ?></h2>
 				<p><?= Lang::get('content.planAContent') ?></p>
 			</div>
+			<div class="bottomText">
+				ภาพจำลอง
+			</div>
 		</div>
 		<div class="slide planFloor" id="planAFloor" name="<?= Lang::get('content.floorPlan') ?>">
 			<div class="sideCover">
@@ -302,6 +318,9 @@
 			<div class="textcontainer" id="textbox-type-B" ><h2><?= Lang::get('content.planBTopic') ?></h2>
 				<p><?= Lang::get('content.planBContent') ?></p>
 			</div>
+			<div class="bottomText">
+				ภาพจำลอง
+			</div>
 		</div>
 		<div class="slide planFloor" id="planBFloor" name="<?= Lang::get('content.floorPlan') ?>">
 			<div class="sideCover">
@@ -325,7 +344,7 @@
 
 	<div class="section" id="samapan">
 		<div class="slide" id="samapanSlide" name="<?= Lang::get('content.baanSamapanTopic') ?>">
-			<img src="imgs/samapan_logo.png" style="height:80px; width:auto;" alt="">
+			<img src="imgs/samapan_logo.png" style="height:75px; width:auto;" alt="">
 			<p class="textTopic"><?= Lang::get('content.baanSamapanTopic') ?></p>
 			<p class="textDesp"><?= Lang::get('content.baanSamapanContent') ?>
 			</p>
@@ -387,7 +406,7 @@
 
 		</div>
 
-		<div class="creditText">
+		<div class="copyrightText">
 			&copy Samaphan Property Co.,Ltd. All right reserved.
 		</div>
 

@@ -35,11 +35,22 @@
 .textRight {
   text-align: right; }
 
-.creditText {
+.copyrightText {
   position: absolute;
-  bottom: 15px;
+  bottom: 0px;
+  padding-bottom: 10px;
   width: 100%;
   font-size: 1.2em; }
+
+.bottomText {
+  position: absolute;
+  bottom: 0px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-size: 1.1em;
+  width: 100%;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.5); }
 
 .invisible {
   transition: all 0.5s ease !important;
