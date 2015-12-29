@@ -42,5 +42,5 @@ Route::get('/th', function()
 Route::get('/en', function()
 {
 	Session::put('lang', 'en');
-	return Redirect::to('/');
+	return Redirect::to('/#ContactNav');
 });
