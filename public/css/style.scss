@@ -47,6 +47,13 @@
   text-align: right;
 }
 
+.creditText{
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  font-size: 1.2em;
+}
+
 
 .textTopic {
   font-size: 2.2em;
@@ -1231,7 +1238,7 @@ a {
 	.fp-slidesNav ul li:hover a span{
 
 	}
-	
+
 	#textbox-type-A {
 		top: 55%;
 	}

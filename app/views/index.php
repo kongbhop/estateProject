@@ -19,7 +19,7 @@
 
 	<style>
 
-	
+
 
 	</style>
 
@@ -241,7 +241,7 @@
 		    		<a href="http://maps.apple.com/maps?q=Ban+Samaphan+Private+Park" class="no-dec"><div class="locationButton">START NAVIGATION</div></a>
 		    	</div>
 		    </div>
-	    	
+
 	    </div>
 	    <!-- <div class="slide" id="slide2-3" name="Neighbourhood ">
 	    	<div class="textcontainer centertext" id="textbox-2-3" ><h2><?= Lang::get('content.neighbourhoodTopic') ?></h2>
@@ -323,13 +323,13 @@
 
 	<div class="section" id="samapan">
 		<div class="slide" id="samapanSlide" name="<?= Lang::get('content.baanSamapanTopic') ?>">
-			<img src="imgs/samapan_logo.png" alt="">
+			<img src="imgs/samapan_logo.png" style="height:80px; width:auto;" alt="">
 			<p class="textTopic"><?= Lang::get('content.baanSamapanTopic') ?></p>
 			<p class="textDesp"><?= Lang::get('content.baanSamapanContent') ?>
 			</p>
 		</div>
 		<div class="slide" id="privateSlide" name="<?= Lang::get('content.privateParkTopic') ?>">
-			<img src="imgs/private_logo.png" alt="">
+			<img src="imgs/private_logo.png" style="height: 110px; width: auto;" alt="">
 			<p class="textTopic"><?= Lang::get('content.privateParkTopic') ?></p>
 			<p class="textDesp"><?= Lang::get('content.privateParkContent') ?>
 			</p>
@@ -383,6 +383,10 @@
 			</h3>
 
 
+		</div>
+
+		<div class="creditText">
+			&copy Samaphan Property Co.,Ltd. All right reserved.
 		</div>
 
 	</div>
