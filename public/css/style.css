@@ -979,7 +979,7 @@ figure.effect-chico:hover p {
   color: #000;
   max-height: 1000px;
   min-height: 300px;
-  width: 55%;
+  width: 65%;
   height: 100%;
   opacity: 1;
   font-family: ThaiSansLite;
@@ -1218,7 +1218,7 @@ figure.effect-chico:hover p {
 
 #map-navigate-outer {
   position: relative;
-  width: 45%;
+  width: 35%;
   height: 100%; }
 
 .locationButton {

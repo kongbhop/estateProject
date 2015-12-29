@@ -126,7 +126,7 @@
 
 	<script>
       function initialize() {
-      	var myLatLng = {lat: 12.675997, lng: 101.224394};
+      	var myLatLng = {lat: 12.689821, lng: 101.213778};
         var mapCanvas = document.getElementById('map');
         var mapOptions = {
           center: myLatLng,
@@ -252,8 +252,10 @@
 	    	</div>
 	    	<div id="map-navigate-outer">
 		    	<div id="map-navigate-container">
-		    		<p>ให้เรานำทางท่านไปยังไพรเวทพาร์ค 3</p><br>
-		    		<a href="http://maps.apple.com/maps?q=Ban+Samaphan+Private+Park" class="no-dec"><div class="locationButton">START NAVIGATION</div></a>
+		    		<p>ให้เรานำทางท่านไปยัง <br> ไพรเวทพาร์ค 3</p><br>
+		    		<a href="http://maps.apple.com/maps?q=12.689821,101.213778" class="no-dec"><div class="locationButton">START NAVIGATION</div></a><br>
+						<span style="font-size:1.4em;">Using navigation via your tablet or smartphone</span>
+
 		    	</div>
 		    </div>
 
