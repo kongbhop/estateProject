@@ -412,11 +412,11 @@ p {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #2F96B4;
   background-position: 0 -15px;
-  -webkit-transition: background-position 0.1s linear;
-  -moz-transition: background-position 0.1s linear;
-  -ms-transition: background-position 0.1s linear;
-  -o-transition: background-position 0.1s linear;
-  transition: background-position 0.1s linear; }
+  -webkit-transition: background-position .1s linear;
+  -moz-transition: background-position .1s linear;
+  -ms-transition: background-position .1s linear;
+  -o-transition: background-position .1s linear;
+  transition: background-position .1s linear; }
 
 #infoMenu {
   height: 20px;
@@ -1082,7 +1082,8 @@ figure.effect-chico:hover p {
   -webkit-transition: all 1.5s ease-in-out;
   -moz-transition: all 1.5s ease-in-out;
   -o-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out; }
+  transition: all 1.5s ease-in-out;
+  animation: mymove 1s ease 3s 1; }
 
 #scrollDown.active {
   -webkit-transform: translate3d(0px, 5px, 0px);
@@ -1185,10 +1186,10 @@ figure.effect-chico:hover p {
   background-repeat: no-repeat;
   background-position: right;
   width: 30vw;
-  height: 30vh;
+  height: 20vh;
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  right: 5%;
+  bottom: 5%;
   z-index: 1;
   margin: 1vw;
   opacity: 0;
@@ -1246,3 +1247,11 @@ figure.effect-chico:hover p {
 hr {
   margin: 0.7rem;
   border-top: 1px solid #4D4C4A; }
+
+@keyframes mymove {
+  0% {
+    transform: translateY(5px); }
+  50% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateY(5px); } }
