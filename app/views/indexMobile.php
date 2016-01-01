@@ -368,11 +368,12 @@
     </div>
 
     <div class="telContact">
-      <i class="fa fa-phone"></i> 038 618 2442
+      <i class="fa fa-phone"></i> 038 023 023 <br>
+      <i class="fa fa-phone"></i> 082 083 1999
     </div>
 
     <div class="textCenter">
-      Samaphan Property Ltd. All right reserved.
+      Samaphan Property Co.,Ltd. All rights Reserved.
     </div>
   </div>
 
