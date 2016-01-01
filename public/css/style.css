@@ -1082,15 +1082,15 @@ figure.effect-chico:hover p {
   -webkit-transition: all 1.5s ease-in-out;
   -moz-transition: all 1.5s ease-in-out;
   -o-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
-  animation: mymove 1s ease 3s 1; }
+  transition: all 1.5s ease-in-out; }
 
 #scrollDown.active {
   -webkit-transform: translate3d(0px, 5px, 0px);
   -moz-transform: translate3d(0px, 5px, 0px);
   -ms-transform: translate3d(0px, 5px, 0px);
   transform: translate3d(0px, 5px, 0px);
-  opacity: 1; }
+  opacity: 1;
+  animation: mymove 1s ease 3s 1; }
 
 #scrollDownImg {
   background: url("../imgs/down.png") no-repeat;
@@ -1198,7 +1198,7 @@ figure.effect-chico:hover p {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out; }
   #private-logo.active {
-    opacity: 0.6;
+    opacity: 1;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
