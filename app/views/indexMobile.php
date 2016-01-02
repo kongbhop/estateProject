@@ -74,6 +74,8 @@
 
 
 
+
+
         // $('#concept-2').css('height', $(window).height() - $('#concept-2').next('.halfHeightBottom.rectangle').height());
         // $('#concept-2').closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', $('#concept-2').next('.halfHeightBottom.rectangle').height());
       });
@@ -94,6 +96,13 @@
           console.log(nextH);
           $('#houseBImg-1').css('height', $(window).height() - nextH);
           $('#houseBImg-1').closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', nextH);
+
+          var space = $('.fp-tableCell').height()-$('#locationImage').height()-60;
+          console.log("space " + space);
+          $('#locationTopic').css('line-height', space / 3 + "px");
+          space = space*2 / 3;
+          space = space - $('#locationText').height();
+          $('#locationText').css('padding', + space / 2 + "px 0");
       });
 
       $(window).on('resize', function(){
@@ -112,6 +121,13 @@
           console.log(nextH);
           $('#houseBImg-1').css('height', $(window).height() - nextH);
           $('#houseBImg-1').closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', nextH);
+
+          var space = $('.fp-tableCell').height()-$('#locationImage').height()-60;
+          console.log("space " + space);
+          $('#locationTopic').css('line-height', space / 3 + "px");
+          space = space*2 / 3;
+          space = space - $('#locationText').height();
+          $('#locationText').css('padding', + space / 2 + "px 0");
       });
   </script>
 </head>
@@ -201,11 +217,14 @@
   <div class="section" id="location">
 
       <div class="padfromnav">
-        <div class="centerText" id="mainpageText">
-            <div id="head"><?= Lang::get('content.locationOnMapTopic') ?></div>
+        <div class="centerText" id="locationTopic">
+            <div class="no-margin" id="head"><?= Lang::get('content.locationOnMapTopic') ?></div>
         </div>
-        <a href="imgs/map.png"><div class="fullWidth" id="locationImage">
-        </div></a>
+        <a href="imgs/map.png">
+          <div id="locationImage">
+            <img src="imgs/map.png" id="hidden-map"/>
+          </div>
+        </a>
         <div class="halfHeightBottom rectangle centerText" id="locationText">
              <div class="text lineHeightDiv">นำทางไปยังไพรเวทพาร์ค 3</div>
              <div class="button lineHeightDiv"><a href="http://maps.apple.com/maps?q=Ban+Samaphan+Private+Park" class="locationButton">START NAVIGATION</a></div>

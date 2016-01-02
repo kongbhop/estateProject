@@ -167,14 +167,7 @@
 }
 
 #locationImage {
-	background: url("../imgs/map.png");
-	-webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 80%;
+	
 }
 
 #locationImg-2 {
@@ -244,17 +237,15 @@
 	}
 }
 #locationText{
-	bottom: 0px;
+	padding-bottom: 0em;
 	.text {
 		vertical-align: middle;
 		text-align: center;
 		font-size: 1.3em;
-		height: 20%
 	}
 	.button {
 		text-align: center;
 		font-size: 1.3em;
-		height: 30%
 	}
 
 }
@@ -283,4 +274,13 @@
     height: 80%;
     margin-top: 10%;
     background-position: center center;
+}
+
+#hidden-map {
+	width: 100%;
+    height: auto;
+}
+
+.no-margin {
+	margin: 0 !important;
 }
