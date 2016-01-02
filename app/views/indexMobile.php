@@ -204,8 +204,8 @@
         <div class="centerText" id="mainpageText">
             <div id="head"><?= Lang::get('content.locationOnMapTopic') ?></div>
         </div>
-        <div class="fullWidth" id="locationImage">
-        </div>
+        <a href="imgs/map.png"><div class="fullWidth" id="locationImage">
+        </div></a>
         <div class="halfHeightBottom rectangle centerText" id="locationText">
              <div class="text lineHeightDiv">นำทางไปยังไพรเวทพาร์ค 3</div>
              <div class="button lineHeightDiv"><a href="http://maps.apple.com/maps?q=Ban+Samaphan+Private+Park" class="locationButton">START NAVIGATION</a></div>
