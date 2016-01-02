@@ -227,7 +227,7 @@
         </a>
         <div class="halfHeightBottom rectangle centerText" id="locationText">
              <div class="text lineHeightDiv">นำทางไปยังไพรเวทพาร์ค 3</div>
-             <div class="button lineHeightDiv"><a href="http://maps.apple.com/maps?q=Ban+Samaphan+Private+Park" class="locationButton">START NAVIGATION</a></div>
+             <div class="button lineHeightDiv"><a href="http://maps.apple.com/maps?q=12.689821,101.213778" class="locationButton">START NAVIGATION</a></div>
         </div>
       </div>
 
