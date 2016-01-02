@@ -173,7 +173,7 @@
     -o-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: center center;
     height: 80%;
 }
 
@@ -244,9 +244,7 @@
 	}
 }
 #locationText{
-	padding-top: 5%;
-	padding-bottom: 5%;
-	height: 30%;
+	bottom: 0px;
 	.text {
 		vertical-align: middle;
 		text-align: center;
