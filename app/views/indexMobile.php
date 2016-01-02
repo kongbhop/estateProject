@@ -71,9 +71,9 @@
               $(this).css('height', div_height - 80 + "px");
           });
 
-          
 
-        
+
+
         // $('#concept-2').css('height', $(window).height() - $('#concept-2').next('.halfHeightBottom.rectangle').height());
         // $('#concept-2').closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', $('#concept-2').next('.halfHeightBottom.rectangle').height());
       });
@@ -181,7 +181,7 @@
       </div>
       <div class="halfHeightBottom triangle-down-right">
       </div>
-      
+
     </div>
 
     <div class="slide" id="slide3">
@@ -290,13 +290,13 @@
 
   <div class="section" id="samapan">
     <div class="slide" id="samapanSlide" name="<?= Lang::get('content.baanSamapanTopic') ?>">
-      <img src="imgs/baansamapanlogo.png" alt="">
+      <img src="imgs/baansamapanlogo.png" style="width: 170px;" alt="">
       <p class="textTopic"><?= Lang::get('content.baanSamapanTopic') ?></p>
       <p class="textDesp"><?= Lang::get('content.baanSamapanContent') ?>
       </p>
     </div>
     <div class="slide" id="privateSlide" name="<?= Lang::get('content.privateParkTopic') ?>">
-      <img src="imgs/private_logo.png" alt="">
+      <img src="imgs/private_logo.png" style="width: 100px;" alt="">
       <p class="textTopic"><?= Lang::get('content.privateParkTopic') ?></p>
       <p class="textDesp"><?= Lang::get('content.privateParkContent') ?>
       </p>
