@@ -373,7 +373,7 @@
     </div>
 
     <div class="textCenter">
-      Samaphan Property Co.,Ltd. All rights Reserved.
+      &copy Samaphan Property Co.,Ltd. All rights Reserved.
     </div>
   </div>
 
