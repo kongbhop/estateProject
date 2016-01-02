@@ -328,7 +328,8 @@ body {
 
 /* Default demo styles */
 .snap-drawers {
-  background: #282828; }
+  background: #282828;
+  overflow: hidden !important; }
 
 .snap-drawer {
   z-index: 150;
@@ -336,6 +337,7 @@ body {
   color: #eee;
   transition: right 0.5s ease;
   right: -100vw;
+  overflow: hidden !important;
   box-shadow: 0 0 15px #000; }
 
 .slideActive {
@@ -395,6 +397,11 @@ body {
 
 .right {
   text-align: right; }
+
+.modal {
+  width: 100vw !important;
+  right: auto !important;
+  bottom: auto !important; }
 
 #thankYouModal .modal-body, #navigateModal .modal-body {
   font-family: 'ThaiSansLite';

@@ -409,6 +409,8 @@ body {
 
 .snap-drawers {
   background: #282828;
+  overflow: hidden !important;
+
 }
 
 .snap-drawer {
@@ -416,11 +418,17 @@ body {
 	background: #282828;
 	color: #eee;
   transition: right 0.5s ease;
+  // transition: width 0.2s ease;
   right: -100vw;
+  overflow: hidden !important;
+  // display: none;
+  // width: 0px;
   box-shadow: 0 0 15px #000;
 }
 
 .slideActive {
+  // display: block;
+  // width: 80vw;
   right: 0vw;
 }
 
@@ -490,6 +498,12 @@ body {
 
 .right {
   text-align: right;
+}
+
+.modal {
+  width: 100vw !important;
+  right: auto !important;
+  bottom: auto !important;
 }
 
 #thankYouModal, #navigateModal {
