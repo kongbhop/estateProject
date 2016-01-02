@@ -310,7 +310,7 @@
     <div class="blankSpace"></div>
     <div>
         <div class="textLeft sidePadding">
-          <h1><?= Lang::get('content.contactTopic') ?></h1>
+          <h1 style="margin-bottom:0px;"><?= Lang::get('content.contactTopic') ?></h1>
         </div>
 
         <div class="thankYou" style="display:none;">

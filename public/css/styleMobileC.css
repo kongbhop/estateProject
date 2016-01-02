@@ -33,7 +33,12 @@
   background-color: #CCC;
   color: #555;
   text-shadow: none;
-  font-size: 1.5em; }
+  font-size: 1.3em; }
+
+.customerContactForm {
+  line-height: 1em; }
+  .customerContactForm label {
+    margin-bottom: 0px; }
 
 .blankSpace {
   height: 40px;
@@ -112,8 +117,9 @@ button {
 
 .telContact {
   text-align: center;
-  font-size: 1.5em;
-  padding-top: 10px; }
+  font-size: 1.2em;
+  padding-top: 5px;
+  line-height: 0.8em; }
 
 .logo img {
   height: 60px; }
