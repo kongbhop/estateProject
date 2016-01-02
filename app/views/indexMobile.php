@@ -415,19 +415,19 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <div class="xButton" data-dismiss="modal">X</div>
+        <div class="xButton" data-dismiss="modal"><i class="fa fa-times fa-1"></i></div>
         <div class="clear"></div>
         <p>LET US NAVIGATION YOU TO OUR SITE</p><br>
         <div class="button lineHeightDiv hideNavigateModal"><a data-menuanchor="Location" href="#Location" class="locationButton">START NAVIGATION</a></div>
         <br>
         <br>
         <div>
-          <div class="col-xs-4 right textTopic" style="padding-right:0px">CALL:</div>
+          <div class="col-xs-4 right textTopic" style="padding-right:0px">CALL :</div>
           <div class="col-xs-8 left">038 023 023 </br> 082 083 1999</div>
         </div>
         <div class="clear"></div>
         <br>
-        <p style="padding: 0 10%; line-height: 1em;"><small>USING GOOGLE MAPS TO BRING TO OUR SITE</small></p>
+        <p style="padding: 0 3%; line-height: 1em;"><small>USING GOOGLE MAPS TO BRING TO OUR SITE</small></p>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
