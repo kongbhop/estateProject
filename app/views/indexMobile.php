@@ -81,16 +81,16 @@
       $(window).load(function(){
         console.log($('#houseBImg-1').next().outerHeight());
           $('.halfHeight').each(function(){
-            var nextH = $(this).next('.halfHeightBottom.rectangle').outerHeight();
+            var nextH = $(this).next('.halfHeightBottom.rectangle').outerHeight()+60;
             console.log(nextH);
             $(this).css('height', $(window).height() - nextH);
             $(this).closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', nextH);
           });
-          var nextH = $('#houseAImg-1').next('.halfHeightBottom.rectangle').outerHeight();
+          var nextH = $('#houseAImg-1').next('.halfHeightBottom.rectangle').outerHeight()+60;
           console.log(nextH);
           $('#houseAImg-1').css('height', $(window).height() - nextH);
           $('#houseAImg-1').closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', nextH);
-          var nextH = $('#houseBImg-1').next('.halfHeightBottom.rectangle').outerHeight();
+          var nextH = $('#houseBImg-1').next('.halfHeightBottom.rectangle').outerHeight()+60;
           console.log(nextH);
           $('#houseBImg-1').css('height', $(window).height() - nextH);
           $('#houseBImg-1').closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', nextH);
@@ -99,16 +99,16 @@
       $(window).on('resize', function(){
         console.log($('#houseBImg-1').next().outerHeight());
           $('.halfHeight').each(function(){
-            var nextH = $(this).next('.halfHeightBottom.rectangle').outerHeight();
+            var nextH = $(this).next('.halfHeightBottom.rectangle').outerHeight()+60;
             console.log(nextH);
             $(this).css('height', $(window).height() - nextH);
             $(this).closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', nextH);
           });
-          var nextH = $('#houseAImg-1').next('.halfHeightBottom.rectangle').outerHeight();
+          var nextH = $('#houseAImg-1').next('.halfHeightBottom.rectangle').outerHeight()+60;
           console.log(nextH);
           $('#houseAImg-1').css('height', $(window).height() - nextH);
           $('#houseAImg-1').closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', nextH);
-          var nextH = $('#houseBImg-1').next('.halfHeightBottom.rectangle').outerHeight();
+          var nextH = $('#houseBImg-1').next('.halfHeightBottom.rectangle').outerHeight()+60;
           console.log(nextH);
           $('#houseBImg-1').css('height', $(window).height() - nextH);
           $('#houseBImg-1').closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', nextH);
