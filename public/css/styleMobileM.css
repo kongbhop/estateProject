@@ -151,7 +151,7 @@
   -o-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: center center;
   height: 80%; }
 
 #locationImg-2 {
@@ -211,9 +211,7 @@
   letter-spacing: 0.1em; }
 
 #locationText {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  height: 30%; }
+  bottom: 0px; }
   #locationText .text {
     vertical-align: middle;
     text-align: center;
