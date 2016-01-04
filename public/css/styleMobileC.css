@@ -352,8 +352,7 @@ body {
   z-index: -1;
   position: fixed;
   width: 100vw;
-  height: 100vh;
-  transition: background-color 0.5s ease; }
+  height: 100vh; }
 
 .overlayActive {
   background-color: rgba(0, 0, 0, 0.7);
