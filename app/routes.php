@@ -26,7 +26,7 @@ Route::get('/', function()
 {
 	$Agent = new Agent();
 	// return View::make('index');
-	 if ( $Agent->isMobile() ) {
+	 if ( $Agent->isMobile() && !$Agent->isTablet() ) {
        return View::make('indexMobile');
    } else {
       return View::make('index');
