@@ -44,7 +44,56 @@
 
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+  <script src="bower_components/scream/dist/scream.js"></script>
+  <script src="bower_components/brim/dist/brim.js"></script>
 
+  <script type="text/javascript">
+
+  (function () {
+
+      var scream;
+      var brim;
+
+      //IS ALREAD LOADED
+      var firstTime = true;
+
+      //APPEND CANVAS TO THIS ELEMENT
+      var domElement;
+
+      //SET BASE SIZE
+      var width = 640;
+      var height = 960;
+
+
+          //CHECK FOR IOS8 AND IF ITS NOT IN STANDALONE MODE
+       if ((platform.os.family == 'iOS' && parseInt(platform.os.version, 10) > 8 || platform.ua.indexOf('like Mac OS X') != -1)&&("standalone" in window.navigator) &&!window.navigator.standalone)
+       {
+          scream = gajus.Scream({
+              width: {
+                  portrait: 640,
+                  landscape: 1144
+              }
+          });
+
+          brim = gajus.Brim({
+              viewport: scream
+          });
+
+          //YOU ARE ON IOS SET FULL SCREEN SIZE
+          height = scream.getViewportHeight();
+          width = scream.getViewportWidth();
+
+          brim.on('viewchange', function (e) {
+
+              document.body.className = e.viewName;
+
+              //WRONG ORIENTATION SHOW IMAGE
+
+          });
+      }
+
+  })();
+  </script>
 
   <script type="text/javascript">
       $(document).ready(function() {
@@ -148,7 +197,7 @@
       });
   </script>
 </head>
-<body>
+<body id="brim-main">
 
 <div class="snap-drawers">
     <div class="snap-drawer snap-drawer-right">
@@ -181,7 +230,7 @@
 </div>
 <div id="fullpage">
   <div class="section" id="mainpage">
-    <div class="padfromnav">
+    <div class="padfromnav" id="brim-mask">
       <div class="centerDiv" id="mainpageText">
           <div id="head"><?= Lang::get('content.mainPageTopic') ?></div>
           <span><?= Lang::get('content.mainPageContent') ?></span>
