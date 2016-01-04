@@ -137,12 +137,12 @@
     <div class="snap-drawer snap-drawer-right">
         <div>
             <ul>
-              <li data-menuanchor="Project"><a href="#Project"><?= Lang::get('content.navProject') ?></a></li>
-              <li data-menuanchor="Location"><a href="#Location"><?= Lang::get('content.navLocation') ?></a></li>
-              <li data-menuanchor="PlanA"><a href="#PlanA"><?= Lang::get('content.navPlanA') ?></a></li>
-              <li data-menuanchor="PlanB"><a href="#PlanB"><?= Lang::get('content.navPlanB') ?></a></li>
-              <li data-menuanchor="Samapan"><a href="#Samapan"><?= Lang::get('content.navSamapan') ?></a></li>
-              <li data-menuanchor="Contact"><a href="#Contact"><?= Lang::get('content.navContact') ?></a></li>
+              <a href="#Project"><li data-menuanchor="Project"><?= Lang::get('content.navProject') ?></li></a>
+              <a href="#Location"><li data-menuanchor="Location"><?= Lang::get('content.navLocation') ?></li></a>
+              <a href="#PlanA"><li data-menuanchor="PlanA"><?= Lang::get('content.navPlanA') ?></li></a>
+              <a href="#PlanB"><li data-menuanchor="PlanB"><?= Lang::get('content.navPlanB') ?></li></a>
+              <a href="#Samapan"><li data-menuanchor="Samapan"><?= Lang::get('content.navSamapan') ?></li></a>
+              <a href="#Contact"><li data-menuanchor="Contact"><?= Lang::get('content.navContact') ?></li></a>
               <li>
                 <span class="<?= (Session::get('lang') == 'th')? 'active':'' ?>"><a href="th">ไทย</a></span>
                  |

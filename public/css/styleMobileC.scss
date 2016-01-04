@@ -433,6 +433,14 @@ body {
   // display: none;
   // width: 0px;
   // box-shadow: 0 0 15px #000;
+   a {
+     color: white;
+     text-decoration: none;
+     &:active, &:focus {
+       color: gray;
+       text-decoration: none;
+     }
+   }
 }
 
 .slideActive {
