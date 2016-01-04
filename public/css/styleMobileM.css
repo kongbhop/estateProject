@@ -238,3 +238,23 @@
 
 .no-margin {
   margin: 0 !important; }
+
+#private-logo {
+  background-image: url("../imgs/private_logo.png");
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 30vw;
+  height: 20vh;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  z-index: 1;
+  margin: 1vw;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
