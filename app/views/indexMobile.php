@@ -74,6 +74,8 @@
 
 
 
+
+
         // $('#concept-2').css('height', $(window).height() - $('#concept-2').next('.halfHeightBottom.rectangle').height());
         // $('#concept-2').closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', $('#concept-2').next('.halfHeightBottom.rectangle').height());
       });
@@ -94,6 +96,13 @@
           console.log(nextH);
           $('#houseBImg-1').css('height', $(window).height() - nextH);
           $('#houseBImg-1').closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', nextH);
+
+          var space = $('.fp-tableCell').height()-$('#locationImage').height()-60;
+          console.log("space " + space);
+          $('#locationTopic').css('line-height', space / 3 + "px");
+          space = space*2 / 3;
+          space = space - $('#locationText').height();
+          $('#locationText').css('padding', + space / 2 + "px 0");
       });
 
       $(window).on('resize', function(){
@@ -112,6 +121,13 @@
           console.log(nextH);
           $('#houseBImg-1').css('height', $(window).height() - nextH);
           $('#houseBImg-1').closest(':has(.triangle-down-right)').find('.triangle-down-right').css('bottom', nextH);
+
+          var space = $('.fp-tableCell').height()-$('#locationImage').height()-60;
+          console.log("space " + space);
+          $('#locationTopic').css('line-height', space / 3 + "px");
+          space = space*2 / 3;
+          space = space - $('#locationText').height();
+          $('#locationText').css('padding', + space / 2 + "px 0");
       });
   </script>
 </head>
@@ -128,9 +144,9 @@
               <li data-menuanchor="Samapan"><a href="#Samapan"><?= Lang::get('content.navSamapan') ?></a></li>
               <li data-menuanchor="Contact"><a href="#Contact"><?= Lang::get('content.navContact') ?></a></li>
               <li>
-                <span class="<?= (Session::get('lang') == 'th')? 'active':'' ?>"><a href="th"><img src="imgs/th_icon.png" alt=""> ไทย</a></span>
+                <span class="<?= (Session::get('lang') == 'th')? 'active':'' ?>"><a href="th">ไทย</a></span>
                  |
-                <span class="<?= (Session::get('lang') == 'en')? 'active':'' ?>"><a href="en"><img src="imgs/us_icon.png" alt=""> ENGLISH</a></span>
+                <span class="<?= (Session::get('lang') == 'en')? 'active':'' ?>"><a href="en">ENGLISH</a></span>
               </li>
             </ul>
         </div>
@@ -201,14 +217,17 @@
   <div class="section" id="location">
 
       <div class="padfromnav">
-        <div class="centerText" id="mainpageText">
-            <div id="head"><?= Lang::get('content.locationOnMapTopic') ?></div>
+        <div class="centerText" id="locationTopic">
+            <div class="no-margin" id="head"><?= Lang::get('content.locationOnMapTopic') ?></div>
         </div>
-        <div class="fullWidth" id="locationImage">
-        </div>
+        <a href="imgs/map.png">
+          <div id="locationImage">
+            <img src="imgs/map.png" id="hidden-map"/>
+          </div>
+        </a>
         <div class="halfHeightBottom rectangle centerText" id="locationText">
              <div class="text lineHeightDiv">นำทางไปยังไพรเวทพาร์ค 3</div>
-             <div class="button lineHeightDiv"><a href="http://maps.apple.com/maps?q=Ban+Samaphan+Private+Park" class="locationButton">START NAVIGATION</a></div>
+             <div class="button lineHeightDiv"><a href="http://maps.apple.com/maps?q=12.689821,101.213778" class="locationButton">START NAVIGATION</a></div>
         </div>
       </div>
 
@@ -396,19 +415,19 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <div class="xButton" data-dismiss="modal">X</div>
+        <div class="xButton" data-dismiss="modal"><i class="fa fa-times fa-1"></i></div>
         <div class="clear"></div>
         <p>LET US NAVIGATION YOU TO OUR SITE</p><br>
         <div class="button lineHeightDiv hideNavigateModal"><a data-menuanchor="Location" href="#Location" class="locationButton">START NAVIGATION</a></div>
         <br>
         <br>
         <div>
-          <div class="col-xs-4 right textTopic" style="padding-right:0px">CALL:</div>
+          <div class="col-xs-4 right textTopic" style="padding-right:0px">CALL :</div>
           <div class="col-xs-8 left">038 023 023 </br> 082 083 1999</div>
         </div>
         <div class="clear"></div>
         <br>
-        <p style="padding: 0 10%; line-height: 1em;"><small>USING GOOGLE MAPS TO BRING TO OUR SITE</small></p>
+        <p style="padding: 0 3%; line-height: 1em;"><small>USING GOOGLE MAPS TO BRING TO OUR SITE</small></p>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
