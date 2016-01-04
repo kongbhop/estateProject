@@ -169,6 +169,8 @@
           <div id="head"><?= Lang::get('content.mainPageTopic') ?></div>
           <span><?= Lang::get('content.mainPageContent') ?></span>
       </div>
+      <div id="private-logo">
+      </div>
     </div>
   </div>
 
