@@ -54,7 +54,24 @@
               css3: true,
               scrollingSpeed: 500,
               // scrollOverflow: true,
-              loopHorizontal: false
+              loopHorizontal: false,
+              afterLoad: function(anchorLink, index){
+
+        					if(anchorLink == "Mainpage"){
+        						$('#scrollDown').addClass("active");
+        						$('#private-logo').addClass("active");
+        					}
+
+
+  		        },
+              onLeave: function(index, nextIndex, direction){
+
+                  $('#scrollDown').removeClass("active");
+                  $('#private-logo').removeClass("active");
+
+
+
+              },
           });
 
           var parentHeight = $('.fp-tableCell').height()-80;
@@ -169,7 +186,13 @@
           <div id="head"><?= Lang::get('content.mainPageTopic') ?></div>
           <span><?= Lang::get('content.mainPageContent') ?></span>
       </div>
-      <div id="private-logo">
+      <div id="scrollDown">
+  			<p></p>
+  			<a href="#Project" id="">
+  				<div id="scrollDownImg"></div>
+  			</a>
+  		</div>
+  		<div id="private-logo">
       </div>
     </div>
   </div>

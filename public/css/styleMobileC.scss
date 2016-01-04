@@ -443,6 +443,90 @@ body {
    }
 }
 
+#private-logo {
+  background-image: url("../imgs/private_logo.png");
+  -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 30vw;
+    height: 20vh;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    z-index: 1;
+    margin: 1vw;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    &.active {
+      opacity: 1;
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      transition: all 1s ease-in-out;
+      -webkit-transition-delay: 1s; /* Safari */
+      transition-delay: 1s;
+    }
+}
+#scrollDown {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  opacity: 0;
+  -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+}
+#scrollDown.active{
+  -webkit-transform: translate3d(0px, 5px, 0px);
+  -moz-transform: translate3d(0px, 5px, 0px);
+  -ms-transform:translate3d(0px, 5px, 0px);
+  transform: translate3d(0px, 5px, 0px);
+  opacity: 1;
+  animation: mymove 1s ease 3s 1;
+
+}
+
+#scrollDownImg {
+  background: url("../imgs/down.png") no-repeat;
+  -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-position: center center;
+    height: 100%;
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#scrollDownImg:hover {
+  opacity: 0.5;
+  -webkit-transform: translate3d(0px, 5px, 0px);
+  -moz-transform: translate3d(0px, 5px, 0px);
+  -ms-transform:translate3d(0px, 5px, 0px);
+  transform: translate3d(0px, 5px, 0px);
+}
+
+#scrollDown p{
+  margin: 0 0 2px;
+  color: #fff;
+  font-size: 1.25em;
+}
+
+
 .slideActive {
   // display: block;
   // width: 80vw;
