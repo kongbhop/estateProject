@@ -26,7 +26,6 @@
     padding-right: 20px;
     background-color: #2A2728; }
     #samapan #samapanSlide img, #samapan #privateSlide img {
-      margin-top: 40px;
       height: auto; }
 
 #contact {
@@ -346,7 +345,7 @@ body {
   .snap-drawer a {
     color: white;
     text-decoration: none; }
-    .snap-drawer a:active, .snap-drawer a:focus {
+    .snap-drawer a:active, .snap-drawer a:focus, .snap-drawer a:hover {
       color: gray;
       text-decoration: none; }
 
