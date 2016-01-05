@@ -139,6 +139,7 @@
           var parentHeight = $('.fp-tableCell').height()-80;
           var childHeight = $('#mid-vertical-1').height();
           $('#mid-vertical-1').css('padding-top', (parentHeight - childHeight) / 2);
+          var childHeight = $('#mid-vertical-2').height();
           $('#mid-vertical-2').css('padding-top', (parentHeight - childHeight) / 2);
 
 
