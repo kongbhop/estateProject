@@ -346,7 +346,7 @@ body {
   .snap-drawer a {
     color: white;
     text-decoration: none; }
-    .snap-drawer a:active, .snap-drawer a:focus {
+    .snap-drawer a:active, .snap-drawer a:focus, .snap-drawer a:hover {
       color: gray;
       text-decoration: none; }
 
