@@ -352,7 +352,7 @@
 			</p>
 		</div>
 		<div class="slide" id="privateSlide" name="<?= Lang::get('content.privateParkTopic') ?>">
-			<img src="imgs/private_logo.png" style="height: 110px; width: auto;" alt="">
+			<img src="imgs/private_logo.png" style="height: 130px; width: auto; margin: 0px;" alt="">
 			<p class="textTopic"><?= Lang::get('content.privateParkTopic') ?></p>
 			<p class="textDesp"><?= Lang::get('content.privateParkContent') ?>
 			</p>
