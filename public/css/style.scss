@@ -168,6 +168,9 @@
   margin-top: 20px;
   text-align: left !important;
   font-family: 'Didot', 'ThaiSansLite', Arial, Helvetica;
+  h2 {
+  	font-size: 1.5em;
+  }
 }
 
 .rightContact {
@@ -1299,8 +1302,7 @@ a {
 	}
 	#scrollDown.active{
 		opacity: 1;
-		animation: mymove 1s ease 0.8s 1;
-
+		animation: mymove 1s ease 2s 1;
 	}
 
 	#scrollDownImg {
@@ -1482,6 +1484,6 @@ a {
 
 	@keyframes mymove {
 	    0%   {transform:translateY(0px);}
-	    25%  {transform:translateY(-10px);}
+	    40%  {transform:translateY(-10px);}
 	    100% {transform:translateY(0px);}
 	}
