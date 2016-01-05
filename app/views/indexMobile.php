@@ -136,6 +136,9 @@
               var div_height = $(this).parent('div').height();
               $(this).css('height', div_height - 80 + "px");
           });
+          var parentHeight = $('.fp-tableCell').height()-80;
+          var childHeight = $('.mid-vertical').height();
+          $('.mid-vertical').css('padding-top', (parentHeight - childHeight) / 2);
 
 
 
@@ -383,16 +386,20 @@
 
   <div class="section" id="samapan">
     <div class="slide" id="samapanSlide" name="<?= Lang::get('content.baanSamapanTopic') ?>">
-      <img src="imgs/baansamapanlogo.png" style="width: 170px;" alt="">
-      <p class="textTopic"><?= Lang::get('content.baanSamapanTopic') ?></p>
-      <p class="textDesp"><?= Lang::get('content.baanSamapanContent') ?>
-      </p>
+      <div class="mid-vertical">
+        <img src="imgs/baansamapanlogo.png" style="width: 170px;" alt="">
+        <p class="textTopic"><?= Lang::get('content.baanSamapanTopic') ?></p>
+        <p class="textDesp"><?= Lang::get('content.baanSamapanContent') ?>
+        </p>
+      </div>
     </div>
     <div class="slide" id="privateSlide" name="<?= Lang::get('content.privateParkTopic') ?>">
-      <img src="imgs/private_logo.png" style="width: 100px;" alt="">
-      <p class="textTopic"><?= Lang::get('content.privateParkTopic') ?></p>
-      <p class="textDesp"><?= Lang::get('content.privateParkContent') ?>
-      </p>
+      <div class="mid-vertical">
+        <img src="imgs/private_logo.png" style="width: 100px;" alt="">
+        <p class="textTopic"><?= Lang::get('content.privateParkTopic') ?></p>
+        <p class="textDesp"><?= Lang::get('content.privateParkContent') ?>
+        </p>
+      </div>
     </div>
   </div>
 
