@@ -175,7 +175,7 @@ return array(
 	"formDesp" => "Other information",
 	"formSubmitButton" => "Submit",
 	"contactTopic" => "Contact us",
-	"contactDesp" => "Just fill in your informations, we will contact you back as soon as possible",
+	"contactDesp" => "Just fill in your informations<br>We will contact you back as soon as possible",
 
 
 );
