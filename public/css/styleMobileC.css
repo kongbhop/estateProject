@@ -215,7 +215,7 @@ body {
 #toolbar {
   background: #BBB;
   border-bottom: 10px solid #CCC;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;

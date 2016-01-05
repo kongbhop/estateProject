@@ -102,6 +102,7 @@
               menu: '#menu',
               css3: true,
               scrollingSpeed: 500,
+              autoScrolling: false,
               // scrollOverflow: true,
               loopHorizontal: false,
               afterLoad: function(anchorLink, index){
