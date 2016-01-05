@@ -253,7 +253,7 @@
 	    	<div id="map-navigate-outer">
 		    	<div id="map-navigate-container">
 		    		<p>ให้เรานำทางท่านไปยัง <br> ไพรเวทพาร์ค 3</p><br>
-		    		<a href="http://maps.apple.com/maps?q=12.689821,101.213778" class="no-dec"><div class="locationButton">START NAVIGATION</div></a><br>
+		    		<a target="_blank" href="http://maps.google.com/maps?q=12.689821,101.213778" class="no-dec"><div class="locationButton">START NAVIGATION</div></a><br>
 						<span style="font-size:1.4em;">Using navigation via your tablet or smartphone</span>
 
 		    	</div>
