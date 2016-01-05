@@ -436,7 +436,7 @@ body {
    a {
      color: white;
      text-decoration: none;
-     &:active, &:focus {
+     &:active, &:focus, &:hover,  {
        color: gray;
        text-decoration: none;
      }
