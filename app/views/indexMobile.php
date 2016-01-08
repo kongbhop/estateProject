@@ -259,6 +259,7 @@
         <div id="head"><?= Lang::get('content.concept1Topic') ?>
         </div>
         <div id="description"><?= Lang::get('content.concept1Content') ?>
+          <br> <br>
         </div>
       </div>
       <div class="halfHeightBottom triangle-down-right">
@@ -272,6 +273,7 @@
         <div id="head"><?= Lang::get('content.concept2Topic') ?>
         </div>
         <div id="description"><?= Lang::get('content.concept2Content') ?>
+          <br> <br>
         </div>
       </div>
       <div class="halfHeightBottom triangle-down-right">
@@ -286,6 +288,7 @@
         <div id="head"><?= Lang::get('content.concept3Topic') ?>
         </div>
         <div id="description"><?= Lang::get('content.concept3Content') ?>
+          <br> <br>
         </div>
       </div>
       <div class="halfHeightBottom triangle-down-right">
@@ -320,6 +323,7 @@
           <div id="head"><?= Lang::get('content.planATopic') ?>
           </div>
           <div id="description"><?= Lang::get('content.planAContent') ?>
+            <br> <br>
           </div>
         </div>
         <div class="halfHeightBottom triangle-down-right" id="hAtri">
@@ -333,6 +337,7 @@
           <div id="head"><?= Lang::get('content.planADownTopic') ?>
           </div>
           <div id="description"><?= Lang::get('content.planADownContent') ?>
+            <br> <br>
           </div>
         </div>
       </div>
@@ -344,6 +349,7 @@
           <div id="head"><?= Lang::get('content.planAUpTopic') ?>
           </div>
           <div id="description"><?= Lang::get('content.planAUpContent') ?>
+            <br> <br>
           </div>
         </div>
       </div>
