@@ -430,14 +430,14 @@
         <div class="customerContactForm">
           <span><?= Lang::get('content.contactDesp') ?></span>
 
-          <div class="contactToggle">
-            <div class="radio">
+          <div class="contactToggle row no-padding" style="margin-top: 10px; margin-bottom: 10px;">
+            <div class="radio col-xs-6"  style="padding:0; margin:0;">
               <input type="radio" id="contactRadio" name="contactType" checked/>
               <label for="contactRadio"><?= Lang::get('content.formContactButton') ?></label>
             </div>
-            <div class="radio">
-              <input type="radio" id="attendRadio" name="contactType" />
-              <label for="attendRadio"><?= Lang::get('content.formAttendButton') ?></label>
+            <div class="radio col-xs-6"  style="padding:0; margin:0;">
+              <input type="radio" id="attendRadio" name="contactType"/>
+              <label for="attendRadio" style="padding:0; margin:0;"><?= Lang::get('content.formAttendButton') ?></label>
             </div>
 
             <div class="clear"></div>
@@ -476,8 +476,7 @@
     </div>
 
     <div class="telContact">
-      <i class="fa fa-phone"></i> 038 023 023 <br>
-      <i class="fa fa-phone"></i> 082 083 1999
+      <i class="fa fa-phone"></i> 038 023 023, 082 083 1999
     </div>
 
     <div class="textCenter">
