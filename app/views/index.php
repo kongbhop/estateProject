@@ -298,15 +298,15 @@
 		<div class="slide planFloor" id="planAFloor" name="<?= Lang::get('content.floorPlan') ?>">
 			<div class="sideCover">
 				<div class="floorPlan">
-					<a class="fancybox" rel="fancybox" href="imgs/A1.jpg" title="">
-						<img src="imgs/A1.jpg" alt="" />
+					<a class="fancybox" rel="fancybox" href="imgs/A1com.jpg" title="">
+						<img src="imgs/A1com.jpg" alt="" />
 					</a>
 					<p class="textTopic"><?= Lang::get('content.planADownTopic') ?></p>
 					<div class="textLeft textDesp"><?= Lang::get('content.planADownContent') ?></div>
 				</div>
 				<div class="floorPlan">
-					<a class="fancybox" rel="fancybox" href="imgs/A2.jpg" title="">
-						<img src="imgs/A2.jpg" alt="" />
+					<a class="fancybox" rel="fancybox" href="imgs/A2com.jpg" title="">
+						<img src="imgs/A2com.jpg" alt="" />
 					</a>
 					<p class="textTopic"><?= Lang::get('content.planAUpTopic') ?></p>
 					<div class="textLeft textDesp"><?= Lang::get('content.planAUpContent') ?></div>
@@ -327,15 +327,15 @@
 		<div class="slide planFloor" id="planBFloor" name="<?= Lang::get('content.floorPlan') ?>">
 			<div class="sideCover">
 				<div class="floorPlan">
-					<a class="fancybox" rel="fancybox" href="imgs/B1.jpg" title="">
-						<img src="imgs/B1.jpg" alt="" />
+					<a class="fancybox" rel="fancybox" href="imgs/B1com.jpg" title="">
+						<img src="imgs/B1com.jpg" alt="" />
 					</a>
 					<p class="textTopic"><?= Lang::get('content.planBDownTopic') ?></p>
 					<div class="textDesp"><?= Lang::get('content.planBDownContent') ?></div>
 				</div>
 				<div class="floorPlan">
-					<a class="fancybox" rel="fancybox" href="imgs/B2.jpg" title="">
-						<img src="imgs/B2.jpg" alt="" />
+					<a class="fancybox" rel="fancybox" href="imgs/B2com.jpg" title="">
+						<img src="imgs/B2com.jpg" alt="" />
 					</a>
 					<p class="textTopic"><?= Lang::get('content.planBUpTopic') ?></p>
 					<div class="textDesp"><?= Lang::get('content.planBUpContent') ?></div>
