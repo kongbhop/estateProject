@@ -221,7 +221,7 @@
 	    		<p><?= Lang::get('content.concept1Content') ?></p>
 	    	</div>
 				<div class="bottomText">
-					ภาพจำลอง
+					ภาพและบรรยากาศจำลอง
 				</div>
 	    </div>
 	    <div class="slide" id="slide2" name="Exclusive Lifestyle">
@@ -229,7 +229,7 @@
 	    		<p><?= Lang::get('content.concept2Content') ?></p>
 	    	</div>
 				<div class="bottomText">
-					ภาพจำลอง
+					ภาพและบรรยากาศจำลอง
 				</div>
 	    </div>
 	    <div class="slide" id="slide3" name="Exclusive Location">
@@ -237,7 +237,7 @@
 	    		<p><?= Lang::get('content.concept3Content') ?></p>
 	    	</div>
 				<div class="bottomText">
-					ภาพจำลอง
+					ภาพและบรรยากาศจำลอง
 				</div>
 	    </div>
 	</div>
@@ -292,7 +292,7 @@
 				<p><?= Lang::get('content.planAContent') ?></p>
 			</div>
 			<div class="bottomText">
-				ภาพจำลอง
+				ภาพและบรรยากาศจำลอง
 			</div>
 		</div>
 		<div class="slide planFloor" id="planAFloor" name="<?= Lang::get('content.floorPlan') ?>">
@@ -321,7 +321,7 @@
 				<p><?= Lang::get('content.planBContent') ?></p>
 			</div>
 			<div class="bottomText">
-				ภาพจำลอง
+				ภาพและบรรยากาศจำลอง
 			</div>
 		</div>
 		<div class="slide planFloor" id="planBFloor" name="<?= Lang::get('content.floorPlan') ?>">
