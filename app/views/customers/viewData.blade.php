@@ -36,6 +36,7 @@
 				<td>mobile</td>
 				<td>description</td>
 				<td>appointment</td>
+				<td>delete</td>
 			</tr>
 
 			@foreach ($customers as $each_customer)
@@ -51,6 +52,12 @@
 				    @else
 				    	<td>-</td>
 				    @endif
+				    <td>
+				    	<form name="form" action="deleteData" method="post">
+				    		<input type="hidden" name="id" id="subject" value="{{ $each_customer['id'] }}">
+				    		<button type="submit">DELETE</button>
+						</form>
+					</td>
 			  	</tr>
 		  	@endforeach
 		</table>
