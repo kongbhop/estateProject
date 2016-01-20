@@ -346,8 +346,8 @@
 
 	<div class="section" id="samapan">
 		<div class="slide" id="samapanSlide" name="<?= Lang::get('content.baanSamapanTopic') ?>">
-			<img src="imgs/samapan_logo.png" style="margin-top:0px; height:75px; width:auto;" alt="">
-			<p class="textTopic"><?= Lang::get('content.baanSamapanTopic') ?></p>
+			<img src="imgs/baansamapanlogo.png" style="margin-top:0px; height:160px; width:auto;" alt="">
+			<!-- <p class="textTopic"><?= Lang::get('content.baanSamapanTopic') ?></p> -->
 			<p class="textDesp"><?= Lang::get('content.baanSamapanContent') ?>
 			</p>
 		</div>
