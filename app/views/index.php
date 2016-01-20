@@ -221,7 +221,7 @@
 	    		<p><?= Lang::get('content.concept1Content') ?></p>
 	    	</div>
 				<div class="bottomText">
-					ภาพและบรรยากาศจำลอง
+					ภาพจำลอง
 				</div>
 	    </div>
 	    <div class="slide" id="slide2" name="Exclusive Lifestyle">
@@ -229,15 +229,15 @@
 	    		<p><?= Lang::get('content.concept2Content') ?></p>
 	    	</div>
 				<div class="bottomText">
-					ภาพและบรรยากาศจำลอง
+					ภาพจำลอง
 				</div>
 	    </div>
-	    <div class="slide" id="slide3" name="Exclusive Neighbourhood">
+	    <div class="slide" id="slide3" name="Exclusive Location">
 	    	<div class="textcontainer" id="textbox-1-2" ><h2><?= Lang::get('content.concept3Topic') ?></h2>
 	    		<p><?= Lang::get('content.concept3Content') ?></p>
 	    	</div>
 				<div class="bottomText">
-					ภาพและบรรยากาศจำลอง
+					ภาพจำลอง
 				</div>
 	    </div>
 	</div>
@@ -292,7 +292,7 @@
 				<p><?= Lang::get('content.planAContent') ?></p>
 			</div>
 			<div class="bottomText">
-				ภาพและบรรยากาศจำลอง
+				ภาพจำลอง
 			</div>
 		</div>
 		<div class="slide planFloor" id="planAFloor" name="<?= Lang::get('content.floorPlan') ?>">
@@ -321,7 +321,7 @@
 				<p><?= Lang::get('content.planBContent') ?></p>
 			</div>
 			<div class="bottomText">
-				ภาพและบรรยากาศจำลอง
+				ภาพจำลอง
 			</div>
 		</div>
 		<div class="slide planFloor" id="planBFloor" name="<?= Lang::get('content.floorPlan') ?>">
@@ -346,8 +346,8 @@
 
 	<div class="section" id="samapan">
 		<div class="slide" id="samapanSlide" name="<?= Lang::get('content.baanSamapanTopic') ?>">
-			<img src="imgs/baansamapanlogo.png" style="margin-top:0px; height:160px; width:auto;" alt="">
-			<!-- <p class="textTopic"><?= Lang::get('content.baanSamapanTopic') ?></p> -->
+			<img src="imgs/samapan_logo.png" style="margin-top:0px; height:75px; width:auto;" alt="">
+			<p class="textTopic"><?= Lang::get('content.baanSamapanTopic') ?></p>
 			<p class="textDesp"><?= Lang::get('content.baanSamapanContent') ?>
 			</p>
 		</div>
