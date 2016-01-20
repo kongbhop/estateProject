@@ -24,6 +24,7 @@
 		</h2>
 	</div>
 	<a class="waves-effect waves-light btn" href="./exportData">export</a>
+	<a class="waves-effect waves-light btn" href="./changePasswordView">change password</a>
 	<a class="waves-effect waves-light btn" href="./logout">logout</a>
 
 

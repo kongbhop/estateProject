@@ -83,21 +83,3 @@ require app_path().'/filters.php';
 if(Session::get('lang') == "")
 	Session::put('lang', 'th');
 App::setLocale(Session::get('lang'));
-
-App::error(function(Exception $exception, $code)
-{
-    switch ($code)
-    {
-        case 403:
-            return Response::view('errors.missingPage', array('errMessage'=> "Cannot Access: 403"), 403);
-
-        case 404:
-            return Response::view('errors.missingPage', array('errMessage'=> "Page Not Found: 404"), 404);
-
-        case 500:
-        	return Response::view('errors.missingPage', array('errMessage'=> "Server Error: 500"), 500);
-
-        default:
-            return Response::view('errors.missingPage', array('errMessage'=> "Something Wrong!"), $code);
-    }
-});
