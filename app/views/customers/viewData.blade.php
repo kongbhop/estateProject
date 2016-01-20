@@ -17,7 +17,7 @@
 
  </style>
 				 
-<div class="container">
+<div style="padding: 0 2%;">
 	<div>
 		<h2>
 			ข้อมูลลูกค้า
@@ -30,6 +30,7 @@
 		<table style="width:100%" class="bordered">
 			<tr>
 				<td>ref#</td>
+				<td>date</td>
 				<td>firstname</td>
 				<td>lastname</td>
 				<td>email</td>
@@ -42,6 +43,7 @@
 			@foreach ($customers as $each_customer)
 				<tr>
 				    <td>{{ $each_customer['id'] }}</td>
+				    <td>{{ $each_customer['created_at'] }}</td>
 				    <td>{{ $each_customer['firstname'] }}</td>
 				    <td>{{ $each_customer['lastname'] }}</td>
 				    <td>{{ $each_customer['email'] }}</td>

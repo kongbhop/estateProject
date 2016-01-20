@@ -15,6 +15,7 @@ class CustomerData extends Eloquent {
 	public function toArray(){
 		return array(
 			'id'=> $this->id,
+			'created_at'=> $this->created_at->format('d M y'),
 			'firstname'=> $this->firstname,
 			'lastname'=> $this->lastname,
 			'email'=> $this->email,
@@ -29,6 +30,7 @@ class CustomerData extends Eloquent {
 		foreach ($customers as $each_customer) {
 			$contents[] = array(
 				'id'=> $each_customer['id'],
+				'created_at'=>$each_customer['created_at'],
 				'firstname'=> $each_customer['firstname'],
 				'lastname'=> $each_customer['lastname'],
 				'mobile'=> $each_customer['mobile'],
@@ -48,12 +50,14 @@ class CustomerData extends Eloquent {
 
 		$header = [
 			'ref#',
+			'created_at',
 			'firstname',
 			'lastname',
 			'mobile',
 			'email',
 			'description',
 			'appointment',
+
 		];
 		fputcsv($file, $header);
 
