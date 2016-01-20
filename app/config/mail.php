@@ -28,8 +28,8 @@ return array(
 	|
 	*/
 
-	'host' => 'smtp.mandrillapp.com',
-	// 'host' => 'smtp.gmail.com',
+	// 'host' => 'smtp.mandrillapp.com',
+	'host' => 'smtp.gmail.com',
 	/*
 	|--------------------------------------------------------------------------
 	| SMTP Host Port
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'Jt_5fYEclHxLUWnXLB_XWw',
+	'password' => '939JXQqV',
 
 	/*
 	|--------------------------------------------------------------------------
