@@ -37,7 +37,7 @@
 				<td>mobile</td>
 				<td>description</td>
 				<td>appointment</td>
-				<td>delete</td>
+				<td></td>
 			</tr>
 
 			@foreach ($customers as $each_customer)
@@ -57,7 +57,7 @@
 				    <td>
 				    	<form name="form" action="deleteData" method="post">
 				    		<input type="hidden" name="id" id="subject" value="{{ $each_customer['id'] }}">
-				    		<button type="submit">DELETE</button>
+				    		<button class="waves-effect waves-light btn red" type="submit">DEL</button>
 						</form>
 					</td>
 			  	</tr>
