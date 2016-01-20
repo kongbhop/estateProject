@@ -29,22 +29,22 @@
 
 		<table style="width:100%" class="bordered">
 			<tr>
-				<td class="wrapword">ref#</td>
-				<td class="wrapword">firstname</td>
-				<td class="wrapword">lastname</td>
-				<td class="wrapword">email</td>
-				<td class="wrapword">mobile</td>
-				<td class="wrapword">description</td>
-				<td class="wrapword">appointment</td>
+				<td>ref#</td>
+				<td>firstname</td>
+				<td>lastname</td>
+				<td>email</td>
+				<td>mobile</td>
+				<td>description</td>
+				<td>appointment</td>
 			</tr>
 
 			@foreach ($customers as $each_customer)
 				<tr>
-				    <td class="wrapword">{{ $each_customer['id'] }}</td>
-				    <td class="wrapword">{{ $each_customer['firstname'] }}</td>
-				    <td class="wrapword">{{ $each_customer['lastname'] }}</td>
-				    <td class="wrapword">{{ $each_customer['email'] }}</td>
-				    <td class="wrapword">{{ $each_customer['mobile'] }}</td>
+				    <td>{{ $each_customer['id'] }}</td>
+				    <td>{{ $each_customer['firstname'] }}</td>
+				    <td>{{ $each_customer['lastname'] }}</td>
+				    <td>{{ $each_customer['email'] }}</td>
+				    <td>{{ $each_customer['mobile'] }}</td>
 				    <td class="wrapword">{{ $each_customer['description'] }}</td>
 				    @if ($each_customer['appointment'])
 				    	<td>{{ date_create($each_customer['appointment'])->format('d F Y - H:i')}}</td>
