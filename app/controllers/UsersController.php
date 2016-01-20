@@ -50,6 +50,19 @@ class UsersController extends BaseController {
         }
         return Redirect::route('login');
     }
+
+    public function changePassword(){
+        $user = Auth::user();
+        
+        $current_password = Input::get('current_password');
+        if (strlen($current_password) > 0 && !Hash::check($current_password, $user->password)) {
+                return Redirect::to('/user/edit-profile')->withErrors('Please specify the good current password');
+        }
+        
+        $user = Auth::user();
+        $user->password = Hash::make($new_password);
+        $user->save();    
+    }
 }
 
 ?>
