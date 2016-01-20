@@ -1,5 +1,5 @@
 return array(
 	'mandrill' => array(
-	    'secret' => 'dju8Ubze5DRo-OFaiLsmyw',
+	    'secret' => 'Jt_5fYEclHxLUWnXLB_XWw',
 	),
 )

@@ -29,7 +29,7 @@ return array(
 	*/
 
 	'host' => 'smtp.mandrillapp.com',
-
+	// 'host' => 'smtp.gmail.com',
 	/*
 	|--------------------------------------------------------------------------
 	| SMTP Host Port
@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'private.park.test@gmail.com', 'name' => 'PRIVATE PARK'),
+	'from' => array('address' => 'Privatepark3@gmail.com', 'name' => 'PRIVATE PARK'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'private.park.test@gmail.com',
+	'username' => 'Privatepark3@gmail.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'dju8Ubze5DRo-OFaiLsmyw',
+	'password' => 'Jt_5fYEclHxLUWnXLB_XWw',
 
 	/*
 	|--------------------------------------------------------------------------

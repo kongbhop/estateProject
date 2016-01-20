@@ -40,8 +40,8 @@ class CustomerController extends BaseController {
 
 		$subject = (string)('customer contact #'.$customerData->id);
 		Mail::send('customers.email', array('data'=> $customerData), function($message) use ($subject){
-        	$message->to('private.park.test@gmail.com', 'AUTHOR - PRIVATE CONTACT')
-        			->from('private.park.test@gmail.com', 'PRIVATE PARK')
+        	$message->to('Privatepark3@gmail.com', 'AUTHOR - PRIVATE CONTACT')
+        			->from('Privatepark3@gmail.com', 'PRIVATE PARK')
         			->subject($subject);
     	});
 
