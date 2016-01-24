@@ -1,6 +1,8 @@
 $(document).ready(function(){
   setTimeout(function(){
-    $("#navigateModal").modal("show");
+    var lang = $('#lang').val().trim();
+    if(lang !== 'en')
+      $("#navigateModal").modal("show");
   }, 1000);
 
   $('#open-right').click(function(){

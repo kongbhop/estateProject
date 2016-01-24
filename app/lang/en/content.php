@@ -168,14 +168,16 @@ return array(
 	"formContactButton" => "Contact",
 	"formAttendButton" => "Visiting",
 	"formDate" => "Date",
-	"formFirstname" => "Firstame",
-	"formLastname" => "Lastname",
+	"formFirstname" => "First Name",
+	"formLastname" => "Last Name",
 	"formTel" => "Phone Number",
 	"formEmail" => "Email",
-	"formDesp" => "Other information",
+	"formDesp" => "Other Information",
 	"formSubmitButton" => "Submit",
 	"contactTopic" => "Contact us",
-	"contactDesp" => "Just fill in your informations<br>We will contact you back as soon as possible<br><br>",
+	"continueButton" => "Continue",
+	"backButton" => "Back",
+	"contactDesp" => "Please fill in your informations<br>We will contact you back as soon as possible<br><br>",
 
 
 );

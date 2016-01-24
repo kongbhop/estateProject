@@ -26,6 +26,7 @@
   <![endif]-->
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.cookie.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js"></script>
 
@@ -49,6 +50,8 @@
 
   <script type="text/javascript">
 
+  var language = "{{Session::get('lang')}}";
+  console.log(language);
   (function () {
 
       var scream;
@@ -203,6 +206,8 @@
   </script>
 </head>
 <body id="brim-main">
+
+<input type="hidden" id="lang" value="<?= Session::get('lang') ?>">
 
 <div class="snap-drawers">
     <div class="snap-drawer snap-drawer-right">
@@ -459,12 +464,12 @@
               <input type="text" name="lastname"> <br>
               <label><?= Lang::get('content.formTel') ?></label> <br>
               <input type="text" name="mobile"> <br>
-              <button id="submitFirstSection">ดำเนินการต่อ >></button>
+              <button id="submitFirstSection"><?= Lang::get('content.continueButton') ?> >></button>
 
             </div>
 
             <div class="secondSection" style="display:none;">
-              <button id="backtoFirstSection"><< ย้อนกลับ</button><br>
+              <button id="backtoFirstSection"><< <?= Lang::get('content.backButton') ?></button><br>
               <label><?= Lang::get('content.formEmail') ?></label> <br>
               <input type="text" name="email"> <br>
               <label><?= Lang::get('content.formDesp') ?></label> <br>
@@ -510,7 +515,7 @@
       <div class="modal-body">
         <div class="xButton" data-dismiss="modal"><i class="fa fa-times fa-1"></i></div>
         <div class="clear"></div>
-        <p>LET US NAVIGATION YOU TO OUR SITE</p><br>
+        <p></p><br>
         <div class="button lineHeightDiv hideNavigateModal"><a data-menuanchor="Location" href="#Location" class="locationButton">START NAVIGATION</a></div>
         <br>
         <br>
@@ -520,7 +525,7 @@
         </div>
         <div class="clear"></div>
         <br>
-        <p style="padding: 0 3%; line-height: 1em;"><small>USING GOOGLE MAPS TO BRING TO OUR SITE</small></p>
+        <!-- <p style="padding: 0 3%; line-height: 1em;"><small>USING GOOGLE MAPS TO BRING TO OUR SITE</small></p> -->
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

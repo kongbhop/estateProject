@@ -46,5 +46,11 @@ Route::get('/th', function()
 Route::get('/en', function()
 {
 	Session::put('lang', 'en');
-	return Redirect::to('/#ContactNav');
+	$Agent = new Agent();
+	// return View::make('index');
+	 if ( $Agent->isMobile() && !$Agent->isTablet() ) {
+		 return Redirect::to('/#Contact');
+   } else {
+		 return Redirect::to('/#ContactNav');
+   }
 });
