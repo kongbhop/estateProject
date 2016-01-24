@@ -29,16 +29,21 @@ $(document).ready(function(){
   $(".customerContact").submit(function(){
     event.preventDefault();
     // console.log($(this).serializeArray());
+    $("#thankYouModal").modal("show");
+    $(".loading").slideDown();
+    $(".finish").hide();
     $.ajax(
     {
       url: 'contact',
       type: "POST",
       data: $(this).serializeArray(),
       success: function(data, textStatus,jqXHR){
+        $(".loading").slideUp();
+        $(".finish").slideDown();
         $("input[type='text']").val("");
 				$("textarea").val("");
-				$("#thankYouModal").modal("show");
         $("#backtoFirstSection").click();
+
       }
     });
   });

@@ -419,8 +419,13 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <p><?= Lang::get('content.formThankYouMsg') ?></p>
-				<button type="button" class="myBtn" data-dismiss="modal">OK</button>
+				<div class="loading">
+          <img src="imgs/loading.gif" style="width:100px;" alt="">
+        </div>
+        <div class="finish">
+          <p><?= Lang::get('content.formThankYouMsg') ?></p>
+  				<button type="button" class="myBtn" data-dismiss="modal">OK</button>
+        </div>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

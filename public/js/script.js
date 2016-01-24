@@ -18,6 +18,9 @@ $(document).ready(function(){
 	$(".customerContact").submit(function(){
 		event.preventDefault();
 		// console.log($(this).serializeArray());
+		$("#thankYouModal").modal("show");
+    $(".loading").slideDown();
+    $(".finish").hide();
 		$.ajax(
 		{
 			url: 'contact',
@@ -26,7 +29,8 @@ $(document).ready(function(){
 			success: function(data, textStatus,jqXHR){
 				$("input[type='text']").val("");
 				$("textarea").val("");
-				$("#thankYouModal").modal("show");
+				$(".loading").slideUp();
+        $(".finish").slideDown();
 			}
 		});
 	});
