@@ -15,9 +15,13 @@ Route::post('createUser', array('as' => 'create', 'uses'=> 'UsersController@hand
 Route::get('login', array('as' => 'login', 'uses' => 'UsersController@login'));
 Route::post('/login', array('as' => 'login', 'uses' => 'UsersController@handleLogin'));
 Route::get('/logout', array('as' => 'logout', 'uses' => 'UsersController@logout'));
+Route::get('changePasswordView', array('as' => 'changePasswordView', 'uses' => 'UsersController@changePasswordView'));
+Route::post('changePassword', array('as' => 'changePassword', 'uses' => 'UsersController@changePassword'));
+
 
 Route::get('customerData', array('as' => 'customerData', 'uses' => 'CustomerController@viewCustomerData'));
 Route::get('exportData', array('as' => 'exportData', 'uses' => 'CustomerController@exportCustomerData'));
+Route::post('deleteData', array('as' => 'deleteCustomerData', 'uses' => 'CustomerController@deleteCustomerData'));
 Route::get('contact', array('as' => 'contact', 'uses' => 'CustomerController@requestData'));
 Route::post('contact', array('as' => 'contact', 'uses' => 'CustomerController@handleRequestData'));
 

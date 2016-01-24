@@ -17,30 +17,34 @@
 
  </style>
 				 
-<div class="container">
+<div style="padding: 0 2%;">
 	<div>
 		<h2>
 			ข้อมูลลูกค้า
 		</h2>
 	</div>
 	<a class="waves-effect waves-light btn" href="./exportData">export</a>
+	<a class="waves-effect waves-light btn" href="./changePasswordView">change password</a>
 	<a class="waves-effect waves-light btn" href="./logout">logout</a>
 
 
 		<table style="width:100%" class="bordered">
 			<tr>
 				<td>ref#</td>
+				<td>date</td>
 				<td>firstname</td>
 				<td>lastname</td>
 				<td>email</td>
 				<td>mobile</td>
 				<td>description</td>
 				<td>appointment</td>
+				<td></td>
 			</tr>
 
 			@foreach ($customers as $each_customer)
 				<tr>
 				    <td>{{ $each_customer['id'] }}</td>
+				    <td>{{ $each_customer['created_at'] }}</td>
 				    <td>{{ $each_customer['firstname'] }}</td>
 				    <td>{{ $each_customer['lastname'] }}</td>
 				    <td>{{ $each_customer['email'] }}</td>
@@ -51,6 +55,12 @@
 				    @else
 				    	<td>-</td>
 				    @endif
+				    <td>
+				    	<form name="form" action="deleteData" method="post">
+				    		<input type="hidden" name="id" id="subject" value="{{ $each_customer['id'] }}">
+				    		<button class="waves-effect waves-light btn red" type="submit">DEL</button>
+						</form>
+					</td>
 			  	</tr>
 		  	@endforeach
 		</table>

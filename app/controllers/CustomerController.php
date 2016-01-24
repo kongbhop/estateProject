@@ -63,4 +63,10 @@ class CustomerController extends BaseController {
 
 		return Response::download(public_path($filename));
 	}
+
+	public function deleteCustomerData(){
+		$id = $_POST['id'];
+		CustomerData::where('id', $id)->delete();
+		return Redirect::to('/customerData');
+	}
 }

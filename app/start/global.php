@@ -95,7 +95,7 @@ App::error(function(Exception $exception, $code)
             return Response::view('errors.missingPage', array('errMessage'=> "Page Not Found: 404"), 404);
 
         case 500:
-        	return Response::view('errors.missingPage', array('errMessage'=> "Server Error: 500"), 500);
+            return Response::view('errors.missingPage', array('errMessage'=> "Server Error: 500"), 500);
 
         default:
             return Response::view('errors.missingPage', array('errMessage'=> "Something Wrong!"), $code);
