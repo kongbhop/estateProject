@@ -354,7 +354,7 @@
           <div id="head"><?= Lang::get('content.planAUpTopic') ?>
           </div>
           <div id="description"><?= Lang::get('content.planAUpContent') ?>
-            <br> <br>
+            <br> <br> <br>
           </div>
         </div>
       </div>
@@ -368,6 +368,7 @@
           <div id="head"><?= Lang::get('content.planBTopic') ?>
           </div>
           <div id="description"><?= Lang::get('content.planBContent') ?>
+            <br> <br>
           </div>
         </div>
         <div class="halfHeightBottom triangle-down-right">
@@ -381,6 +382,7 @@
           <div id="head"><?= Lang::get('content.planBDownTopic') ?>
           </div>
           <div id="description"><?= Lang::get('content.planBDownContent') ?>
+            <br> <br>
           </div>
         </div>
       </div>
@@ -392,6 +394,7 @@
           <div id="head"><?= Lang::get('content.planBUpTopic') ?>
           </div>
           <div id="description"><?= Lang::get('content.planBUpContent') ?>
+            <br> <br>
           </div>
         </div>
       </div>
@@ -434,7 +437,9 @@
 
         <div class="customerContactForm">
           <span><?= Lang::get('content.contactDesp') ?></span>
-
+          <div class="telContact">
+            <i class="fa fa-phone"></i> 038 023 023, 082 083 1999
+          </div>
           <div class="contactToggle row no-padding" style="margin-top: 10px; margin-bottom: 10px;">
             <div class="radio col-xs-6"  style="padding:0; margin:0;">
               <input type="radio" id="contactRadio" name="contactType" checked/>
@@ -480,9 +485,7 @@
         </div>
     </div>
 
-    <div class="telContact">
-      <i class="fa fa-phone"></i> 038 023 023, 082 083 1999
-    </div>
+
 
     <div class="textCenter">
       &copy Samaphan Property Co.,Ltd. All rights Reserved.

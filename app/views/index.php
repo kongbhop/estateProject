@@ -302,14 +302,14 @@
 						<img src="imgs/A1com.jpg" alt="" />
 					</a>
 					<p class="textTopic"><?= Lang::get('content.planADownTopic') ?></p>
-					<div class="textLeft textDesp"><?= Lang::get('content.planADownContent') ?></div>
+					<div class="textLeft homeDesp"><?= Lang::get('content.planADownContent') ?></div>
 				</div>
 				<div class="floorPlan">
 					<a class="fancybox" rel="fancybox" href="imgs/A2com.jpg" title="">
 						<img src="imgs/A2com.jpg" alt="" />
 					</a>
 					<p class="textTopic"><?= Lang::get('content.planAUpTopic') ?></p>
-					<div class="textLeft textDesp"><?= Lang::get('content.planAUpContent') ?></div>
+					<div class="textLeft homeDesp"><?= Lang::get('content.planAUpContent') ?></div>
 				</div>
 			</div>
 		</div>
@@ -331,14 +331,14 @@
 						<img src="imgs/B1com.jpg" alt="" />
 					</a>
 					<p class="textTopic"><?= Lang::get('content.planBDownTopic') ?></p>
-					<div class="textDesp"><?= Lang::get('content.planBDownContent') ?></div>
+					<div class="homeDesp"><?= Lang::get('content.planBDownContent') ?></div>
 				</div>
 				<div class="floorPlan">
 					<a class="fancybox" rel="fancybox" href="imgs/B2com.jpg" title="">
 						<img src="imgs/B2com.jpg" alt="" />
 					</a>
 					<p class="textTopic"><?= Lang::get('content.planBUpTopic') ?></p>
-					<div class="textDesp"><?= Lang::get('content.planBUpContent') ?></div>
+					<div class="homeDesp"><?= Lang::get('content.planBUpContent') ?></div>
 				</div>
 			</div>
 		</div>

@@ -65,6 +65,13 @@
   min-width: 500px;
   margin: auto; }
 
+.homeDesp {
+  font-size: 1.4em;
+  margin: auto;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px; }
+
 #samapan {
   color: white !important; }
   #samapan #samapanSlide, #samapan #privateSlide {
@@ -414,11 +421,11 @@ p {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #2F96B4;
   background-position: 0 -15px;
-  -webkit-transition: background-position .1s linear;
-  -moz-transition: background-position .1s linear;
-  -ms-transition: background-position .1s linear;
-  -o-transition: background-position .1s linear;
-  transition: background-position .1s linear; }
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear; }
 
 #infoMenu {
   height: 20px;
