@@ -166,7 +166,7 @@ return array(
 
 	"formThankYouMsg" => "Thank you",
 	"formContactButton" => "Contact",
-	"formAttendButton" => "Visiting",
+	"formAttendButton" => "Visit",
 	"formDate" => "Date",
 	"formFirstname" => "First Name",
 	"formLastname" => "Last Name",
@@ -177,7 +177,7 @@ return array(
 	"contactTopic" => "Contact us",
 	"continueButton" => "Continue",
 	"backButton" => "Back",
-	"contactDesp" => "Please fill in your informations<br>We will contact you back as soon as possible<br><br>",
+	"contactDesp" => "Please fill in your information<br>We will contact you back as soon as possible<br><br>",
 
 
 );
