@@ -518,7 +518,8 @@
       <div class="modal-body">
         <div class="xButton" data-dismiss="modal"><i class="fa fa-times fa-1"></i></div>
         <div class="clear"></div>
-        <p></p><br>
+        <p>LET US NAVIGATE YOU TO OUR SITE</p><br>
+        <br>
         <div class="button lineHeightDiv hideNavigateModal"><a data-menuanchor="Location" href="#Location" class="locationButton">START NAVIGATION</a></div>
         <br>
         <br>
@@ -528,7 +529,7 @@
         </div>
         <div class="clear"></div>
         <br>
-        <!-- <p style="padding: 0 3%; line-height: 1em;"><small>USING GOOGLE MAPS TO BRING TO OUR SITE</small></p> -->
+        <p style="padding: 0 3%; line-height: 1em;"><small>USING GOOGLE MAPS TO BRING YOU TO OUR SITE</small></p>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
