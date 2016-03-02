@@ -3,11 +3,23 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Private Park Project</title>
-	<meta name="author" content="Alvaro Trigo Lopez" />
-	<meta name="description" content="fullPage full-screen backgrounds." />
-	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<title>Private Park 3</title>
 	<meta name="Resource-type" content="Document" />
+
+	<!-- for Google -->
+	<meta name="description" content="Private Park 3 - “บ้านสุดพิเศษใจกลางเมืองระยอง” มากกว่าความสมบูรณ์แบบ...ด้วยความเป็นส่วนตัว" />
+	<meta name="keywords" content="Private Park 3, Samaphan, Rayong" />
+
+	<meta name="author" content="บ้านสมาพันธ์" />
+	<meta name="copyright" content="บ้านสมาพันธ์" />
+	<meta name="application-name" content="Private Park 3" />
+
+	<!-- for Facebook -->
+	<meta property="og:title" content="Private Park 3" />
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="imgs/logo.png" />
+	<meta property="og:description" content="Private Park 3 - “บ้านสุดพิเศษใจกลางเมืองระยอง” มากกว่าความสมบูรณ์แบบ...ด้วยความเป็นส่วนตัว" />
+
 
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css" media="screen" />
@@ -16,13 +28,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
-
-	<style>
-
-
-
-	</style>
-
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
